@@ -19,7 +19,8 @@
 #import <AVFoundation/AVCaptureDevice.h>
 #import <AVFoundation/AVMediaFormat.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import <Photos/Photos.h>
+
+#import <Photos/PHPhotoLibrary.h>
 
 typedef void (^getPictureBlock)(UIImage *image);
 
