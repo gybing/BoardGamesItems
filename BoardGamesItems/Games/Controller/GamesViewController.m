@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"游戏";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"选中"] style:UIBarButtonItemStylePlain target:self action:@selector(addGamesList)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"add_games"] style:UIBarButtonItemStylePlain target:self action:@selector(addGamesList)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }

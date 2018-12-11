@@ -211,19 +211,19 @@ const CGFloat HeadImageHeight= 90;
     MineTableViewCell * cell = [MineTableViewCell cellWithTableView:tableView];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            cell.headerImageView.image = [UIImage imageNamed:@"编辑分类"];
+            cell.headerImageView.image = [UIImage imageNamed:@"opinion"];
             cell.titleLabel.text = @"意见反馈";
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
-            cell.headerImageView.image = [UIImage imageNamed:@"垃圾桶"];
+            cell.headerImageView.image = [UIImage imageNamed:@"privacy"];
             cell.titleLabel.text = @"隐私政策";
         } else if (indexPath.row == 1) {
-            cell.headerImageView.image = [UIImage imageNamed:@"清理缓存"];
+            cell.headerImageView.image = [UIImage imageNamed:@"clear_cache"];
             cell.titleLabel.text = @"清除缓存";
         }
     } else {
-        cell.headerImageView.image = [UIImage imageNamed:@"关于我们"];
+        cell.headerImageView.image = [UIImage imageNamed:@"about_mine"];
         cell.titleLabel.text = @"关于我们";
     }
     return cell;
