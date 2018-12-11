@@ -11,40 +11,44 @@
 @interface JSFastLoginModel : NSObject<NSCoding>
 
 /*!
- 日记图片
+ 日记图片名称
  */
-@property(copy,nonatomic) NSMutableArray * class_imageArr;
+@property(copy,nonatomic) NSString * class_image;
 /*!
- 写日记时间年月
+ 添加时间年月
  */
 @property(copy,nonatomic) NSString* class_year;
 
 /*!
- 写日记时间日
+ 添加时间日
  */
 @property(copy,nonatomic) NSString* class_day;
 
 /*!
- 写日记时间小时分钟
+ 添加时间小时分钟
  */
 @property(copy,nonatomic) NSString* class_hour;
 
 /*!
- 写日记时间周
+ 添加时间周
  */
 @property(copy,nonatomic) NSString* class_week;
 /*!
- 日记内容
+ 添加内容
  */
-@property(copy,nonatomic) NSString* class_note;
+@property(copy,nonatomic) NSString* class_number;
 /*!
- 日记类别
+ x游戏名称
  */
 @property(copy,nonatomic) NSString* class_name;
 /*!
- 类别方式(颜色)
+ x备注
  */
-@property(strong,nonatomic) UIColor * class_color;
+@property(copy,nonatomic) NSString* class_note;
+/*!
+ x是否是加分
+ */
+@property(copy,nonatomic) NSString* class_isAdd;
 
 
 - (instancetype)init;

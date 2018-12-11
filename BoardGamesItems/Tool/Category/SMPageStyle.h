@@ -44,6 +44,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 //表格分割线颜色
 #define SMSeparator SMColorFromRGB(0xe5e5e5)
 
+#define SMMainColor SMColorFromRGB(0x777CB5)
+
+
 static const char * _closeEmptyHandel = "sm_closeEmptyHandel";
 static const char * _emptyMsg = "sm_emptyMsg";
 static const char * _emptyImage = "sm_emptyImage";

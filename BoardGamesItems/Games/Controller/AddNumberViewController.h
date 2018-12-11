@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AddNumberViewController : UIViewController
 
+typedef void (^ReturnAddBlock) (JSFastLoginModel * addModel);
+
+@property(nonatomic, copy) ReturnAddBlock returnAddBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

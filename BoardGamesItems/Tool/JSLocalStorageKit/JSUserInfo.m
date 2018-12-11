@@ -10,12 +10,8 @@
 #import "JSFastLoginModel.h"
 //
 
-//全部日记数组
-#define AllUserNameArray @"AllUserNameArray"
-//类别日记数组
-#define ClassUserNameArray @"ClassUserNameArray"
-//类别日记数组
-#define GarbageUserNameArray @"GarbageUserNameArray"
+//游戏列表
+#define gamesUserNameArray @"gamesUserNameArray"
 //当前用户的token
 #define User_Token @"User_Token"
 
@@ -98,67 +94,24 @@
 
 #pragma mark - getter & setter
 
-
-- (NSMutableArray<JSFastLoginModel *> *)allArray{
-    NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    NSData * tmp = [userdefaults objectForKey:AllUserNameArray];
-    if (tmp == nil) {
-        return  [[NSMutableArray alloc]init];
-    }
-    else {
-        NSArray * array = [NSArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData: tmp]];
-        return  [NSMutableArray arrayWithArray:[self sortedArrayUsingComparatorByPaymentTimeWithDataArr:array]];
-    }
-    
-}
-- (void)setAllArray:(NSMutableArray<JSFastLoginModel *> *)allArray{
-    if (allArray == nil) {
+-(void)setGamesArray:(NSMutableArray<JSClassModel *> *)gamesArray{
+    if (gamesArray == nil) {
         return;
     }
     NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:allArray];
-    [userdefaults setObject:data forKey:AllUserNameArray];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:gamesArray];
+    [userdefaults setObject:data forKey:gamesUserNameArray];
 }
 
--(void)setClassArray:(NSMutableArray<JSClassModel *> *)classArray{
-    if (classArray == nil) {
-        return;
-    }
-    NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:classArray];
-    [userdefaults setObject:data forKey:ClassUserNameArray];
-}
-
--(NSMutableArray<JSClassModel *> *)classArray
+-(NSMutableArray<JSClassModel *> *)gamesArray
 {
     NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    NSData * tmp = [userdefaults objectForKey:ClassUserNameArray];
+    NSData * tmp = [userdefaults objectForKey:gamesUserNameArray];
     if (tmp == nil) {
         return  [[NSMutableArray alloc]init];
     }
     else {
         return  [NSKeyedUnarchiver unarchiveObjectWithData: tmp];
-    }
-}
-
--(void)setGarbageArray:(NSMutableArray<JSFastLoginModel *> *)garbageArray{
-    if (garbageArray == nil) {
-        return;
-    }
-    NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:garbageArray];
-    [userdefaults setObject:data forKey:GarbageUserNameArray];
-}
-
--(NSMutableArray<JSFastLoginModel *> *)garbageArray{
-    NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    NSData * tmp = [userdefaults objectForKey:GarbageUserNameArray];
-    if (tmp == nil) {
-        return  [[NSMutableArray alloc]init];
-    }
-    else {
-        NSArray * array = [NSArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData: tmp]];
-        return  [NSMutableArray arrayWithArray:[self sortedArrayUsingComparatorByPaymentTimeWithDataArr:array]];
     }
 }
 

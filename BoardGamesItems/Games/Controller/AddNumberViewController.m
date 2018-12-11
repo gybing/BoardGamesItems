@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
 
+@property (nonatomic,strong) JSFastLoginModel * model;
+
 @property (nonatomic,assign) BOOL isAdd;
 
 
@@ -27,6 +29,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"添加得分";
     self.isAdd = YES;
+    self.model.class_isAdd = @"1";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(addNumber)];
@@ -40,8 +43,48 @@
 }
 
 -(void)addNumber{
-    
+    if (self.model.class_number.length==0) {
+        [SVProgressHUD showInfoWithStatus:@"请输入本届得分！"];
+        return;
+    }
+//    if (self.model.class_note.length==0) {
+//        [SVProgressHUD showInfoWithStatus:@"请输入备注信息！"];
+//        return;
+//    }
+    [self customTimeModel];
+    if (self.returnAddBlock) {
+        self.returnAddBlock(self.model);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
+-(void)customTimeModel{
+    NSArray * arrWeek=[NSArray arrayWithObjects:@"周六",@"周日",@"周一",@"周二",@"周三",@"周四",@"周五", nil];
+    NSDate *date = [NSDate date];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    NSInteger unitFlags = NSCalendarUnitYear |NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitWeekday | NSCalendarUnitHour |NSCalendarUnitMinute |NSCalendarUnitSecond;
+    comps = [calendar components:unitFlags fromDate:date];
+    NSInteger week = [comps weekday];
+    NSInteger year=[comps year];
+    NSInteger month = [comps month];
+    NSInteger day = [comps day];
+    NSInteger hours = [comps hour];
+    NSInteger minutes = [comps minute];
+//    NSInteger seconds = [comps second];
+    self.model.class_year = [NSString stringWithFormat:@"%ld.%ld",year,month];
+    if (day<10) {
+        self.model.class_day = [NSString stringWithFormat:@"0%ld",day];
+    } else {
+        self.model.class_day = [NSString stringWithFormat:@"%ld",day];
+    }
+    self.model.class_week = [arrWeek objectAtIndex:week];
+    self.model.class_hour = [NSString stringWithFormat:@"%ld:%ld",hours,minutes];
+}
+
+
 
 -(void)customAddAndDelete:(BOOL)isAdd{
     if (isAdd) {
@@ -67,12 +110,14 @@
 
 - (IBAction)addNumberBtn:(UIButton *)sender {
     self.isAdd = YES;
+    self.model.class_isAdd = @"1";
     [self customAddAndDelete:self.isAdd];
 }
 
 
 - (IBAction)deleteNumberBtn:(id)sender {
     self.isAdd = NO;
+    self.model.class_isAdd = @"0";
     [self customAddAndDelete:self.isAdd];
 }
 
@@ -90,7 +135,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 10;
+    return 15;
 }
 
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
@@ -113,7 +158,7 @@
         cell.noteField.keyboardType = UIKeyboardTypeNumberPad;
         [[cell.noteField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
-//            self.signature = x;
+            self.model.class_number = x;
         }];
     } else {
         cell.titleLabel.text = @"备注：";
@@ -121,15 +166,18 @@
         cell.noteField.keyboardType = UIKeyboardTypeDefault;
         [[cell.noteField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
-//            self.signature = x;
+            self.model.class_note = x;
         }];
     }
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(JSFastLoginModel *)model
 {
-    
+    if (!_model) {
+        _model = [[JSFastLoginModel alloc]init];
+    }
+    return _model;
 }
 
 @end

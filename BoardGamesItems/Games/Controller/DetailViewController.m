@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (nonatomic,strong)NSMutableArray * dataArr;
+
 
 @end
 
@@ -23,13 +23,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"斗地主计分器";
+    self.navigationItem.title = [NSString stringWithFormat:@"%@计分器",self.titleStr];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self getTotalData];
+}
+
+-(void)getTotalData{
+    NSInteger total_count;
+    total_count = 0;
+    for (NSInteger i=0; i<self.dataArr.count; i++) {
+        JSFastLoginModel * model = self.dataArr[i];
+        if ([model.class_isAdd boolValue]) {
+            total_count = total_count + model.class_number.integerValue;
+        } else {
+            total_count = total_count - model.class_number.integerValue;
+        }
+    }
+    if (total_count>0) {
+        self.totalLabel.text = [NSString stringWithFormat:@"+%ld",(long)total_count];
+    } else if (total_count==0) {
+        self.totalLabel.text = @"0";
+    } else {
+        self.totalLabel.text = [NSString stringWithFormat:@"%ld",(long)total_count];
+    }
+    
 }
 
 - (IBAction)addGameNumberBtn:(UIButton *)sender {
+    WS(wSelf);
     AddNumberViewController * addNumberVC = [[AddNumberViewController alloc]init];
+    addNumberVC.returnAddBlock = ^(JSFastLoginModel * addModel){
+        addModel.class_name = wSelf.titleStr;
+        addModel.class_image = wSelf.imageStr;
+        [wSelf.dataArr insertObject:addModel atIndex:0];
+        [wSelf getTotalData];
+        [wSelf.tableView reloadData];
+        NSMutableArray * array = [JSUserInfo shareManager].gamesArray;
+        for (NSInteger i=0; i<array.count; i++) {
+            JSClassModel * classModel = array[i];
+            if ([classModel.class_name isEqualToString:self.titleStr]) {
+                classModel.numberArr = wSelf.dataArr;
+                [array replaceObjectAtIndex:i withObject:classModel];
+            }
+        }
+        [JSUserInfo shareManager].gamesArray = array;
+        [SVProgressHUD showSuccessWithStatus:@"添加成功！"];
+    };
+    
     [self.navigationController pushViewController:addNumberVC animated:YES];
 }
 
@@ -44,10 +85,10 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     [self.tableView hideEmptyView];
-    //    if (self.dataArr.count == 0) {
-    //        [self.tableView showEmptyView];
-    //    }
-    return 5;// self.dataArr.count;
+        if (self.dataArr.count == 0) {
+            [self.tableView showEmptyView];
+        }
+    return self.dataArr.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -56,14 +97,43 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    JSFastLoginModel * model = self.dataArr[indexPath.row];
     DetailTableViewCell * cell = [DetailTableViewCell cellWithTableView:tableView];
+    cell.headerImageView.image = [UIImage imageNamed:model.class_image];
+    cell.dayLabel.text = model.class_day;
+    cell.weekLabel.text = model.class_week;
+    cell.dateLabel.text = model.class_year;
+    if ([model.class_isAdd boolValue]) {
+        cell.numberLabel.text = [NSString stringWithFormat:@"+%@",model.class_number];
+    } else {
+        cell.numberLabel.text = [NSString stringWithFormat:@"-%@",model.class_number];
+    }
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
+    WS(wSelf);
+    JSFastLoginModel * model = self.dataArr[indexPath.row];
     DeleteViewController * deleteVC = [[DeleteViewController alloc]init];
+    deleteVC.model = model;
+    deleteVC.returnDeleteBlock = ^(void){
+        [wSelf.dataArr removeObject:model];
+        [wSelf getTotalData];
+        [wSelf.tableView reloadData];
+        
+        NSMutableArray * array = [JSUserInfo shareManager].gamesArray;
+        for (NSInteger i=0; i<array.count; i++) {
+            JSClassModel * classModel = array[i];
+            if ([classModel.class_name isEqualToString:self.titleStr]) {
+                classModel.numberArr = wSelf.dataArr;
+                [array replaceObjectAtIndex:i withObject:classModel];
+            }
+        }
+        [JSUserInfo shareManager].gamesArray = array;
+        [SVProgressHUD showSuccessWithStatus:@"删除成功！"];
+        
+    };
     [self.navigationController pushViewController:deleteVC animated:YES];
 }
 

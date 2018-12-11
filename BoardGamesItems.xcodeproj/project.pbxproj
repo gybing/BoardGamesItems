@@ -399,14 +399,14 @@
 		505A6BBF21BE3CA400011D7A /* JSLocalStorageKit */ = {
 			isa = PBXGroup;
 			children = (
+				505A6BC421BE3CA400011D7A /* JSFastLoginModel.h */,
 				505A6BC021BE3CA400011D7A /* JSFastLoginModel.m */,
+				505A6BC521BE3CA400011D7A /* JSLocalStorageKit.h */,
 				505A6BC121BE3CA400011D7A /* JSLocalStorageKit.m */,
 				505A6BC221BE3CA400011D7A /* JSClassModel.h */,
-				505A6BC321BE3CA400011D7A /* JSUserInfo.m */,
-				505A6BC421BE3CA400011D7A /* JSFastLoginModel.h */,
-				505A6BC521BE3CA400011D7A /* JSLocalStorageKit.h */,
-				505A6BC621BE3CA400011D7A /* JSUserInfo.h */,
 				505A6BC721BE3CA400011D7A /* JSClassModel.m */,
+				505A6BC621BE3CA400011D7A /* JSUserInfo.h */,
+				505A6BC321BE3CA400011D7A /* JSUserInfo.m */,
 			);
 			path = JSLocalStorageKit;
 			sourceTree = "<group>";
@@ -433,12 +433,12 @@
 		505A6BED21BE438900011D7A /* JSPictureManager */ = {
 			isa = PBXGroup;
 			children = (
-				505A6BEE21BE438900011D7A /* JSFPictureManager.m */,
-				505A6BEF21BE438900011D7A /* Group */,
-				505A6BF421BE438900011D7A /* UIImage+ScaleImage.m */,
 				505A6BF521BE438900011D7A /* JSFPictureManager.h */,
-				505A6BF621BE438900011D7A /* New Group */,
+				505A6BEE21BE438900011D7A /* JSFPictureManager.m */,
 				505A6BFB21BE438900011D7A /* UIImage+ScaleImage.h */,
+				505A6BF421BE438900011D7A /* UIImage+ScaleImage.m */,
+				505A6BEF21BE438900011D7A /* Group */,
+				505A6BF621BE438900011D7A /* New Group */,
 				505A6BFC21BE438900011D7A /* Album */,
 			);
 			path = JSPictureManager;
@@ -447,9 +447,9 @@
 		505A6BEF21BE438900011D7A /* Group */ = {
 			isa = PBXGroup;
 			children = (
+				505A6BF221BE438900011D7A /* GroupTableViewCell.h */,
 				505A6BF021BE438900011D7A /* GroupTableViewCell.m */,
 				505A6BF121BE438900011D7A /* GroupTableViewController.h */,
-				505A6BF221BE438900011D7A /* GroupTableViewCell.h */,
 				505A6BF321BE438900011D7A /* GroupTableViewController.m */,
 			);
 			path = Group;

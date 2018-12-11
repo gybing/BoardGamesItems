@@ -47,7 +47,5 @@
 	<string>楷楷计分器需要访问您的相册，帮助完成您的个人头像更换</string>
 	<key>NSCameraUsageDescription</key>
 	<string>楷楷计分器需要访问您的相机，帮助完成您的个人头像更换</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>楷楷计分器需要访问您的多媒体，帮助完成您的个人头像更换</string>
 </dict>
 </plist>

@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DeleteViewController : UIViewController
 
+@property (nonatomic,strong) JSFastLoginModel * model;
+
+typedef void (^ReturnDeleteBlock) (void);
+
+@property(nonatomic, copy) ReturnDeleteBlock returnDeleteBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

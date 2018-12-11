@@ -13,6 +13,11 @@
 @interface OpinionViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic,copy) NSString * note;
+
+@property (nonatomic,copy) NSString * email;
+
+
 @end
 
 @implementation OpinionViewController
@@ -27,22 +32,32 @@
 }
 
 -(void)setupOpinion{
-    
+    if (self.note.length>0&&self.email.length>0) {
+        [SVProgressHUD showSuccessWithStatus:@"提交成功！"];
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        if (self.note.length == 0) {
+            [SVProgressHUD showInfoWithStatus:@"反馈意见未填写"];
+        } else {
+            [SVProgressHUD showInfoWithStatus:@"邮箱未填写"];
+        }
+        
+    }
 }
 
 # pragma mark - UITableViewDelegate UITableViewDatasource
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 2;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 1;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0) {
+    if (indexPath.section == 0) {
         return 150;
     } else {
         return 50;
@@ -64,12 +79,13 @@
 {
     
     @weakify(self);
-    if (indexPath.row == 0) {
+    if (indexPath.section == 0) {
         FillContantTableViewCell* cell = [FillContantTableViewCell cellWithTableView:tableView];
         cell.textView.PlaceHolder = @"请输入反馈内容";
+        [cell.textView becomeFirstResponder];
         [[cell.textView rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
-//            self.signature = x;
+            self.note = x;
         }];
         return cell;
     } else {
@@ -78,7 +94,7 @@
         cell.noteField.placeholder = @"请输入邮箱";
         [[cell.noteField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
-//            self.signature = x;
+            self.email = x;
         }];
         return cell;
     }

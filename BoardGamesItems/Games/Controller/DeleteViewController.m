@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"斗地主";
+    self.navigationItem.title = self.model.class_name;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
@@ -30,7 +30,11 @@
     [alter showAlertView:@"取消" sureTitle:@"确定" cancelBlock:^{
         
     } sureBlock:^{
-        
+        if (wSelf.returnDeleteBlock) {
+            //将自己的值传出去，完成传值
+            wSelf.returnDeleteBlock();
+        }
+        [wSelf.navigationController popViewControllerAnimated:YES];
     }];
 }
 
@@ -43,7 +47,11 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    if (self.model.class_note.length>0) {
+        return 4;
+    } else {
+      return 3;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -65,13 +73,21 @@
     DeleteTableViewCell * cell = [DeleteTableViewCell cellWithTableView:tableView];
     if (indexPath.row == 0) {
         cell.titleLabel.text = @"得分";
-        cell.noteLabel.text = @"2000";
+        if ([self.model.class_isAdd boolValue]) {
+            cell.noteLabel.text = [NSString stringWithFormat:@"+%@",self.model.class_number];
+        }else{
+            cell.noteLabel.text = [NSString stringWithFormat:@"-%@",self.model.class_number];
+        }
+        
     } else if (indexPath.row == 1) {
         cell.titleLabel.text = @"类型";
-        cell.noteLabel.text = @"欢乐斗地主";
-    } else {
+        cell.noteLabel.text = self.model.class_name;
+    } else if (indexPath.row == 2) {
         cell.titleLabel.text = @"时间";
-        cell.noteLabel.text = @"2018年10月20日 19:30";
+        cell.noteLabel.text = [NSString stringWithFormat:@"%@.%@ %@",self.model.class_year,self.model.class_day,self.model.class_hour];
+    } else {
+        cell.titleLabel.text = @"备注";
+        cell.noteLabel.text = self.model.class_note;
     }
     return cell;
 }

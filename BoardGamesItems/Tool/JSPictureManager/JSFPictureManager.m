@@ -40,7 +40,7 @@
         // 判断是否支持相机
         if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
         {
-            UIAlertAction *CameraAction = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction *CameraAction){
+            UIAlertAction *CameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction *CameraAction){
                 [getPicture openCamera];
             }];
             [alertController addAction:CameraAction];
@@ -51,11 +51,11 @@
         }];
         [alertController addAction:ImageAction];
         
-        UIAlertAction *galleryAction = [UIAlertAction actionWithTitle:@"图片库" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ImageAction){
-            [getPicture openGallery];
-        }];
-        [alertController addAction:galleryAction];
-        
+//        UIAlertAction *galleryAction = [UIAlertAction actionWithTitle:@"图片库" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ImageAction){
+//            [getPicture openGallery];
+//        }];
+//        [alertController addAction:galleryAction];
+    
         [AppRootViewController presentViewController:alertController animated:YES completion:nil];
         
 //    });
@@ -135,12 +135,10 @@
 #pragma mark - Album
 - (void)openAlbum {
     JSFPictureManager * getPicture = [JSFPictureManager sharedManager];
-    ALAuthorizationStatus author = [ALAssetsLibrary authorizationStatus];
-    if (author == ALAuthorizationStatusRestricted || author == ALAuthorizationStatusDenied)
-    {
-        //无权限
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted) {
+        //相册权限受限制
         [getPicture showAlertViewWithTitel:kNOTSUPPORTALBUM];
-        
     }else{
         // 相册
         [getPicture setImagePickerControllerWith:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
@@ -150,8 +148,8 @@
 #pragma mark - Gallery
 - (void)openGallery {
     JSFPictureManager * getPicture = [JSFPictureManager sharedManager];
-    ALAuthorizationStatus author = [ALAssetsLibrary authorizationStatus];
-    if (author == ALAuthorizationStatusRestricted || author == ALAuthorizationStatusDenied)
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied)
     {
         //无权限
         [getPicture showAlertViewWithTitel:kNOTSUPPORTGALLERY];

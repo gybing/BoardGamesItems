@@ -15,13 +15,26 @@
 @property (strong, nonatomic) NSMutableArray <JSFastLoginModel *> * userInfoArray;
 
 /*!
- 日记类别
+游戏名称
  */
-@property(copy,nonatomic) NSString* class_name;
+@property(copy,nonatomic) NSString * class_name;
 /*!
- 类别方式(颜色)
+ 游戏简介
  */
-@property(strong,nonatomic) UIColor * class_color;
+@property(copy,nonatomic) NSString * class_describe;
+/*!
+ 游戏选择
+ */
+@property(copy,nonatomic) NSString * class_isSelect;
+/*!
+游戏图片名称
+ */
+@property(copy,nonatomic) NSString * class_image;
+
+/*!
+ 游戏分数信息
+ */
+@property(strong,nonatomic) NSMutableArray<JSFastLoginModel*> * numberArr;
 
 
 - (instancetype)init;

@@ -35,8 +35,7 @@
     self.headerImageView.layer.masksToBounds = YES;
     self.addBtn.layer.cornerRadius = 15;
     self.addBtn.layer.masksToBounds = YES;
-    self.addBtn.layer.borderColor = SMColorFromRGB(0xa6a6a6).CGColor;
-    self.addBtn.layer.borderWidth = 1;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

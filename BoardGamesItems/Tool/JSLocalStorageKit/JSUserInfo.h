@@ -16,20 +16,12 @@
 
 +(JSUserInfo *)shareManager;
 
-/**
- *  全部类别日记
- */
-@property (strong, nonatomic) NSMutableArray <JSFastLoginModel *> * allArray;
 
 /**
- *  类别日记
+ *  游戏列表
  */
-@property (strong, nonatomic) NSMutableArray <JSClassModel *> * classArray;
+@property (strong, nonatomic) NSMutableArray <JSClassModel *> * gamesArray;
 
-/**
- *  垃圾信息
- */
-@property (strong, nonatomic) NSMutableArray <JSFastLoginModel *> * garbageArray;
 /**
  *  token
  */
