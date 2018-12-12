@@ -24,57 +24,16 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.dataArr = [JSUserInfo shareManager].gamesArray;
+    NSArray * array = @[@"拆红包斗地主",@"欢乐斗牛",@"跑得快",@"炸金花",@"大富翁",@"德州扑克",@"疯狂骰子",@"够级",@"挤黑五",@"清墩",@"十三张",@"娱乐场"];
+    NSArray * titleArr = @[@"拆红包斗地主，红包多多！",@"欢乐斗牛，欢乐都牛！",@"跑得快，跑得快，看谁跑得快！",@"我是豹子，你呢？",@"大富豪，快乐玩啊！",@"我梭哈！该你了！",@"比比谁点大，看谁更疯狂！",@"你够级的吗？我升级了！",@"快乐挤黑五了！",@"清墩你玩过吗？非常好玩，快快啦！",@"十三张是锻炼智力水平、勇气的纯休闲类游戏！",@"娱乐场，快乐娱乐！"];
     if (self.dataArr.count == 0) {
-        for (NSInteger i=0; i<6; i++) {
+        for (NSInteger i=0; i<array.count; i++) {
             JSClassModel * model = [[JSClassModel alloc]init];
-            switch (i) {
-                case 0:
-                    model.class_name = @"欢乐斗地主";
-                    model.class_isSelect = @"0";
-                    model.class_image = @"选中";
-                    model.class_describe = @"欢乐斗地主，欢乐永不停！";
-                    model.numberArr = [NSMutableArray array];
-                    break;
-                case 1:
-                    model.class_name = @"欢乐斗牛";
-                    model.class_isSelect = @"0";
-                    model.class_image = @"选中";
-                    model.class_describe = @"欢乐斗牛，欢乐都牛！";
-                    model.numberArr = [NSMutableArray array];
-                    
-                    break;
-                case 2:
-                    model.class_name = @"跑得快";
-                    model.class_isSelect = @"0";
-                    model.class_image = @"选中";
-                    model.class_describe = @"跑得快，跑得快，看谁跑得快！";
-                    model.numberArr = [NSMutableArray array];
-                    break;
-                case 3:
-                    model.class_name = @"四川麻将";
-                    model.class_isSelect = @"0";
-                    model.class_image = @"选中";
-                    model.class_describe = @"雀神降临，恭喜发财！";
-                    model.numberArr = [NSMutableArray array];
-                    break;
-                case 4:
-                    model.class_name = @"挖坑";
-                    model.class_isSelect = @"0";
-                    model.class_image = @"选中";
-                    model.class_describe = @"挖坑，挖坑，不停挖坑！";
-                    model.numberArr = [NSMutableArray array];
-                    break;
-                case 5:
-                    model.class_name = @"德州扑克";
-                    model.class_isSelect = @"0";
-                    model.class_image = @"选中";
-                    model.class_describe = @"我梭哈！该你了！";
-                    model.numberArr = [NSMutableArray array];
-                    break;
-                    
-                default:
-                    break;
-            }
+            model.class_name = array[i];
+            model.class_isSelect = @"0";
+            model.class_image = array[i];
+            model.class_describe = titleArr[i];
+            model.numberArr = [NSMutableArray array];
             [self.dataArr addObject:model];
         }
         [JSUserInfo shareManager].gamesArray = self.dataArr;
@@ -91,9 +50,9 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 4;
+        return 6;
     } else {
-        return 2;
+        return 6;
     }
 }
 
@@ -134,7 +93,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ((indexPath.section == 0 && indexPath.row == 3)||(indexPath.section == 1 && indexPath.row == 1)) {
+    if (indexPath.section == 0 && indexPath.row == 5) {
         return 90;
     } else {
         return 110;
@@ -143,7 +102,7 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    JSClassModel * model = self.dataArr[indexPath.section*4 + indexPath.row];
+    JSClassModel * model = self.dataArr[indexPath.section*6 + indexPath.row];
     AddGameTableViewCell * cell = [AddGameTableViewCell cellWithTableView:tableView];
     cell.headerImageView.image = [UIImage imageNamed:model.class_image];
     cell.titleLabel.text = model.class_name;
@@ -160,7 +119,7 @@
         cell.addBtn.backgroundColor = SMMainColor;
         [cell.addBtn setTitle:@"添加" forState:UIControlStateNormal];
     }
-    cell.addBtn.tag = 500 + indexPath.section*4+indexPath.row;
+    cell.addBtn.tag = 500 + indexPath.section*6+indexPath.row;
     [cell.addBtn addTarget:self action:@selector(addGamesList:) forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
@@ -174,7 +133,14 @@
         model.class_isSelect = @"1";
     }
     [JSUserInfo shareManager].gamesArray = self.dataArr;
-    [self.tableView reloadData];
+    if (sender.tag-500>5) {
+        NSIndexPath *indexPath=[NSIndexPath indexPathForRow:sender.tag-500-6 inSection:1];
+        [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
+    } else {
+        NSIndexPath *indexPath=[NSIndexPath indexPathForRow:sender.tag-500 inSection:0];
+        [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
+    }
+//    [self.tableView reloadData];
 }
 
 

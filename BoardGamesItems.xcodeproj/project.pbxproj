@@ -74,6 +74,17 @@
 		505A6C5121BE7BE000011D7A /* OpinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4F21BE7BE000011D7A /* OpinionViewController.xib */; };
 		505A6C5521BE7D6A00011D7A /* FillContantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C5221BE7D6900011D7A /* FillContantTableViewCell.xib */; };
 		505A6C5621BE7D6A00011D7A /* FillContantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5421BE7D6A00011D7A /* FillContantTableViewCell.m */; };
+		505A6C6A21C0FEC700011D7A /* XXToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5921C0FEBF00011D7A /* XXToast.m */; };
+		505A6C6B21C0FEC700011D7A /* AppURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5C21C0FEBF00011D7A /* AppURL.m */; };
+		505A6C6C21C0FEC700011D7A /* NSDictionary+codeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6221C0FEC100011D7A /* NSDictionary+codeString.m */; };
+		505A6C6D21C0FEC700011D7A /* NSString+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6321C0FEC100011D7A /* NSString+Code.m */; };
+		505A6C6E21C0FEC700011D7A /* UIView+addGradualLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6421C0FEC100011D7A /* UIView+addGradualLayer.m */; };
+		505A6C6F21C0FEC700011D7A /* XXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6621C0FEC200011D7A /* XXRequest.m */; };
+		505A6C7021C0FEC700011D7A /* AppDeviceMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6821C0FEC200011D7A /* AppDeviceMode.m */; };
+		505A6C7421C1047500011D7A /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7221C1047500011D7A /* TransferViewController.m */; };
+		505A6C7521C1047500011D7A /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7321C1047500011D7A /* TransferViewController.xib */; };
+		505A6C7921C116EA00011D7A /* IudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7721C116EA00011D7A /* IudgeViewController.m */; };
+		505A6C7A21C116EA00011D7A /* IudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7821C116EA00011D7A /* IudgeViewController.xib */; };
 		609E7C604908ECCE640B431E /* libPods-BoardGamesItems.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +226,27 @@
 		505A6C5221BE7D6900011D7A /* FillContantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FillContantTableViewCell.xib; sourceTree = "<group>"; };
 		505A6C5321BE7D6900011D7A /* FillContantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillContantTableViewCell.h; sourceTree = "<group>"; };
 		505A6C5421BE7D6A00011D7A /* FillContantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillContantTableViewCell.m; sourceTree = "<group>"; };
+		505A6C5921C0FEBF00011D7A /* XXToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXToast.m; sourceTree = "<group>"; };
+		505A6C5A21C0FEBF00011D7A /* AppURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppURL.h; sourceTree = "<group>"; };
+		505A6C5B21C0FEBF00011D7A /* XXToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXToast.h; sourceTree = "<group>"; };
+		505A6C5C21C0FEBF00011D7A /* AppURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppURL.m; sourceTree = "<group>"; };
+		505A6C5D21C0FEC000011D7A /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		505A6C5F21C0FEC100011D7A /* NSDictionary+codeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+codeString.h"; sourceTree = "<group>"; };
+		505A6C6021C0FEC100011D7A /* NSString+Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Code.h"; sourceTree = "<group>"; };
+		505A6C6121C0FEC100011D7A /* UIView+addGradualLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addGradualLayer.h"; sourceTree = "<group>"; };
+		505A6C6221C0FEC100011D7A /* NSDictionary+codeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+codeString.m"; sourceTree = "<group>"; };
+		505A6C6321C0FEC100011D7A /* NSString+Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Code.m"; sourceTree = "<group>"; };
+		505A6C6421C0FEC100011D7A /* UIView+addGradualLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addGradualLayer.m"; sourceTree = "<group>"; };
+		505A6C6621C0FEC200011D7A /* XXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRequest.m; sourceTree = "<group>"; };
+		505A6C6721C0FEC200011D7A /* XXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRequest.h; sourceTree = "<group>"; };
+		505A6C6821C0FEC200011D7A /* AppDeviceMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDeviceMode.m; sourceTree = "<group>"; };
+		505A6C6921C0FEC200011D7A /* AppDeviceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDeviceMode.h; sourceTree = "<group>"; };
+		505A6C7121C1047500011D7A /* TransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
+		505A6C7221C1047500011D7A /* TransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
+		505A6C7321C1047500011D7A /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		505A6C7621C116EA00011D7A /* IudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IudgeViewController.h; sourceTree = "<group>"; };
+		505A6C7721C116EA00011D7A /* IudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IudgeViewController.m; sourceTree = "<group>"; };
+		505A6C7821C116EA00011D7A /* IudgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IudgeViewController.xib; sourceTree = "<group>"; };
 		80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoardGamesItems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34B419008FE59CB600F22B /* Pods-BoardGamesItems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGamesItems.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoardGamesItems/Pods-BoardGamesItems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,6 +346,12 @@
 				505A6B9C21BE3B9F00011D7A /* DelegateViewController.h */,
 				505A6B9F21BE3B9F00011D7A /* DelegateViewController.m */,
 				505A6BA021BE3B9F00011D7A /* DelegateViewController.xib */,
+				505A6C7121C1047500011D7A /* TransferViewController.h */,
+				505A6C7221C1047500011D7A /* TransferViewController.m */,
+				505A6C7321C1047500011D7A /* TransferViewController.xib */,
+				505A6C7621C116EA00011D7A /* IudgeViewController.h */,
+				505A6C7721C116EA00011D7A /* IudgeViewController.m */,
+				505A6C7821C116EA00011D7A /* IudgeViewController.xib */,
 			);
 			path = RootTab;
 			sourceTree = "<group>";
@@ -321,6 +359,7 @@
 		505A6BA421BE3C5D00011D7A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				505A6C5721C0FE7400011D7A /* Integration */,
 				505A6BED21BE438900011D7A /* JSPictureManager */,
 				505A6BB121BE3CA400011D7A /* Category */,
 				505A6BAB21BE3CA300011D7A /* cleanCache */,
@@ -556,6 +595,52 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		505A6C5721C0FE7400011D7A /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C5821C0FEBF00011D7A /* Alert */,
+				505A6C6921C0FEC200011D7A /* AppDeviceMode.h */,
+				505A6C6821C0FEC200011D7A /* AppDeviceMode.m */,
+				505A6C5D21C0FEC000011D7A /* AppMacro.h */,
+				505A6C5E21C0FEC100011D7A /* Category */,
+				505A6C6521C0FEC200011D7A /* Request */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		505A6C5821C0FEBF00011D7A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C5921C0FEBF00011D7A /* XXToast.m */,
+				505A6C5A21C0FEBF00011D7A /* AppURL.h */,
+				505A6C5B21C0FEBF00011D7A /* XXToast.h */,
+				505A6C5C21C0FEBF00011D7A /* AppURL.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		505A6C5E21C0FEC100011D7A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C5F21C0FEC100011D7A /* NSDictionary+codeString.h */,
+				505A6C6021C0FEC100011D7A /* NSString+Code.h */,
+				505A6C6121C0FEC100011D7A /* UIView+addGradualLayer.h */,
+				505A6C6221C0FEC100011D7A /* NSDictionary+codeString.m */,
+				505A6C6321C0FEC100011D7A /* NSString+Code.m */,
+				505A6C6421C0FEC100011D7A /* UIView+addGradualLayer.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		505A6C6521C0FEC200011D7A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C6621C0FEC200011D7A /* XXRequest.m */,
+				505A6C6721C0FEC200011D7A /* XXRequest.h */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		75EC11D273EA9284784CF558 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,9 +772,11 @@
 				505A6C2021BE4C1600011D7A /* GamesTableViewCell.xib in Resources */,
 				505A6C4721BE706200011D7A /* AddGameViewController.xib in Resources */,
 				505A6C2F21BE5CD600011D7A /* DeleteViewController.xib in Resources */,
+				505A6C7521C1047500011D7A /* TransferViewController.xib in Resources */,
 				505A6BA321BE3B9F00011D7A /* DelegateViewController.xib in Resources */,
 				505A6B7321BE30C300011D7A /* Assets.xcassets in Resources */,
 				505A6C3D21BE631600011D7A /* AddNumberViewController.xib in Resources */,
+				505A6C7A21C116EA00011D7A /* IudgeViewController.xib in Resources */,
 				505A6C5121BE7BE000011D7A /* OpinionViewController.xib in Resources */,
 				505A6B7121BE30C100011D7A /* Main.storyboard in Resources */,
 				505A6BE521BE3D4100011D7A /* GamesViewController.xib in Resources */,
@@ -729,6 +816,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BoardGamesItems/Pods-BoardGamesItems-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
@@ -736,6 +824,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
@@ -773,17 +862,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505A6C7021C0FEC700011D7A /* AppDeviceMode.m in Sources */,
+				505A6C6D21C0FEC700011D7A /* NSString+Code.m in Sources */,
+				505A6C6C21C0FEC700011D7A /* NSDictionary+codeString.m in Sources */,
 				505A6BD321BE3CA400011D7A /* JS3DImageViewController.m in Sources */,
 				505A6C3721BE5EAB00011D7A /* DeleteTableViewCell.m in Sources */,
 				505A6C0221BE438900011D7A /* GroupTableViewCell.m in Sources */,
 				505A6BCE21BE3CA400011D7A /* MMCleanCacheManager.m in Sources */,
 				505A6B6E21BE30C100011D7A /* ViewController.m in Sources */,
+				505A6C7421C1047500011D7A /* TransferViewController.m in Sources */,
 				505A6C0821BE438900011D7A /* AllAlbumCollectionViewCell.m in Sources */,
 				505A6BD421BE3CA400011D7A /* UIViewController+BackgroundAlpha.m in Sources */,
+				505A6C6A21C0FEC700011D7A /* XXToast.m in Sources */,
 				505A6C2921BE55B600011D7A /* DetailTableViewCell.m in Sources */,
 				505A6BD921BE3CA400011D7A /* JSClassModel.m in Sources */,
 				505A6C4121BE63EE00011D7A /* AddNumberTableViewCell.m in Sources */,
+				505A6C6E21C0FEC700011D7A /* UIView+addGradualLayer.m in Sources */,
 				505A6C4B21BE707F00011D7A /* AddGameTableViewCell.m in Sources */,
+				505A6C6F21C0FEC700011D7A /* XXRequest.m in Sources */,
 				505A6BD621BE3CA400011D7A /* JSFastLoginModel.m in Sources */,
 				505A6BDF21BE3D2F00011D7A /* MineViewController.m in Sources */,
 				505A6C0521BE438900011D7A /* PhotoDetailsCollectionViewCell.m in Sources */,
@@ -807,12 +903,14 @@
 				505A6C0E21BE443100011D7A /* PersonalTableViewCell.m in Sources */,
 				505A6C1821BE44E400011D7A /* AboutMineViewController.m in Sources */,
 				505A6C0721BE438900011D7A /* AllAlbumViewController.m in Sources */,
+				505A6C7921C116EA00011D7A /* IudgeViewController.m in Sources */,
 				505A6C0321BE438900011D7A /* GroupTableViewController.m in Sources */,
 				505A6C3C21BE631600011D7A /* AddNumberViewController.m in Sources */,
 				505A6BA121BE3B9F00011D7A /* JSRootTabBarViewController.m in Sources */,
 				505A6BEB21BE42EF00011D7A /* PersonViewController.m in Sources */,
 				505A6C0121BE438900011D7A /* JSFPictureManager.m in Sources */,
 				505A6C5621BE7D6A00011D7A /* FillContantTableViewCell.m in Sources */,
+				505A6C6B21C0FEC700011D7A /* AppURL.m in Sources */,
 				505A6BD721BE3CA400011D7A /* JSLocalStorageKit.m in Sources */,
 				505A6BD221BE3CA400011D7A /* UITableView+JSCustom.m in Sources */,
 				505A6BD821BE3CA400011D7A /* JSUserInfo.m in Sources */,

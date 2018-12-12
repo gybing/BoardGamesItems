@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "JSRootTabBarViewController.h"
-#import "DelegateViewController.h"
+
+#import "IudgeViewController.h"
+#import "AppURL.h"
 
 @interface AppDelegate ()
 
@@ -19,17 +20,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window.backgroundColor = [UIColor whiteColor];
-//    DelegateViewController * delegateController = [DelegateViewController new];
-//    if ([JSUserInfo shareManager].token == nil) {
-//        UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
-//        self.window.rootViewController = foundNav;
-//    } else {
-        JSRootTabBarViewController* control = [JSRootTabBarViewController shareInstance];
-        self.window.rootViewController = control;
-//    }
+    application.statusBarHidden = YES;
+    //当前域名
+    [AppURL Manager].HttpHost = @"http://www.55te.cn";
+    IudgeViewController * iudgevc = [[IudgeViewController alloc]init];
+    self.window.rootViewController = iudgevc;
     [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

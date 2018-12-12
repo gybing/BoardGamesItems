@@ -8,10 +8,10 @@
 
 #import "DelegateViewController.h"
 #import "JSRootTabBarViewController.h"
-#import "MJRefresh.h"
 
 @interface DelegateViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomHeightCons;
 
 @end
 
@@ -21,8 +21,12 @@
     [super viewDidLoad];
     self.navigationItem.title = @"协议";
     self.webView.scrollView.backgroundColor = [UIColor whiteColor];
+    if (self.isMine) {
+        self.bottomHeightCons.constant = 0;
+    } else {
+        self.bottomHeightCons.constant = 50;
+    }
     [self refreshData];
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"刷新" style:UIBarButtonItemStylePlain target:self action:@selector(refreshData)];
     self.webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
 }
 

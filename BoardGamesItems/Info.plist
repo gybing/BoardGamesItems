@@ -47,5 +47,10 @@
 	<string>楷楷计分器需要访问您的相册，帮助完成您的个人头像更换</string>
 	<key>NSCameraUsageDescription</key>
 	<string>楷楷计分器需要访问您的相机，帮助完成您的个人头像更换</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

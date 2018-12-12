@@ -87,7 +87,7 @@
     if(_gamesViewControl==nil){
         _gamesViewControl = [GamesViewController new];
         _gamesViewControl.tabBarItem.title = @"游戏";
-        _gamesViewControl.tabBarItem.selectedImage = [[UIImage imageNamed:@"game_sel"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _gamesViewControl.tabBarItem.selectedImage = [[UIImage imageNamed:@"game_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _gamesViewControl.tabBarItem.image = [[UIImage imageNamed:@"game"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return _gamesViewControl;
@@ -99,7 +99,7 @@
     if(_mineViewControl==nil){
         _mineViewControl = [MineViewController new];
         _mineViewControl.tabBarItem.title = @"我的";
-        _mineViewControl.tabBarItem.selectedImage = [[UIImage imageNamed:@"mine_sel"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _mineViewControl.tabBarItem.selectedImage = [[UIImage imageNamed:@"mine_select"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _mineViewControl.tabBarItem.image = [[UIImage imageNamed:@"mine"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return _mineViewControl;

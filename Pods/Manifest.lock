@@ -1,4 +1,20 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.2.0)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.7)
   - ReactiveObjC (3.1.0)
@@ -6,33 +22,49 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.2.5)
-  - YYCache (1.0.4)
+  - XFAssistiveTouch (0.0.1)
+  - XYSuspensionMenu (1.0.7)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
   - Masonry
   - MJRefresh
   - ReactiveObjC
   - SDWebImage
   - SVProgressHUD
-  - YYCache
+  - XFAssistiveTouch
+  - XYSuspensionMenu (~> 1.0.7)
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - IQKeyboardManager
     - Masonry
     - MJRefresh
     - ReactiveObjC
     - SDWebImage
     - SVProgressHUD
-    - YYCache
+    - XFAssistiveTouch
+    - XYSuspensionMenu
+    - YYKit
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  XFAssistiveTouch: 9bb7289b0894b6e4752ccf6a29e654154926ec18
+  XYSuspensionMenu: 2331900538d60a26698e5170e0bf58d074051f2b
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 4af88edd4262a728146d93d98cb6e6cdbfbe4f9a
+PODFILE CHECKSUM: 9385d2df15b7df5ee74441499ad196b43eacdf0a
 
 COCOAPODS: 1.5.3

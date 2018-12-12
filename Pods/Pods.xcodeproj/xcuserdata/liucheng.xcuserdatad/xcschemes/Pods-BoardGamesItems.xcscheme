@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9CAB8F04A95DEEBA9104EF23C8566B58"
+               BlueprintIdentifier = "2D9FA793DD5AB6DED39E742916399C13"
                BlueprintName = "Pods-BoardGamesItems"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-BoardGamesItems.a">

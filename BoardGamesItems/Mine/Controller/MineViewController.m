@@ -12,6 +12,7 @@
 #import "AboutMineViewController.h"
 #import "MMCleanCacheManager.h"
 #import "OpinionViewController.h"
+#import "DelegateViewController.h"
 
 const CGFloat BackGroupHeight = 200;
 const CGFloat HeadImageHeight= 90;
@@ -237,7 +238,10 @@ const CGFloat HeadImageHeight= 90;
         [self.navigationController pushViewController:opinionVC animated:YES];
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
-          
+            DelegateViewController * delegateController = [DelegateViewController new];
+            delegateController.hidesBottomBarWhenPushed = YES;
+            delegateController.isMine = YES;
+            [self.navigationController pushViewController:delegateController animated:YES];
         } else {
             WS(wSelf);
             JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:@"是否清除缓存" textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
