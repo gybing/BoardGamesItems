@@ -61,7 +61,7 @@
 - (void)requestMainURL
 {
     //
-    _urlID = @"3";
+//    _urlID = @"3";
     NSMutableDictionary * mbody = [NSMutableDictionary dictionary];
     [mbody setObject:@"GetWebInfo" forKey:@"api"];
     [mbody setObject:app_id forKey:@"app_id"];
