@@ -12,6 +12,7 @@
 @interface DelegateViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomHeightCons;
+@property (weak, nonatomic) IBOutlet UIButton *agreeBtn;
 
 @end
 
@@ -19,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"协议";
+    self.navigationItem.title = NSLocalizedString(@"隐私协议", nil);
+    [self.agreeBtn setTitle:NSLocalizedString(@"同意", nil) forState:UIControlStateNormal];
     self.webView.scrollView.backgroundColor = [UIColor whiteColor];
     if (self.isMine) {
         self.bottomHeightCons.constant = 0;

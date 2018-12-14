@@ -12,8 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
+                <outlet property="addStoreBtn" destination="SLK-N2-FCK" id="yVa-Ac-ajX"/>
                 <outlet property="tableView" destination="9WC-ya-S4N" id="lMF-hy-drd"/>
                 <outlet property="totalLabel" destination="jqn-b9-ay1" id="4dU-FV-4Zm"/>
+                <outlet property="totalScoreLabel" destination="PhC-Q3-888" id="L38-g8-N3a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

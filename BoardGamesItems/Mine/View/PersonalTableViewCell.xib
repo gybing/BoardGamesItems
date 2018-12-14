@@ -40,7 +40,7 @@
                         </constraints>
                     </imageView>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Bg-m1-pIg">
-                        <rect key="frame" x="90" y="17" width="198" height="16"/>
+                        <rect key="frame" x="83.5" y="17" width="204.5" height="16"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <textInputTraits key="textInputTraits"/>
@@ -52,8 +52,8 @@
                     <constraint firstItem="sae-d2-98D" firstAttribute="leading" secondItem="2Bg-m1-pIg" secondAttribute="trailing" constant="10" id="Bn7-cV-ofc"/>
                     <constraint firstAttribute="trailing" secondItem="sae-d2-98D" secondAttribute="trailing" constant="15" id="GXr-I2-ELE"/>
                     <constraint firstItem="sae-d2-98D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a99-Fe-Txa"/>
-                    <constraint firstItem="2Bg-m1-pIg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="aaw-wW-ie2"/>
                     <constraint firstItem="VY6-3s-Zim" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dS1-IX-DR0"/>
+                    <constraint firstItem="2Bg-m1-pIg" firstAttribute="leading" secondItem="VY6-3s-Zim" secondAttribute="trailing" constant="10" id="dgr-tS-QkH"/>
                     <constraint firstItem="sae-d2-98D" firstAttribute="leading" secondItem="15w-ka-Fmv" secondAttribute="trailing" constant="10" id="foB-Lt-Xb2"/>
                     <constraint firstItem="2Bg-m1-pIg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q03-rC-Wlm"/>
                 </constraints>

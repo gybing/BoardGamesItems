@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 @property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
+@property (weak, nonatomic) IBOutlet UILabel *score;
 
 @property (nonatomic,strong) JSFastLoginModel * model;
 
@@ -27,14 +28,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"添加得分";
+    self.navigationItem.title = NSLocalizedString(@"添加得分", nil);
     self.isAdd = YES;
     self.model.class_isAdd = @"1";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(addNumber)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"保存", nil)  style:UIBarButtonItemStylePlain target:self action:@selector(addNumber)];
     self.addBtn.layer.cornerRadius = 15;
     self.addBtn.layer.masksToBounds = YES;
+    self.score.text = NSLocalizedString(@"得分", nil);
     
     self.deleteBtn.layer.cornerRadius = 15;
     self.deleteBtn.layer.masksToBounds = YES;
@@ -44,7 +46,7 @@
 
 -(void)addNumber{
     if (self.model.class_number.length==0) {
-        [SVProgressHUD showInfoWithStatus:@"请输入本届得分！"];
+        [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"请输入本届得分", nil)];
         return;
     }
 //    if (self.model.class_note.length==0) {
@@ -59,7 +61,7 @@
 }
 
 -(void)customTimeModel{
-    NSArray * arrWeek=[NSArray arrayWithObjects:@"周六",@"周日",@"周一",@"周二",@"周三",@"周四",@"周五", nil];
+    NSArray * arrWeek=[NSArray arrayWithObjects:NSLocalizedString(@"周六", nil),NSLocalizedString(@"周日", nil),NSLocalizedString(@"周一", nil),NSLocalizedString(@"周二", nil),NSLocalizedString(@"周三", nil),NSLocalizedString(@"周四", nil),NSLocalizedString(@"周五", nil), nil];
     NSDate *date = [NSDate date];
     
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -153,16 +155,16 @@
     AddNumberTableViewCell * cell = [AddNumberTableViewCell cellWithTableView:tableView];
     @weakify(self);
     if (indexPath.row == 0) {
-        cell.titleLabel.text = @"本届得分：";
-        cell.noteField.placeholder = @"请输入本届得分";
+        cell.titleLabel.text = NSLocalizedString(@"本届得分：", nil);
+        cell.noteField.placeholder = NSLocalizedString(@"请输入本届得分", nil);
         cell.noteField.keyboardType = UIKeyboardTypeNumberPad;
         [[cell.noteField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
             self.model.class_number = x;
         }];
     } else {
-        cell.titleLabel.text = @"备注：";
-        cell.noteField.placeholder = @"请输入备注";
+        cell.titleLabel.text = NSLocalizedString(@"备注：", nil);
+        cell.noteField.placeholder = NSLocalizedString(@"请输入备注", nil);
         cell.noteField.keyboardType = UIKeyboardTypeDefault;
         [[cell.noteField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);

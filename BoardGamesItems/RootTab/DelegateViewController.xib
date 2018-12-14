@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DelegateViewController">
             <connections>
+                <outlet property="agreeBtn" destination="CcT-Z8-wqo" id="x5n-SR-VKR"/>
                 <outlet property="bottomHeightCons" destination="9ET-U4-DJ8" id="Y73-7m-00W"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="fSd-Mu-fwU" id="cRp-cH-l7i"/>

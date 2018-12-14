@@ -213,19 +213,19 @@ const CGFloat HeadImageHeight= 90;
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             cell.headerImageView.image = [UIImage imageNamed:@"opinion"];
-            cell.titleLabel.text = @"意见反馈";
+            cell.titleLabel.text = NSLocalizedString(@"feedback", nil);
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
             cell.headerImageView.image = [UIImage imageNamed:@"privacy"];
-            cell.titleLabel.text = @"隐私政策";
+            cell.titleLabel.text = NSLocalizedString(@"PrivacyPolicy", nil);
         } else if (indexPath.row == 1) {
             cell.headerImageView.image = [UIImage imageNamed:@"clear_cache"];
-            cell.titleLabel.text = @"清除缓存";
+            cell.titleLabel.text = NSLocalizedString(@"ClearcCache", nil);
         }
     } else {
         cell.headerImageView.image = [UIImage imageNamed:@"about_mine"];
-        cell.titleLabel.text = @"关于我们";
+        cell.titleLabel.text = NSLocalizedString(@"AboutUs", nil);
     }
     return cell;
 }
@@ -244,12 +244,12 @@ const CGFloat HeadImageHeight= 90;
             [self.navigationController pushViewController:delegateController animated:YES];
         } else {
             WS(wSelf);
-            JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:@"是否清除缓存" textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
-            [alter showAlertView:@"否" sureTitle:@"是" cancelBlock:^{
+            JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:NSLocalizedString(@"是否清除缓存?", nil)  textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
+            [alter showAlertView:NSLocalizedString(@"否", nil) sureTitle:NSLocalizedString(@"是", nil) cancelBlock:^{
                 
             } sureBlock:^{
                 [[MMCleanCacheManager Cachesclear] clearAllCaches];
-                [SVProgressHUD showSuccessWithStatus:@"清除缓存成功"];
+                [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"清除缓存成功！", nil)];
                 [wSelf.tableView reloadData];
             }];
         }

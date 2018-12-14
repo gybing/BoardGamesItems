@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  BoardGamesItems
+
+  Created by 锋子 on 2018/12/13.
+  Copyright © 2018 锋子. All rights reserved.
+*/
+
+"game" = "Game";
+
+"my" = "Mine";
+
+"feedback" = "Feedback";
+
+"PrivacyPolicy" = "PrivacyPolicy";
+
+"ClearcCache" = "ClearcTheCache";
+
+"AboutUs" = "AboutUs";
+
+"nodata" = "WechatI";
+
+"拆红包斗地主" = "Fight the landlord";
+"欢乐斗牛" = "bull";
+"跑得快" = "run faste";
+"炸金花" = "Fried golden flower";
+"大富翁" = "monopoly";
+"德州扑克" = "Texas poker";
+"疯狂骰子" = "crazy dice";
+"够级" = "enough";
+"挤黑五" = "crowded black five";
+"清墩" = "qing pier";
+"十三张" = "13 zhang";
+"娱乐场" = "casino";
+
+"拆红包斗地主图片" = "斗地主";
+"欢乐斗牛图片" = "斗牛";
+"跑得快图片" = "跑得快_en";
+"炸金花图片" = "扎金花_en";
+"大富翁图片" = "大富翁_en";
+"德州扑克图片" = "德州扑克";
+"疯狂骰子图片" = "疯狂骰子";
+"够级图片" = "够级_en";
+"挤黑五图片" = "挤黑五_en";
+"清墩图片" = "清墩_en";
+"十三张图片" = "十三张_en";
+"娱乐场图片" = "娱乐场_en";
+
+
+
+"拆红包斗地主描述" = "red envelopes dou landlord, red envelopes is great!";
+"欢乐斗牛描述" = "joy bullfighting, cow!";
+"跑得快描述" = "run fast, run fast, see who runs fast!";
+"炸金花描述" = "I am a leopard, and you?";
+"大富翁描述" = "richest man, happy to play!";
+"德州扑克描述" = "I spindle ha! It's your turn!";
+"疯狂骰子描述" = "bibi who point is big, see who is more crazy!";
+"够级描述" = "you enough? I upgrade!";
+"挤黑五描述" = "happy crowded black five!";
+"清墩描述" = "qing block you played? Very interesting, Hurry up!";
+"十三张描述" = "13 is exercise intelligence level, courage of pure recreational games! ";
+"娱乐场描述" = "entertainment, happy entertainment! ";
+
+"最新游戏" = "TheLatest games";
+"最热游戏" = "TheHottest game";
+"添加游戏" = "Add game";
+"添加" = "add";
+"已添加" = "added";
+"计分器" = "14-year-old";
+"添加游戏得分" = "Add game score";
+"总得分" = "The total score";
+"添加成功!" = "Add successful!";
+"删除成功！" = "Delete successful!";
+
+"添加得分" = "Add the score";
+"得分" = "score";
+"本届得分：" = "Score：";
+"备注：" = "Remark：";
+"请输入本届得分" = "Please enter your current score";
+"请输入备注" = "Please enter remarks";
+"保存" = "save";
+
+"类型" = "type";
+"时间" = "time";
+"备注" = "note";
+"删除" = "delete";
+
+"取消" = "cancel";
+"确定" = "determine";
+"确定删除吗？" = "Are you sure to delete it?";
+
+"周六" = "saturday";
+"周日" = "sunday";
+"周一" = "monday";
+"周二" = "tuesday";
+"周三" = "wednesday";
+"周四" = "thursday";
+"周五" = "friday";
+
+"个人信息" = "Personal information";
+"头像" = "Head portrait";
+"昵称" = "Nickname:";
+"个性签名" = "Personal signature:";
+"添加信息成功!" = "Information added successfully!";
+"请输入昵称" = "Please enter nickname";
+"请输入个性签名" = "Please enter your personal signature";
+
+"隐私协议" = "Privacy agreement";
+"同意" = "Agreed to";
+
+"是否清除缓存?" = "Clear cache?";
+"是" = "YES";
+"否" = "NO";
+"清除缓存成功！" = "Cleared cache successfully!";
+
+"楷楷计分器" = "KaiScorecard";
+"版本号：" = "Version number: V1.0.0";
+"楷楷计分器描述" = "Kai kai scoreboard is a very simple and practical game scoreboard.";
+
+"请输入反馈内容" = "Please enter feedback";
+"邮箱：" = "Email address:";
+"请输入邮箱" = "Please enter email address";
+"提交" = "submit";
+"邮箱未填写" = "Email not filled in ";
+"提交成功！" = "Successful submission!";
+"反馈意见未填写" = "The feedback was not filled in";
+
+

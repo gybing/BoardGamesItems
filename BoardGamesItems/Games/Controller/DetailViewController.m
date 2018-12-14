@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *addStoreBtn;
+@property (weak, nonatomic) IBOutlet UILabel *totalScoreLabel;
 
 
 @end
@@ -23,9 +25,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = [NSString stringWithFormat:@"%@计分器",self.titleStr];
+    self.navigationItem.title = [NSString stringWithFormat:@"%@%@",self.titleStr,NSLocalizedString(@"计分器", ni)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.totalScoreLabel.text = NSLocalizedString(@"总得分", nil);
+    [self.addStoreBtn setTitle:NSLocalizedString(@"添加游戏得分", nil) forState:UIControlStateNormal];
     [self getTotalData];
 }
 
@@ -68,7 +72,7 @@
             }
         }
         [JSUserInfo shareManager].gamesArray = array;
-        [SVProgressHUD showSuccessWithStatus:@"添加成功！"];
+        [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"添加成功!", nil)];
     };
     
     [self.navigationController pushViewController:addNumberVC animated:YES];
@@ -103,6 +107,7 @@
     cell.dayLabel.text = model.class_day;
     cell.weekLabel.text = model.class_week;
     cell.dateLabel.text = model.class_year;
+    cell.titleLabel.text = model.class_name;
     if ([model.class_isAdd boolValue]) {
         cell.numberLabel.text = [NSString stringWithFormat:@"+%@",model.class_number];
     } else {
@@ -131,7 +136,7 @@
             }
         }
         [JSUserInfo shareManager].gamesArray = array;
-        [SVProgressHUD showSuccessWithStatus:@"删除成功！"];
+        [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"删除成功！", nil)];
         
     };
     [self.navigationController pushViewController:deleteVC animated:YES];

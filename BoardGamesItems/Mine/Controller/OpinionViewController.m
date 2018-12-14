@@ -24,8 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"意见反馈";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"提交" style:UIBarButtonItemStylePlain target:self action:@selector(setupOpinion)];
+    self.navigationItem.title = NSLocalizedString(@"feedback", nil);
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"提交", nil) style:UIBarButtonItemStylePlain target:self action:@selector(setupOpinion)];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -33,13 +33,13 @@
 
 -(void)setupOpinion{
     if (self.note.length>0&&self.email.length>0) {
-        [SVProgressHUD showSuccessWithStatus:@"提交成功！"];
+        [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"提交成功！", nil)];
         [self.navigationController popViewControllerAnimated:YES];
     } else {
         if (self.note.length == 0) {
-            [SVProgressHUD showInfoWithStatus:@"反馈意见未填写"];
+            [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"反馈意见未填写", nil)];
         } else {
-            [SVProgressHUD showInfoWithStatus:@"邮箱未填写"];
+            [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"邮箱未填写", nil)];
         }
         
     }
@@ -81,8 +81,8 @@
     @weakify(self);
     if (indexPath.section == 0) {
         FillContantTableViewCell* cell = [FillContantTableViewCell cellWithTableView:tableView];
-        cell.textView.PlaceHolder = @"请输入反馈内容";
-        [cell.textView becomeFirstResponder];
+        cell.textView.PlaceHolder = NSLocalizedString(@"请输入反馈内容", nil);
+//        [cell.textView becomeFirstResponder];
         [[cell.textView rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
             self.note = x;
@@ -90,8 +90,8 @@
         return cell;
     } else {
         AddNumberTableViewCell* cell = [AddNumberTableViewCell cellWithTableView:tableView];
-        cell.titleLabel.text = @"邮箱：";
-        cell.noteField.placeholder = @"请输入邮箱";
+        cell.titleLabel.text = NSLocalizedString(@"邮箱：", nil);
+        cell.noteField.placeholder = NSLocalizedString(@"请输入邮箱", nil);
         [[cell.noteField rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
             @strongify(self);
             self.email = x;

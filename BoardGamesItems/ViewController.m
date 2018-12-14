@@ -31,6 +31,7 @@
     //控制器间跳转动画
     [[UIApplication sharedApplication].keyWindow.layer addAnimation:animation forKey:nil];
     [self presentViewController:cotent animated:NO completion:nil];
+    
 }
 
 

@@ -85,6 +85,10 @@
 		505A6C7521C1047500011D7A /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7321C1047500011D7A /* TransferViewController.xib */; };
 		505A6C7921C116EA00011D7A /* IudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7721C116EA00011D7A /* IudgeViewController.m */; };
 		505A6C7A21C116EA00011D7A /* IudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7821C116EA00011D7A /* IudgeViewController.xib */; };
+		505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CB321C22CA400011D7A /* InfoPlist.strings */; };
+		505A6CDB21C2501800011D7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CDD21C2501800011D7A /* Localizable.strings */; };
+		505A6CED21C39DE200011D7A /* launch_images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CEC21C39DE200011D7A /* launch_images.jpg */; };
+		505A6CEF21C39E1C00011D7A /* launch_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CEE21C39E1B00011D7A /* launch_image.jpg */; };
 		609E7C604908ECCE640B431E /* libPods-BoardGamesItems.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */; };
 /* End PBXBuildFile section */
 
@@ -247,6 +251,14 @@
 		505A6C7621C116EA00011D7A /* IudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IudgeViewController.h; sourceTree = "<group>"; };
 		505A6C7721C116EA00011D7A /* IudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IudgeViewController.m; sourceTree = "<group>"; };
 		505A6C7821C116EA00011D7A /* IudgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IudgeViewController.xib; sourceTree = "<group>"; };
+		505A6CAB21C22B9600011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		505A6CAC21C22B9700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		505A6CB221C22CA400011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		505A6CBA21C22CC700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		505A6CDC21C2501800011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		505A6CDE21C2501A00011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		505A6CEC21C39DE200011D7A /* launch_images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_images.jpg; sourceTree = "<group>"; };
+		505A6CEE21C39E1B00011D7A /* launch_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_image.jpg; sourceTree = "<group>"; };
 		80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoardGamesItems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34B419008FE59CB600F22B /* Pods-BoardGamesItems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGamesItems.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoardGamesItems/Pods-BoardGamesItems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -311,8 +323,12 @@
 				505A6B6D21BE30C100011D7A /* ViewController.m */,
 				505A6B6F21BE30C100011D7A /* Main.storyboard */,
 				505A6B7221BE30C300011D7A /* Assets.xcassets */,
+				505A6CEE21C39E1B00011D7A /* launch_image.jpg */,
+				505A6CEC21C39DE200011D7A /* launch_images.jpg */,
 				505A6B7421BE30C300011D7A /* LaunchScreen.storyboard */,
 				505A6B7721BE30C300011D7A /* Info.plist */,
+				505A6CDD21C2501800011D7A /* Localizable.strings */,
+				505A6CB321C22CA400011D7A /* InfoPlist.strings */,
 				505A6BE621BE3DD800011D7A /* Header.h */,
 				505A6BE721BE3E0E00011D7A /* PrefixHeader.pch */,
 				505A6B7821BE30C300011D7A /* main.m */,
@@ -419,18 +435,18 @@
 			isa = PBXGroup;
 			children = (
 				505A6BB221BE3CA400011D7A /* SMPageStyle.h */,
-				505A6BB321BE3CA400011D7A /* UIViewController+TouchAvatar.m */,
-				505A6BB421BE3CA400011D7A /* UINavigationBar+BackgroundColor.m */,
-				505A6BB521BE3CA400011D7A /* UITextView+CustomFont.h */,
-				505A6BB621BE3CA400011D7A /* UIViewController+BackgroundAlpha.h */,
-				505A6BB721BE3CA400011D7A /* UITableView+JSCustom.m */,
-				505A6BB821BE3CA400011D7A /* JS3DImageViewController.m */,
 				505A6BB921BE3CA400011D7A /* UIViewController+TouchAvatar.h */,
-				505A6BBA21BE3CA400011D7A /* UIViewController+BackgroundAlpha.m */,
+				505A6BB321BE3CA400011D7A /* UIViewController+TouchAvatar.m */,
 				505A6BBB21BE3CA400011D7A /* UINavigationBar+BackgroundColor.h */,
-				505A6BBC21BE3CA400011D7A /* UITextView+CustomFont.m */,
+				505A6BB421BE3CA400011D7A /* UINavigationBar+BackgroundColor.m */,
+				505A6BB621BE3CA400011D7A /* UIViewController+BackgroundAlpha.h */,
+				505A6BBA21BE3CA400011D7A /* UIViewController+BackgroundAlpha.m */,
 				505A6BBD21BE3CA400011D7A /* JS3DImageViewController.h */,
+				505A6BB821BE3CA400011D7A /* JS3DImageViewController.m */,
 				505A6BBE21BE3CA400011D7A /* UITableView+JSCustom.h */,
+				505A6BB721BE3CA400011D7A /* UITableView+JSCustom.m */,
+				505A6BB521BE3CA400011D7A /* UITextView+CustomFont.h */,
+				505A6BBC21BE3CA400011D7A /* UITextView+CustomFont.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -745,6 +761,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 505A6B5D21BE30C100011D7A;
 			productRefGroup = 505A6B6721BE30C100011D7A /* Products */;
@@ -767,6 +784,7 @@
 				505A6C2521BE536F00011D7A /* DetailViewController.xib in Resources */,
 				505A6C4221BE63EE00011D7A /* AddNumberTableViewCell.xib in Resources */,
 				505A6BDB21BE3CA400011D7A /* districts_bak.xml in Resources */,
+				505A6CEF21C39E1C00011D7A /* launch_image.jpg in Resources */,
 				505A6C5521BE7D6A00011D7A /* FillContantTableViewCell.xib in Resources */,
 				505A6C1421BE449100011D7A /* MineTableViewCell.xib in Resources */,
 				505A6C2021BE4C1600011D7A /* GamesTableViewCell.xib in Resources */,
@@ -774,14 +792,17 @@
 				505A6C2F21BE5CD600011D7A /* DeleteViewController.xib in Resources */,
 				505A6C7521C1047500011D7A /* TransferViewController.xib in Resources */,
 				505A6BA321BE3B9F00011D7A /* DelegateViewController.xib in Resources */,
+				505A6CED21C39DE200011D7A /* launch_images.jpg in Resources */,
 				505A6B7321BE30C300011D7A /* Assets.xcassets in Resources */,
 				505A6C3D21BE631600011D7A /* AddNumberViewController.xib in Resources */,
 				505A6C7A21C116EA00011D7A /* IudgeViewController.xib in Resources */,
 				505A6C5121BE7BE000011D7A /* OpinionViewController.xib in Resources */,
+				505A6CDB21C2501800011D7A /* Localizable.strings in Resources */,
 				505A6B7121BE30C100011D7A /* Main.storyboard in Resources */,
 				505A6BE521BE3D4100011D7A /* GamesViewController.xib in Resources */,
 				505A6BE021BE3D2F00011D7A /* MineViewController.xib in Resources */,
 				505A6C1921BE44E400011D7A /* AboutMineViewController.xib in Resources */,
+				505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */,
 				505A6C4C21BE707F00011D7A /* AddGameTableViewCell.xib in Resources */,
 				505A6BEC21BE42EF00011D7A /* PersonViewController.xib in Resources */,
 				505A6C2A21BE55B600011D7A /* DetailTableViewCell.xib in Resources */,
@@ -953,6 +974,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				505A6B7021BE30C100011D7A /* Base */,
+				505A6CAB21C22B9600011D7A /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -961,8 +983,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				505A6B7521BE30C300011D7A /* Base */,
+				505A6CAC21C22B9700011D7A /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		505A6CB321C22CA400011D7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505A6CB221C22CA400011D7A /* en */,
+				505A6CBA21C22CC700011D7A /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		505A6CDD21C2501800011D7A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505A6CDC21C2501800011D7A /* en */,
+				505A6CDE21C2501A00011D7A /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -972,6 +1013,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1031,6 +1073,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1085,6 +1128,7 @@
 			baseConfigurationReference = 1AB3D92E8DBE96037CF3BE72 /* Pods-BoardGamesItems.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 248CQC5959;
 				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/BoardGamesItems/BoardGamesItems/PrefixHeader.pch;
@@ -1105,6 +1149,7 @@
 			baseConfigurationReference = BB34B419008FE59CB600F22B /* Pods-BoardGamesItems.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 248CQC5959;
 				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/BoardGamesItems/BoardGamesItems/PrefixHeader.pch;

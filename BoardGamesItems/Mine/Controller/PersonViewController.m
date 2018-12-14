@@ -25,13 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"个人信息";
+    self.navigationItem.title = NSLocalizedString(@"个人信息", nil);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.headerImage = [JSUserInfo shareManager].header_image;
     self.nickName = [JSUserInfo shareManager].nickName;
     self.signature = [JSUserInfo shareManager].signature;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(savePersonData)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"保存", nil) style:UIBarButtonItemStylePlain target:self action:@selector(savePersonData)];
 }
 
 -(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize
@@ -60,7 +60,7 @@
         [JSUserInfo shareManager].signature = self.signature;
     }
     
-    [SVProgressHUD showSuccessWithStatus:@"添加信息成功"];
+    [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"添加信息成功!", nil)];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -99,13 +99,13 @@
         cell.headerImageView.hidden = NO;
         cell.rightIMageView.hidden = NO;
         cell.rightField.hidden = YES;
-        cell.titleLabel.text = @"头像";
+        cell.titleLabel.text = NSLocalizedString(@"头像", nil);
         if (self.headerImage != nil) {
             cell.headerImageView.image = self.headerImage;
         }
     } else if (indexPath.row == 1) {
-        cell.titleLabel.text = @"昵称";
-        cell.rightField.placeholder = @"请输入昵称";
+        cell.titleLabel.text = NSLocalizedString(@"昵称", nil);
+        cell.rightField.placeholder = NSLocalizedString(@"请输入昵称", nil);
         if (self.nickName.length>0) {
             cell.rightField.text = self.nickName;
         }
@@ -115,8 +115,8 @@
             self.nickName = x;
         }];
     } else {
-        cell.titleLabel.text = @"个性签名";
-        cell.rightField.placeholder = @"请输入个性签名";
+        cell.titleLabel.text = NSLocalizedString(@"个性签名", nil);
+        cell.rightField.placeholder = NSLocalizedString(@"请输入个性签名", nil);
         if (self.signature.length>0) {
             cell.rightField.text = self.signature;
         }

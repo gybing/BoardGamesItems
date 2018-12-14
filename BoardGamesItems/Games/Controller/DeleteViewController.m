@@ -12,6 +12,7 @@
 @interface DeleteViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *deleteBtn;
 @end
 
 @implementation DeleteViewController
@@ -21,13 +22,14 @@
     self.navigationItem.title = self.model.class_name;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.deleteBtn setTitle:NSLocalizedString(@"删除", nil) forState:UIControlStateNormal];
 }
 
 
 - (IBAction)deleteDataBtn:(UIButton *)sender {
     WS(wSelf);
-    JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:@"确定删除吗？" textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
-    [alter showAlertView:@"取消" sureTitle:@"确定" cancelBlock:^{
+    JSCommonAlertView *alter = [[JSCommonAlertView alloc]initWithTitle:NSLocalizedString(@"确定删除吗？", nil) textArray:nil textAlignment:TextAlignmentCenter buttonStyle:ButtonLandscapeStyle];
+    [alter showAlertView:NSLocalizedString(@"取消", nil) sureTitle:NSLocalizedString(@"确定", nil) cancelBlock:^{
         
     } sureBlock:^{
         if (wSelf.returnDeleteBlock) {
@@ -72,7 +74,7 @@
 {
     DeleteTableViewCell * cell = [DeleteTableViewCell cellWithTableView:tableView];
     if (indexPath.row == 0) {
-        cell.titleLabel.text = @"得分";
+        cell.titleLabel.text = NSLocalizedString(@"得分", nil);
         if ([self.model.class_isAdd boolValue]) {
             cell.noteLabel.text = [NSString stringWithFormat:@"+%@",self.model.class_number];
         }else{
@@ -80,13 +82,13 @@
         }
         
     } else if (indexPath.row == 1) {
-        cell.titleLabel.text = @"类型";
+        cell.titleLabel.text = NSLocalizedString(@"类型", nil);
         cell.noteLabel.text = self.model.class_name;
     } else if (indexPath.row == 2) {
-        cell.titleLabel.text = @"时间";
+        cell.titleLabel.text = NSLocalizedString(@"时间", nil);
         cell.noteLabel.text = [NSString stringWithFormat:@"%@.%@ %@",self.model.class_year,self.model.class_day,self.model.class_hour];
     } else {
-        cell.titleLabel.text = @"备注";
+        cell.titleLabel.text = NSLocalizedString(@"备注", nil);
         cell.noteLabel.text = self.model.class_note;
     }
     return cell;

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferViewController">
             <connections>
+                <outlet property="bottomHeightCons" destination="J2N-xZ-4rM" id="I3p-Dc-f8p"/>
+                <outlet property="bottomView" destination="1fp-qU-yfx" id="6mR-5u-tua"/>
+                <outlet property="scrollView" destination="CnD-bf-guV" id="Por-3f-y3T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="Ivc-pl-C9x" id="VJy-jY-cSD"/>
             </connections>
@@ -21,19 +23,38 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fp-qU-yfx">
+                    <rect key="frame" x="0.0" y="617" width="375" height="94"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CnD-bf-guV">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="CnD-bf-guV" firstAttribute="leading" secondItem="1fp-qU-yfx" secondAttribute="leading" id="4KP-z1-hsO"/>
+                        <constraint firstItem="CnD-bf-guV" firstAttribute="top" secondItem="1fp-qU-yfx" secondAttribute="top" id="4v1-04-SOR"/>
+                        <constraint firstAttribute="bottom" secondItem="CnD-bf-guV" secondAttribute="bottom" constant="44" id="5NR-6Y-20j"/>
+                        <constraint firstAttribute="height" constant="94" id="Tqr-tr-UZw"/>
+                        <constraint firstAttribute="trailing" secondItem="CnD-bf-guV" secondAttribute="trailing" id="VVQ-f8-Flb"/>
+                    </constraints>
+                </view>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivc-pl-C9x">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </webView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Ivc-pl-C9x" secondAttribute="bottom" id="3uX-ro-VjI"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ivc-pl-C9x" secondAttribute="trailing" id="VZZ-8A-xo2"/>
-                <constraint firstItem="Ivc-pl-C9x" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="WTW-Sz-aM6"/>
-                <constraint firstItem="Ivc-pl-C9x" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zNB-mY-umD"/>
+                <constraint firstAttribute="bottom" secondItem="1fp-qU-yfx" secondAttribute="bottom" constant="-44" id="J2N-xZ-4rM"/>
+                <constraint firstAttribute="trailing" secondItem="1fp-qU-yfx" secondAttribute="trailing" id="M1G-sN-DcD"/>
+                <constraint firstItem="Ivc-pl-C9x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W0f-oC-dGI"/>
+                <constraint firstItem="1fp-qU-yfx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wox-DT-w2n"/>
+                <constraint firstItem="1fp-qU-yfx" firstAttribute="top" secondItem="Ivc-pl-C9x" secondAttribute="bottom" id="kFr-dL-j0Z"/>
+                <constraint firstAttribute="trailing" secondItem="Ivc-pl-C9x" secondAttribute="trailing" id="nkI-oZ-eUC"/>
+                <constraint firstItem="Ivc-pl-C9x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yQT-ch-ENz"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="117.39130434782609"/>
         </view>
     </objects>
 </document>

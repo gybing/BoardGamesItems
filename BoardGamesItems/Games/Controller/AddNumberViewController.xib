@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="addBtn" destination="KmF-fO-kfq" id="WnV-YZ-rMx"/>
                 <outlet property="deleteBtn" destination="qww-C7-Y9g" id="0EA-lP-953"/>
+                <outlet property="score" destination="E7X-rg-Vs9" id="HNL-RN-3XS"/>
                 <outlet property="tableView" destination="imV-GK-0rN" id="Fhg-th-WpU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

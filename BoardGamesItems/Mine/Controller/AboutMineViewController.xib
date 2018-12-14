@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutMineViewController">
             <connections>
+                <outlet property="bundleLabel" destination="QXI-ES-lmE" id="Hwt-kT-afp"/>
+                <outlet property="nameLabel" destination="YPI-yh-qqg" id="O8o-pe-la9"/>
+                <outlet property="titleLabel" destination="XDI-h4-RaA" id="vsx-wI-dKL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -25,7 +25,7 @@
     [AppURL Manager].HttpHost = @"http://www.55te.cn";
     IudgeViewController * iudgevc = [[IudgeViewController alloc]init];
     self.window.rootViewController = iudgevc;
-    [self.window makeKeyAndVisible];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

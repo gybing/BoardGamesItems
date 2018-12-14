@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"游戏";
+    self.navigationItem.title = NSLocalizedString(@"game", nil);
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"add_games"] style:UIBarButtonItemStylePlain target:self action:@selector(addGamesList)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
