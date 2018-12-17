@@ -44,11 +44,11 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>楷楷计分器需要访问您的相册，帮助完成您的个人头像更换</string>
+	<string>允许访问相册</string>
 	<key>NSCameraUsageDescription</key>
-	<string>楷楷计分器需要访问您的相机，帮助完成您的个人头像更换</string>
+	<string>允许访问相机</string>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>楷楷计分器需要访问您的媒体库，帮助完成您的个人头像更换</string>
+	<string>允许访问多媒体</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

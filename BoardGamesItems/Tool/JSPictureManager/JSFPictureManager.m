@@ -35,26 +35,26 @@
 //        });
     
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:kALERTTITLE message:nil preferredStyle: UIAlertControllerStyleActionSheet];
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
         [alertController addAction:cancelAction];
         // 判断是否支持相机
         if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
         {
-            UIAlertAction *CameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction *CameraAction){
+            UIAlertAction *CameraAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"相机", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *CameraAction){
                 [getPicture openCamera];
             }];
             [alertController addAction:CameraAction];
         }
         
-        UIAlertAction *ImageAction = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ImageAction){
+        UIAlertAction *ImageAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"相册", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *ImageAction){
             [getPicture openAlbum];
         }];
         [alertController addAction:ImageAction];
         
-//        UIAlertAction *galleryAction = [UIAlertAction actionWithTitle:@"图片库" style:UIAlertActionStyleDefault handler:^(UIAlertAction *ImageAction){
-//            [getPicture openGallery];
-//        }];
-//        [alertController addAction:galleryAction];
+        UIAlertAction *galleryAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"多媒体", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *ImageAction){
+            [getPicture openGallery];
+        }];
+        [alertController addAction:galleryAction];
     
         [AppRootViewController presentViewController:alertController animated:YES completion:nil];
         

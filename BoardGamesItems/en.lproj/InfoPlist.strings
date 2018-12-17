@@ -6,4 +6,9 @@
   Copyright © 2018 锋子. All rights reserved.
 */
 
-CFBundleDisplayName = "KaiScorecard"; 
+CFBundleDisplayName = "KaiScorecard";
+
+"允许访问相册" = "KaiScorecard needs to access your album to help complete your personal portrait replacement";
+"允许访问相机" = "KaiScorecard needs to access your camera to help complete your personal portrait replacement";
+"允许访问多媒体" = "KaiScorecard needs to access your multimedia to help complete your personal portrait replacement";
+

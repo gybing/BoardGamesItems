@@ -23,7 +23,7 @@
     self.navigationItem.title = NSLocalizedString(@"添加游戏", nil);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [JSUserInfo shareManager].gamesArray = [NSMutableArray array];
+//    [JSUserInfo shareManager].gamesArray = [NSMutableArray array];
     NSArray * imageArr = @[NSLocalizedString(@"拆红包斗地主图片", nil),NSLocalizedString(@"欢乐斗牛图片", nil),NSLocalizedString(@"跑得快图片", nil),NSLocalizedString(@"炸金花图片", nil),NSLocalizedString(@"大富翁图片", nil),NSLocalizedString(@"德州扑克图片", nil),NSLocalizedString(@"疯狂骰子图片", nil),NSLocalizedString(@"够级图片", nil),NSLocalizedString(@"挤黑五图片", nil),NSLocalizedString(@"清墩图片", nil),NSLocalizedString(@"十三张图片", nil),NSLocalizedString(@"娱乐场图片", nil)];
     self.dataArr = [JSUserInfo shareManager].gamesArray;
     NSArray * array = @[NSLocalizedString(@"拆红包斗地主", nil),NSLocalizedString(@"欢乐斗牛", nil),NSLocalizedString(@"跑得快", nil),NSLocalizedString(@"炸金花", nil),NSLocalizedString(@"大富翁", nil),NSLocalizedString(@"德州扑克", nil),NSLocalizedString(@"疯狂骰子", nil),NSLocalizedString(@"够级", nil),NSLocalizedString(@"挤黑五", nil),NSLocalizedString(@"清墩", nil),NSLocalizedString(@"十三张", nil),NSLocalizedString(@"娱乐场", nil)];
