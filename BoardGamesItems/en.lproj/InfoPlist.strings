@@ -8,7 +8,9 @@
 
 CFBundleDisplayName = "KaiScorecard";
 
-"允许访问相册" = "KaiScorecard needs to access your album to help complete your personal portrait replacement";
-"允许访问相机" = "KaiScorecard needs to access your camera to help complete your personal portrait replacement";
-"允许访问多媒体" = "KaiScorecard needs to access your multimedia to help complete your personal portrait replacement";
+"NSPhotoLibraryUsageDescription" = "KaiScorecard needs to access your album to help complete your personal portrait replacement";
+"NSCameraUsageDescription" = "KaiScorecard needs to access your camera to help complete your personal portrait replacement";
+"NSAppleMusicUsageDescription" = "KaiScorecard needs to access your multimedia to help complete your personal portrait replacement";
+
+
 
