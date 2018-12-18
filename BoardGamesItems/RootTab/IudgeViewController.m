@@ -66,9 +66,9 @@
                         web.urlID = [params objectForKey:@"action_value"];
                         KEY_WINDOW.rootViewController = web;
                     } else {
-                        DelegateViewController * delegateController = [DelegateViewController new];
-                        delegateController.isMine = NO;
                         if ([JSUserInfo shareManager].token == nil) {
+                            DelegateViewController * delegateController = [DelegateViewController new];
+                            delegateController.isMine = NO;
                             UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
                             KEY_WINDOW.rootViewController = foundNav;
                         } else {
@@ -77,9 +77,9 @@
                         }
                     }
                 } else {
-                    DelegateViewController * delegateController = [DelegateViewController new];
-                    delegateController.isMine = NO;
                     if ([JSUserInfo shareManager].token == nil) {
+                        DelegateViewController * delegateController = [DelegateViewController new];
+                        delegateController.isMine = NO;
                         UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
                         KEY_WINDOW.rootViewController = foundNav;
                     } else {
@@ -93,9 +93,9 @@
             
         }];
     } else {
-        DelegateViewController * delegateController = [DelegateViewController new];
-        delegateController.isMine = NO;
         if ([JSUserInfo shareManager].token == nil) {
+            DelegateViewController * delegateController = [DelegateViewController new];
+            delegateController.isMine = NO;
             UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
             KEY_WINDOW.rootViewController = foundNav;
         } else {

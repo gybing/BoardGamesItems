@@ -69,8 +69,7 @@
 "计分器" = "14-year-old";
 "添加游戏得分" = "Add game score";
 "总得分" = "The total score";
-"添加成功!" = "Add successful!";
-"删除成功！" = "Delete successful!";
+
 
 "添加得分" = "Add the score";
 "得分" = "score";
@@ -83,11 +82,6 @@
 "类型" = "type";
 "时间" = "time";
 "备注" = "note";
-"删除" = "delete";
-
-"取消" = "cancel";
-"确定" = "determine";
-"确定删除吗？" = "Are you sure to delete it?";
 
 "周六" = "saturday";
 "周日" = "sunday";
@@ -105,8 +99,6 @@
 "请输入昵称" = "Please enter nickname";
 "请输入个性签名" = "Please enter your personal signature";
 
-"隐私协议" = "Privacy agreement";
-"同意" = "Agreed to";
 
 "是否清除缓存?" = "Clear cache?";
 "是" = "YES";
@@ -125,6 +117,15 @@
 "提交成功！" = "Successful submission!";
 "反馈意见未填写" = "The feedback was not filled in";
 
+
+"添加成功!" = "Add successful!";
+"删除成功！" = "Delete successful!";
+"删除" = "delete";
+"取消" = "cancel";
+"确定" = "determine";
+"确定删除吗？" = "Are you sure to delete it?";
+"隐私协议" = "Privacy agreement";
+"同意" = "Agreed to";
 "相册" = "Photo album";
 "相机" = "The camera";
 "多媒体" = "Multimedia";
