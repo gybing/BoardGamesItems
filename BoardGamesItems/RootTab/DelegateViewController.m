@@ -33,7 +33,7 @@
 }
 
 - (void)refreshData{
-    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.33or.cn/ys.html"]];
+    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://98857.xin/ys3.html"]];
     [self.webView loadRequest:request];
     [self.webView.scrollView.mj_header endRefreshing];
 }
