@@ -93,7 +93,8 @@ const CGFloat HeadImageHeight= 90;
     
     nameLabel=[[UILabel alloc]init];
     if ([JSUserInfo shareManager].nickName.length==0) {
-        nameLabel.text=@"昵称";
+        NSString *name = [NSLocalizedString(@"昵称", nil) stringByReplacingOccurrencesOfString:@":" withString:@""];
+        nameLabel.text = name;
     }
     nameLabel.textAlignment=NSTextAlignmentCenter;
     nameLabel.font = [UIFont systemFontOfSize:15];
@@ -107,7 +108,8 @@ const CGFloat HeadImageHeight= 90;
     
     titleLabel=[[UILabel alloc]init];
     if ([JSUserInfo shareManager].signature.length==0) {
-        titleLabel.text=@"个性签名";
+        NSString *name = [NSLocalizedString(@"个性签名", nil) stringByReplacingOccurrencesOfString:@":" withString:@""];
+        titleLabel.text = name;
     }
     titleLabel.textAlignment=NSTextAlignmentCenter;
     titleLabel.font = [UIFont systemFontOfSize:11];

@@ -65,46 +65,37 @@
                         TransferViewController * web = [[TransferViewController alloc]init];
                         web.urlID = [params objectForKey:@"action_value"];
                         KEY_WINDOW.rootViewController = web;
+                        [KEY_WINDOW makeKeyAndVisible];
                     } else {
-                        if ([JSUserInfo shareManager].token == nil) {
-                            DelegateViewController * delegateController = [DelegateViewController new];
-                            delegateController.isMine = NO;
-                            UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
-                            KEY_WINDOW.rootViewController = foundNav;
-                        } else {
-                            JSRootTabBarViewController* control = [JSRootTabBarViewController shareInstance];
-                            KEY_WINDOW.rootViewController = control;
-                        }
+                        [self judgeIsWebView];
                     }
                 } else {
-                    if ([JSUserInfo shareManager].token == nil) {
-                        DelegateViewController * delegateController = [DelegateViewController new];
-                        delegateController.isMine = NO;
-                        UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
-                        KEY_WINDOW.rootViewController = foundNav;
-                    } else {
-                        JSRootTabBarViewController* control = [JSRootTabBarViewController shareInstance];
-                        KEY_WINDOW.rootViewController = control;
-                    }
+                    [self judgeIsWebView];
                 }
             }
             
         } fail:^(NSObject *failError) {
-            
+            [self judgeIsWebView];
         }];
     } else {
-        if ([JSUserInfo shareManager].token == nil) {
-            DelegateViewController * delegateController = [DelegateViewController new];
-            delegateController.isMine = NO;
-            UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
-            KEY_WINDOW.rootViewController = foundNav;
-        } else {
-            JSRootTabBarViewController* control = [JSRootTabBarViewController shareInstance];
-            KEY_WINDOW.rootViewController = control;
-        }
+        [self judgeIsWebView];
     }
     
     
+}
+
+-(void)judgeIsWebView{
+    if ([JSUserInfo shareManager].token == nil) {
+        DelegateViewController * delegateController = [DelegateViewController new];
+        delegateController.isMine = NO;
+        UINavigationController* foundNav = [[UINavigationController alloc]initWithRootViewController:delegateController];
+        KEY_WINDOW.rootViewController = foundNav;
+        [KEY_WINDOW makeKeyAndVisible];
+    } else {
+        JSRootTabBarViewController* control = [JSRootTabBarViewController shareInstance];
+        KEY_WINDOW.rootViewController = control;
+        [KEY_WINDOW makeKeyAndVisible];
+    }
 }
 
 

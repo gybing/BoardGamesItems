@@ -9,7 +9,7 @@
 #import "DelegateViewController.h"
 #import "JSRootTabBarViewController.h"
 
-@interface DelegateViewController ()
+@interface DelegateViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomHeightCons;
 @property (weak, nonatomic) IBOutlet UIButton *agreeBtn;
@@ -28,6 +28,8 @@
     } else {
         self.bottomHeightCons.constant = 50;
     }
+    self.webView.delegate = self;
+    [SVProgressHUD showWithStatus:@"正在加载~~~"];
     [self refreshData];
     self.webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
 }
@@ -45,14 +47,41 @@
     KEY_WINDOW.rootViewController = control;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - === UIWebViewDelegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSArray *nCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+    for (NSHTTPCookie *  Cookie in nCookies ) {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:Cookie];
+    }
+    
+    NSURL *URL=request.URL;
+    NSString *scheme=[URL scheme];
+    
+    if ([scheme isEqualToString:@"http"]||[scheme isEqualToString:@"https"]) {
+        return YES;
+    }
+    else{
+        [[UIApplication sharedApplication]openURL:URL];
+        return NO;
+    }
 }
-*/
+//开始加载
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [SVProgressHUD showWithStatus:@"正在加载~~~"];
+}
+//加载完成
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [webView.scrollView.mj_header endRefreshing];
+    [SVProgressHUD dismiss];
+}
+//开始失败
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
+{
+    [webView.scrollView.mj_header endRefreshing];
+    [SVProgressHUD dismiss];
+}
 
 @end
