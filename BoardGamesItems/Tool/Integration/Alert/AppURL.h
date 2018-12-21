@@ -10,12 +10,12 @@
 //api接口
 #define APP_API @"/index.php?c=api&a=index"
 // APPID
-#define app_id  @"3bb12c3ca7ec0e75e62149433f24e023"
+#define app_id  @"6fffd73ca1dc3f4ef649adf6760f2692"
 //app密钥
-#define app_secret @"033d7c0e1a154483fdb6ca07db6e4c33"
+#define app_secret @"8346f3f658ff710ebdf10247b77b1b30"
 
 //市场密钥
-#define market_secret @"ce301acd8e53d4bbd0be227743c0544c"
+#define market_secret @"eff2981d41f7c5cf8e217a0f86ba6cec"
 
 
 

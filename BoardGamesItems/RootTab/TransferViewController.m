@@ -42,6 +42,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     _webView.scalesPageToFit = YES;
     _webView.delegate = self;
+    [SVProgressHUD showWithStatus:@"正在加载~~~"];
     [self requestMainURL];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(doRotateAction:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }

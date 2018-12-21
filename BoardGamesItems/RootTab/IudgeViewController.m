@@ -25,8 +25,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self requestMainURL];
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd"];
+    NSString * currentDateStr = [dateFormatter stringFromDate:currentDate];
+    int comparisonResult = [self compareDate:currentDateStr withDate:@""];
+    if(comparisonResult >0){
+        //endDate 大
+        [self judgeIsWebView];
+    }else{
+        [self requestMainURL];
+    }
+    
+}
+
+//比较两个日期大小
+-(int)compareDate:(NSString*)startDate withDate:(NSString*)endDate{
+    
+    int comparisonResult;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *date1 = [[NSDate alloc] init];
+    NSDate *date2 = [[NSDate alloc] init];
+    date1 = [formatter dateFromString:startDate];
+    date2 = [formatter dateFromString:endDate];
+    NSComparisonResult result = [date1 compare:date2];
+    NSLog(@"result==%ld",(long)result);
+    switch (result)
+    {
+            //date02比date01大
+        case NSOrderedAscending:
+            comparisonResult = 1;
+            break;
+            //date02比date01小
+        case NSOrderedDescending:
+            comparisonResult = -1;
+            break;
+            //date02=date01
+        case NSOrderedSame:
+            comparisonResult = 0;
+            break;
+        default:
+            NSLog(@"erorr dates %@, %@", date1, date2);
+            break;
+    }
+    return comparisonResult;
 }
 
 - (BOOL)isReachable

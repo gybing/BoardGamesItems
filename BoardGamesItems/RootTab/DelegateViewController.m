@@ -29,7 +29,7 @@
         self.bottomHeightCons.constant = 50;
     }
     self.webView.delegate = self;
-    [SVProgressHUD showWithStatus:@"正在加载~~~"];
+    [SVProgressHUD showWithStatus:NSLocalizedString(@"正在加载~~~", nil)];
     [self refreshData];
     self.webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
 }
@@ -69,7 +69,7 @@
 //开始加载
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [SVProgressHUD showWithStatus:@"正在加载~~~"];
+    [SVProgressHUD showWithStatus:NSLocalizedString(@"正在加载~~~", nil)];
 }
 //加载完成
 - (void)webViewDidFinishLoad:(UIWebView *)webView

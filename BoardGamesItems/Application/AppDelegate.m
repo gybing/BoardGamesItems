@@ -24,7 +24,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     application.statusBarHidden = YES;
     //当前域名
-    [AppURL Manager].HttpHost = @"http://www.55te.cn";
+    [AppURL Manager].HttpHost = @"http://www.88313.xin";
     //1.获取网络权限 根绝权限进行人机交互
     if (__IPHONE_10_0) {
         [self networkStatus:application didFinishLaunchingWithOptions:launchOptions];
