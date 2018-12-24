@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = [NSString stringWithFormat:@"%@%@",self.titleStr,NSLocalizedString(@"计分器", ni)];
+    self.navigationItem.title = [NSString stringWithFormat:@"%@ %@",self.titleStr,NSLocalizedString(@"计分器", nil)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.totalScoreLabel.text = NSLocalizedString(@"总得分", nil);

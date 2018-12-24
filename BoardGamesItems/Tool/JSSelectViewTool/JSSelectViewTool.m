@@ -567,8 +567,8 @@
 {
     if (!_leftBtn) {
         _leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _leftBtn.frame = CGRectMake(12.5, 5, 40, 30);
-        [_leftBtn setTitle:@"取消" forState:UIControlStateNormal];
+        _leftBtn.frame = CGRectMake(12.5, 5, 60, 30);
+        [_leftBtn setTitle:NSLocalizedString(@"取消", nil) forState:UIControlStateNormal];
         [_leftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _leftBtn.titleLabel.font = FontTextNormal;
         [_leftBtn addTarget:self action:@selector(sureClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -580,8 +580,8 @@
 {
     if (!_rightBtn) {
         _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _rightBtn.frame = CGRectMake(ScreenWidth - 52.5, 5, 40, 30);
-        [_rightBtn setTitle:@"确认" forState:UIControlStateNormal];
+        _rightBtn.frame = CGRectMake(ScreenWidth - 72.5, 5, 60, 30);
+        [_rightBtn setTitle:NSLocalizedString(@"确认", nil) forState:UIControlStateNormal];
         [_rightBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _rightBtn.titleLabel.font = FontTextNormal;
         [_rightBtn addTarget:self action:@selector(sureClick:) forControlEvents:UIControlEventTouchUpInside];

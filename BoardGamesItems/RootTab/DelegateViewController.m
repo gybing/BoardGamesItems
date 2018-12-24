@@ -34,6 +34,11 @@
     self.webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+}
+
 - (void)refreshData{
     NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://98857.xin/ys3.html"]];
     [self.webView loadRequest:request];

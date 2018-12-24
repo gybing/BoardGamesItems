@@ -34,7 +34,7 @@
             getPicture.pictureBlock = block;
 //        });
     
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:kALERTTITLE message:nil preferredStyle: UIAlertControllerStyleActionSheet];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(kALERTTITLE, nil)  message:nil preferredStyle: UIAlertControllerStyleActionSheet];
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:nil];
         [alertController addAction:cancelAction];
         // 判断是否支持相机
@@ -124,7 +124,7 @@
     if (authStatus == AVAuthorizationStatusRestricted || authStatus ==AVAuthorizationStatusDenied)
     {
         //无权限
-        [getPicture showAlertViewWithTitel:kNOTSUPPORTCAMERAL];
+        [getPicture showAlertViewWithTitel:NSLocalizedString(kNOTSUPPORTCAMERAL, nil)];
         
     }else{
         // 相机 UIImagePickerControllerSourceTypeCamera
@@ -138,7 +138,7 @@
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
     if (status == PHAuthorizationStatusDenied || status == PHAuthorizationStatusRestricted) {
         //相册权限受限制
-        [getPicture showAlertViewWithTitel:kNOTSUPPORTALBUM];
+        [getPicture showAlertViewWithTitel:NSLocalizedString(kNOTSUPPORTALBUM, nil)];
     }else{
         // 相册
         [getPicture setImagePickerControllerWith:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
@@ -152,7 +152,7 @@
     if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied)
     {
         //无权限
-        [getPicture showAlertViewWithTitel:kNOTSUPPORTGALLERY];
+        [getPicture showAlertViewWithTitel:NSLocalizedString(kNOTSUPPORTGALLERY, nil)];
         
     }else{
         // 图片库
@@ -174,9 +174,9 @@
 
 #pragma mark - showAlertView
 - (void)showAlertViewWithTitel:(NSString *)title{
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:title preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提示", nil) message:title preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
     }];
     [alertController addAction:cancelAction];
     [AppRootViewController presentViewController:alertController animated:YES completion:nil];

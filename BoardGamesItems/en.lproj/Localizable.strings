@@ -66,7 +66,7 @@
 "添加游戏" = "Add game";
 "添加" = "Add";
 "已添加" = "Added";
-"计分器" = "14-year-old";
+"计分器" = "score indicator";
 "添加游戏得分" = "Add game score";
 "总得分" = "The total score";
 
@@ -131,5 +131,11 @@
 "多媒体" = "Multimedia";
 
 "正在加载~~~" = "Loading ~~~";
+
+"设置图像" = "Set the image";
+"提示" = "Prompt";
+"设备不支持访问相机，请在设置->隐私->相机中进行设置！" = "The device does not support access to the camera, please set it in Settings -> privacy -> camera!";
+"设备不支持访问相册，请在设置->隐私->照片中进行设置！" = "The device does not support access to albums, please set in Settings -> privacy -> photos!";
+"设备不支持访问多媒体，请在设置->隐私->照片中进行设置！" = "The device does not support access to multimedia, please set in Settings -> privacy -> photos!";
 
 
