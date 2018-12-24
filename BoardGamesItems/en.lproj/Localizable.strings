@@ -107,7 +107,7 @@
 
 "楷楷计分器" = "KaiScorecard";
 "版本号：" = "Version number: V1.0.0";
-"楷楷计分器描述" = "Kai kai scoreboard is a very simple and practical game scoreboard.";
+"楷楷计分器描述" = "KaiScorecard is a very simple and practical game scoreboard.";
 
 "请输入反馈内容" = "Please enter feedback";
 "邮箱：" = "Email address:";
@@ -131,6 +131,7 @@
 "多媒体" = "Multimedia";
 
 "正在加载~~~" = "Loading ~~~";
+"未连接网络" = "Unconnected network";
 
 "设置图像" = "Set the image";
 "提示" = "Prompt";

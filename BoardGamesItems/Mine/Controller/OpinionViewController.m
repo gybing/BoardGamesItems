@@ -9,6 +9,7 @@
 #import "OpinionViewController.h"
 #import "FillContantTableViewCell.h"
 #import "AddNumberTableViewCell.h"
+#import "AFNetworkReachabilityManager.h"
 
 @interface OpinionViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,10 +32,23 @@
     self.tableView.dataSource = self;
 }
 
+- (BOOL)isReachable
+{
+    if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus == AFNetworkReachabilityStatusUnknown) {
+        return YES;
+    } else {
+        return [[AFNetworkReachabilityManager sharedManager] isReachable];
+    }
+}
+
 -(void)setupOpinion{
     if (self.note.length>0&&self.email.length>0) {
-        [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"提交成功！", nil)];
-        [self.navigationController popViewControllerAnimated:YES];
+        if ([self isReachable]) {
+            [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"提交成功！", nil)];
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"未连接网络", nil)];
+        }
     } else {
         if (self.note.length == 0) {
             [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"反馈意见未填写", nil)];
