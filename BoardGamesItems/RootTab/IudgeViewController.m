@@ -115,6 +115,8 @@
                 } else {
                     [self judgeIsWebView];
                 }
+            } else {
+                [self judgeIsWebView];
             }
             
         } fail:^(NSObject *failError) {

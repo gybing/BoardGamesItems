@@ -26,7 +26,6 @@
 #import "SVProgressHUD.h"
 
 
-#define NSLocalizedString(key, comment) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 
 
 //下拉刷新
