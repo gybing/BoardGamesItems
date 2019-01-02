@@ -83,13 +83,13 @@
 "时间" = "Time";
 "备注" = "Note";
 
-"周六" = "saturday";
-"周日" = "sunday";
-"周一" = "monday";
-"周二" = "tuesday";
-"周三" = "wednesday";
-"周四" = "thursday";
-"周五" = "friday";
+"周六" = "SAT";
+"周日" = "SUN";
+"周一" = "MON";
+"周二" = "TUE";
+"周三" = "WED";
+"周四" = "THU";
+"周五" = "FRI";
 
 "个人信息" = "Personal information";
 "头像" = "Head portrait";

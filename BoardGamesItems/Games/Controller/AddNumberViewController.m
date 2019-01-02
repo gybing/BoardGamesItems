@@ -82,7 +82,7 @@
     } else {
         self.model.class_day = [NSString stringWithFormat:@"%ld",day];
     }
-    self.model.class_week = [arrWeek objectAtIndex:week];
+    self.model.class_week = [arrWeek objectAtIndex:week%7];
     self.model.class_hour = [NSString stringWithFormat:@"%ld:%ld",hours,minutes];
 }
 
