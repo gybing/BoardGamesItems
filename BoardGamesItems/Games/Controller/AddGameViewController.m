@@ -24,10 +24,10 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 //    [JSUserInfo shareManager].gamesArray = [NSMutableArray array];
-    NSArray * imageArr = @[NSLocalizedString(@"拆红包斗地主图片", nil),NSLocalizedString(@"欢乐斗牛图片", nil),NSLocalizedString(@"跑得快图片", nil),NSLocalizedString(@"炸金花图片", nil),NSLocalizedString(@"大富翁图片", nil),NSLocalizedString(@"德州扑克图片", nil),NSLocalizedString(@"疯狂骰子图片", nil),NSLocalizedString(@"够级图片", nil),NSLocalizedString(@"挤黑五图片", nil),NSLocalizedString(@"清墩图片", nil),NSLocalizedString(@"十三张图片", nil),NSLocalizedString(@"娱乐场图片", nil)];
+    NSArray * imageArr = @[@"拆红包斗地主图片",@"欢乐斗牛图片",@"跑得快图片",@"炸金花图片",@"大富翁图片",@"德州扑克图片",@"疯狂骰子图片",@"够级图片",@"挤黑五图片",@"清墩图片",@"十三张图片",@"娱乐场图片"];
     self.dataArr = [JSUserInfo shareManager].gamesArray;
-    NSArray * array = @[NSLocalizedString(@"拆红包斗地主", nil),NSLocalizedString(@"欢乐斗牛", nil),NSLocalizedString(@"跑得快", nil),NSLocalizedString(@"炸金花", nil),NSLocalizedString(@"大富翁", nil),NSLocalizedString(@"德州扑克", nil),NSLocalizedString(@"疯狂骰子", nil),NSLocalizedString(@"够级", nil),NSLocalizedString(@"挤黑五", nil),NSLocalizedString(@"清墩", nil),NSLocalizedString(@"十三张", nil),NSLocalizedString(@"娱乐场", nil)];
-    NSArray * titleArr = @[NSLocalizedString(@"拆红包斗地主描述", nil),NSLocalizedString(@"欢乐斗牛描述", nil),NSLocalizedString(@"跑得快描述", nil),NSLocalizedString(@"炸金花描述", nil),NSLocalizedString(@"大富翁描述", nil),NSLocalizedString(@"德州扑克描述", nil),NSLocalizedString(@"疯狂骰子描述", nil),NSLocalizedString(@"够级描述", nil),NSLocalizedString(@"挤黑五描述", nil),NSLocalizedString(@"清墩描述", nil),NSLocalizedString(@"十三张描述", nil),NSLocalizedString(@"娱乐场描述", nil)];
+    NSArray * array = @[@"拆红包斗地主",@"欢乐斗牛",@"跑得快",@"炸金花",@"大富翁",@"德州扑克",@"疯狂骰子",@"够级",@"挤黑五",@"清墩",@"十三张",@"娱乐场"];
+    NSArray * titleArr = @[@"拆红包斗地主描述",@"欢乐斗牛描述",@"跑得快描述",@"炸金花描述",@"大富翁描述",@"德州扑克描述",@"疯狂骰子描述",@"够级描述",@"挤黑五描述",@"清墩描述",@"十三张描述",@"娱乐场描述"];
     if (self.dataArr.count == 0) {
         for (NSInteger i=0; i<array.count; i++) {
             JSClassModel * model = [[JSClassModel alloc]init];
@@ -106,9 +106,9 @@
 {
     JSClassModel * model = self.dataArr[indexPath.section*6 + indexPath.row];
     AddGameTableViewCell * cell = [AddGameTableViewCell cellWithTableView:tableView];
-    cell.headerImageView.image = [UIImage imageNamed:model.class_image];
-    cell.titleLabel.text = model.class_name;
-    cell.noteLabel.text = model.class_describe;
+    cell.headerImageView.image = [UIImage imageNamed:NSLocalizedString(model.class_image,nil)];
+    cell.titleLabel.text = NSLocalizedString(model.class_name,nil);
+    cell.noteLabel.text = NSLocalizedString(model.class_describe,nil);
     if ([model.class_isSelect boolValue]) {
         cell.addBtn.layer.borderColor = SMColorFromRGB(0xa6a6a6).CGColor;
         cell.addBtn.layer.borderWidth = 1;

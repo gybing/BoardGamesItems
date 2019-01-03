@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = [NSString stringWithFormat:@"%@ %@",self.titleStr,NSLocalizedString(@"计分器", nil)];
+    self.navigationItem.title = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(self.titleStr,nil),NSLocalizedString(@"计分器", nil)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.totalScoreLabel.text = NSLocalizedString(@"总得分", nil);
@@ -103,11 +103,11 @@
 {
     JSFastLoginModel * model = self.dataArr[indexPath.row];
     DetailTableViewCell * cell = [DetailTableViewCell cellWithTableView:tableView];
-    cell.headerImageView.image = [UIImage imageNamed:model.class_image];
+    cell.headerImageView.image = [UIImage imageNamed:NSLocalizedString(model.class_image,nil)];
     cell.dayLabel.text = model.class_day;
     cell.weekLabel.text = model.class_week;
     cell.dateLabel.text = model.class_year;
-    cell.titleLabel.text = model.class_name;
+    cell.titleLabel.text = NSLocalizedString(model.class_name,nil);
     if ([model.class_isAdd boolValue]) {
         cell.numberLabel.text = [NSString stringWithFormat:@"+%@",model.class_number];
     } else {

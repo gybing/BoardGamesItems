@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = self.model.class_name;
+    self.navigationItem.title = NSLocalizedString(self.model.class_name,nil);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.deleteBtn setTitle:NSLocalizedString(@"删除", nil) forState:UIControlStateNormal];
@@ -83,7 +83,7 @@
         
     } else if (indexPath.row == 1) {
         cell.titleLabel.text = NSLocalizedString(@"类型", nil);
-        cell.noteLabel.text = self.model.class_name;
+        cell.noteLabel.text = NSLocalizedString(self.model.class_name,nil);
     } else if (indexPath.row == 2) {
         cell.titleLabel.text = NSLocalizedString(@"时间", nil);
         cell.noteLabel.text = [NSString stringWithFormat:@"%@.%@ %@",self.model.class_year,self.model.class_day,self.model.class_hour];

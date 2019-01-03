@@ -72,8 +72,8 @@
 {
     GamesTableViewCell * cell = [GamesTableViewCell cellWithTableView:tableView];
     JSClassModel * model = self.dataArr[indexPath.row];
-    cell.titleLabel.text = model.class_name;
-    cell.headerImageView.image = [UIImage imageNamed:model.class_image];
+    cell.titleLabel.text = NSLocalizedString(model.class_name,nil);
+    cell.headerImageView.image = [UIImage imageNamed:NSLocalizedString(model.class_image,nil)];
     return cell;
 }
 
