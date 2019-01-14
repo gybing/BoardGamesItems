@@ -7,7 +7,7 @@
 //
 
 #import "AddNumberViewController.h"
-#import "AddNumberTableViewCell.h"
+#import "KKAddNumberTableViewCell.h"
 
 @interface AddNumberViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -152,7 +152,7 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    AddNumberTableViewCell * cell = [AddNumberTableViewCell cellWithTableView:tableView];
+    KKAddNumberTableViewCell * cell = [KKAddNumberTableViewCell cellWithTableView:tableView];
     @weakify(self);
     if (indexPath.row == 0) {
         cell.titleLabel.text = NSLocalizedString(@"本届得分：", nil);

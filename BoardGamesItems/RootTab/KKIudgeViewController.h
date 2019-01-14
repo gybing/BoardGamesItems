@@ -1,8 +1,8 @@
 //
-//  OpinionViewController.h
+//  IudgeViewController.h
 //  BoardGamesItems
 //
-//  Created by 锋子 on 2018/12/10.
+//  Created by 锋子 on 2018/12/12.
 //  Copyright © 2018 锋子. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKOpinionViewController : UIViewController
+@interface KKIudgeViewController : UIViewController
 
 @end
 

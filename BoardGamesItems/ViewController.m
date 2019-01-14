@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "IudgeViewController.h"
+#import "KKIudgeViewController.h"
 
 @interface ViewController ()
 
@@ -31,7 +31,7 @@
 //    //控制器间跳转动画
 //    [[UIApplication sharedApplication].keyWindow.layer addAnimation:animation forKey:nil];
 //    [self presentViewController:cotent animated:NO completion:nil];
-    IudgeViewController * iudgevc = [[IudgeViewController alloc]init];
+    KKIudgeViewController * iudgevc = [[KKIudgeViewController alloc]init];
     KEY_WINDOW.rootViewController = iudgevc;
     
 }

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKTransferViewController : UIViewController
+@interface KTransferViewController : UIViewController
 
 @property (nonatomic,strong) NSString * urlStr;
 

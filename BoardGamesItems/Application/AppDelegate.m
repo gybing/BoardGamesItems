@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "IudgeViewController.h"
+#import "KKIudgeViewController.h"
 #import "AppURL.h"
 #import<CoreTelephony/CTCellularData.h>
 #import "AFNetworkReachabilityManager.h"
@@ -111,7 +111,7 @@
 }
 
 - (void)getInfo_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    IudgeViewController * iudgevc = [[IudgeViewController alloc]init];
+    KKIudgeViewController * iudgevc = [[KKIudgeViewController alloc]init];
     self.window.rootViewController = iudgevc;
     [self.window makeKeyAndVisible];
 }

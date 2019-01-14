@@ -1,8 +1,8 @@
 //
-//  OpinionViewController.h
-//  BoardGamesItems
+//  AboutMineViewController.h
+//  JSHeartDiary
 //
-//  Created by 锋子 on 2018/12/10.
+//  Created by 锋子 on 2018/11/30.
 //  Copyright © 2018 锋子. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKOpinionViewController : UIViewController
+@interface KKAboutMineViewController : UIViewController
 
 @end
 

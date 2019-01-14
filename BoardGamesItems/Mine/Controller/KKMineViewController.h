@@ -1,5 +1,5 @@
 //
-//  OpinionViewController.h
+//  MineViewController.h
 //  BoardGamesItems
 //
 //  Created by 锋子 on 2018/12/10.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKOpinionViewController : UIViewController
+@interface KKMineViewController : UIViewController
 
 @end
 

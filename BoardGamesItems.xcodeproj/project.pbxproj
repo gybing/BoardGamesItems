@@ -14,9 +14,9 @@
 		505A6B7921BE30C300011D7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B7821BE30C300011D7A /* main.m */; };
 		505A6B8321BE30C300011D7A /* BoardGamesItemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B8221BE30C300011D7A /* BoardGamesItemsTests.m */; };
 		505A6B8E21BE30C300011D7A /* BoardGamesItemsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B8D21BE30C300011D7A /* BoardGamesItemsUITests.m */; };
-		505A6BA121BE3B9F00011D7A /* JSRootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B9D21BE3B9F00011D7A /* JSRootTabBarViewController.m */; };
-		505A6BA221BE3B9F00011D7A /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B9F21BE3B9F00011D7A /* DelegateViewController.m */; };
-		505A6BA321BE3B9F00011D7A /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BA021BE3B9F00011D7A /* DelegateViewController.xib */; };
+		505A6BA121BE3B9F00011D7A /* KKRootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B9D21BE3B9F00011D7A /* KKRootTabBarViewController.m */; };
+		505A6BA221BE3B9F00011D7A /* KKDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B9F21BE3B9F00011D7A /* KKDelegateViewController.m */; };
+		505A6BA321BE3B9F00011D7A /* KKDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BA021BE3B9F00011D7A /* KKDelegateViewController.xib */; };
 		505A6BAA21BE3C5D00011D7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BA721BE3C5D00011D7A /* AppDelegate.m */; };
 		505A6BCE21BE3CA400011D7A /* MMCleanCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BAC21BE3CA300011D7A /* MMCleanCacheManager.m */; };
 		505A6BCF21BE3CA400011D7A /* JSCommonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BB021BE3CA300011D7A /* JSCommonAlertView.m */; };
@@ -32,12 +32,12 @@
 		505A6BD921BE3CA400011D7A /* JSClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BC721BE3CA400011D7A /* JSClassModel.m */; };
 		505A6BDA21BE3CA400011D7A /* JSSelectViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BCB21BE3CA400011D7A /* JSSelectViewTool.m */; };
 		505A6BDB21BE3CA400011D7A /* districts_bak.xml in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BCD21BE3CA400011D7A /* districts_bak.xml */; };
-		505A6BDF21BE3D2F00011D7A /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BDD21BE3D2F00011D7A /* MineViewController.m */; };
-		505A6BE021BE3D2F00011D7A /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BDE21BE3D2F00011D7A /* MineViewController.xib */; };
+		505A6BDF21BE3D2F00011D7A /* KKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BDD21BE3D2F00011D7A /* KKMineViewController.m */; };
+		505A6BE021BE3D2F00011D7A /* KKMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BDE21BE3D2F00011D7A /* KKMineViewController.xib */; };
 		505A6BE421BE3D4100011D7A /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BE221BE3D4100011D7A /* GamesViewController.m */; };
 		505A6BE521BE3D4100011D7A /* GamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BE321BE3D4100011D7A /* GamesViewController.xib */; };
-		505A6BEB21BE42EF00011D7A /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BE921BE42EF00011D7A /* PersonViewController.m */; };
-		505A6BEC21BE42EF00011D7A /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BEA21BE42EF00011D7A /* PersonViewController.xib */; };
+		505A6BEB21BE42EF00011D7A /* KPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BE921BE42EF00011D7A /* KPersonViewController.m */; };
+		505A6BEC21BE42EF00011D7A /* KPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BEA21BE42EF00011D7A /* KPersonViewController.xib */; };
 		505A6C0121BE438900011D7A /* JSFPictureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BEE21BE438900011D7A /* JSFPictureManager.m */; };
 		505A6C0221BE438900011D7A /* GroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF021BE438900011D7A /* GroupTableViewCell.m */; };
 		505A6C0321BE438900011D7A /* GroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF321BE438900011D7A /* GroupTableViewController.m */; };
@@ -46,12 +46,12 @@
 		505A6C0621BE438900011D7A /* PhotoDetailsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF821BE438900011D7A /* PhotoDetailsCollectionViewController.m */; };
 		505A6C0721BE438900011D7A /* AllAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BFD21BE438900011D7A /* AllAlbumViewController.m */; };
 		505A6C0821BE438900011D7A /* AllAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C0021BE438900011D7A /* AllAlbumCollectionViewCell.m */; };
-		505A6C0E21BE443100011D7A /* PersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C0C21BE443000011D7A /* PersonalTableViewCell.m */; };
-		505A6C0F21BE443100011D7A /* PersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C0D21BE443100011D7A /* PersonalTableViewCell.xib */; };
-		505A6C1321BE449100011D7A /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1021BE449100011D7A /* MineTableViewCell.m */; };
-		505A6C1421BE449100011D7A /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1121BE449100011D7A /* MineTableViewCell.xib */; };
-		505A6C1821BE44E400011D7A /* AboutMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1621BE44E400011D7A /* AboutMineViewController.m */; };
-		505A6C1921BE44E400011D7A /* AboutMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1721BE44E400011D7A /* AboutMineViewController.xib */; };
+		505A6C0E21BE443100011D7A /* KKPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C0C21BE443000011D7A /* KKPersonalTableViewCell.m */; };
+		505A6C0F21BE443100011D7A /* KKPersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C0D21BE443100011D7A /* KKPersonalTableViewCell.xib */; };
+		505A6C1321BE449100011D7A /* KKMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1021BE449100011D7A /* KKMineTableViewCell.m */; };
+		505A6C1421BE449100011D7A /* KKMineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1121BE449100011D7A /* KKMineTableViewCell.xib */; };
+		505A6C1821BE44E400011D7A /* KKAboutMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1621BE44E400011D7A /* KKAboutMineViewController.m */; };
+		505A6C1921BE44E400011D7A /* KKAboutMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1721BE44E400011D7A /* KKAboutMineViewController.xib */; };
 		505A6C1F21BE4C1600011D7A /* GamesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1D21BE4C1600011D7A /* GamesTableViewCell.m */; };
 		505A6C2021BE4C1600011D7A /* GamesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1E21BE4C1600011D7A /* GamesTableViewCell.xib */; };
 		505A6C2421BE536F00011D7A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C2221BE536F00011D7A /* DetailViewController.m */; };
@@ -64,16 +64,16 @@
 		505A6C3821BE5EAB00011D7A /* DeleteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C3621BE5EAB00011D7A /* DeleteTableViewCell.xib */; };
 		505A6C3C21BE631600011D7A /* AddNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C3A21BE631600011D7A /* AddNumberViewController.m */; };
 		505A6C3D21BE631600011D7A /* AddNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C3B21BE631600011D7A /* AddNumberViewController.xib */; };
-		505A6C4121BE63EE00011D7A /* AddNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C3F21BE63EE00011D7A /* AddNumberTableViewCell.m */; };
-		505A6C4221BE63EE00011D7A /* AddNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4021BE63EE00011D7A /* AddNumberTableViewCell.xib */; };
+		505A6C4121BE63EE00011D7A /* KKAddNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C3F21BE63EE00011D7A /* KKAddNumberTableViewCell.m */; };
+		505A6C4221BE63EE00011D7A /* KKAddNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4021BE63EE00011D7A /* KKAddNumberTableViewCell.xib */; };
 		505A6C4621BE706200011D7A /* AddGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4421BE706200011D7A /* AddGameViewController.m */; };
 		505A6C4721BE706200011D7A /* AddGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4521BE706200011D7A /* AddGameViewController.xib */; };
 		505A6C4B21BE707F00011D7A /* AddGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4921BE707F00011D7A /* AddGameTableViewCell.m */; };
 		505A6C4C21BE707F00011D7A /* AddGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4A21BE707F00011D7A /* AddGameTableViewCell.xib */; };
-		505A6C5021BE7BE000011D7A /* OpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4E21BE7BE000011D7A /* OpinionViewController.m */; };
-		505A6C5121BE7BE000011D7A /* OpinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4F21BE7BE000011D7A /* OpinionViewController.xib */; };
-		505A6C5521BE7D6A00011D7A /* FillContantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C5221BE7D6900011D7A /* FillContantTableViewCell.xib */; };
-		505A6C5621BE7D6A00011D7A /* FillContantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5421BE7D6A00011D7A /* FillContantTableViewCell.m */; };
+		505A6C5021BE7BE000011D7A /* KOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4E21BE7BE000011D7A /* KOpinionViewController.m */; };
+		505A6C5121BE7BE000011D7A /* KOpinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4F21BE7BE000011D7A /* KOpinionViewController.xib */; };
+		505A6C5521BE7D6A00011D7A /* KKFillContantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C5221BE7D6900011D7A /* KKFillContantTableViewCell.xib */; };
+		505A6C5621BE7D6A00011D7A /* KKFillContantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5421BE7D6A00011D7A /* KKFillContantTableViewCell.m */; };
 		505A6C6A21C0FEC700011D7A /* XXToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5921C0FEBF00011D7A /* XXToast.m */; };
 		505A6C6B21C0FEC700011D7A /* AppURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5C21C0FEBF00011D7A /* AppURL.m */; };
 		505A6C6C21C0FEC700011D7A /* NSDictionary+codeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6221C0FEC100011D7A /* NSDictionary+codeString.m */; };
@@ -81,14 +81,13 @@
 		505A6C6E21C0FEC700011D7A /* UIView+addGradualLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6421C0FEC100011D7A /* UIView+addGradualLayer.m */; };
 		505A6C6F21C0FEC700011D7A /* XXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6621C0FEC200011D7A /* XXRequest.m */; };
 		505A6C7021C0FEC700011D7A /* AppDeviceMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6821C0FEC200011D7A /* AppDeviceMode.m */; };
-		505A6C7421C1047500011D7A /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7221C1047500011D7A /* TransferViewController.m */; };
-		505A6C7521C1047500011D7A /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7321C1047500011D7A /* TransferViewController.xib */; };
-		505A6C7921C116EA00011D7A /* IudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7721C116EA00011D7A /* IudgeViewController.m */; };
-		505A6C7A21C116EA00011D7A /* IudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7821C116EA00011D7A /* IudgeViewController.xib */; };
+		505A6C7421C1047500011D7A /* KTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7221C1047500011D7A /* KTransferViewController.m */; };
+		505A6C7521C1047500011D7A /* KTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7321C1047500011D7A /* KTransferViewController.xib */; };
+		505A6C7921C116EA00011D7A /* KKIudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7721C116EA00011D7A /* KKIudgeViewController.m */; };
+		505A6C7A21C116EA00011D7A /* KKIudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7821C116EA00011D7A /* KKIudgeViewController.xib */; };
 		505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CB321C22CA400011D7A /* InfoPlist.strings */; };
 		505A6CDB21C2501800011D7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CDD21C2501800011D7A /* Localizable.strings */; };
-		505A6CED21C39DE200011D7A /* launch_images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CEC21C39DE200011D7A /* launch_images.jpg */; };
-		505A6CEF21C39E1C00011D7A /* launch_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CEE21C39E1B00011D7A /* launch_image.jpg */; };
+		50742C6521E837C5007BFDC8 /* launch_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50742C6421E837C5007BFDC8 /* launch_icon.jpg */; };
 		609E7C604908ECCE640B431E /* libPods-BoardGamesItems.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */; };
 /* End PBXBuildFile section */
 
@@ -125,11 +124,11 @@
 		505A6B8921BE30C300011D7A /* BoardGamesItemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGamesItemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505A6B8D21BE30C300011D7A /* BoardGamesItemsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardGamesItemsUITests.m; sourceTree = "<group>"; };
 		505A6B8F21BE30C300011D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		505A6B9C21BE3B9F00011D7A /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
-		505A6B9D21BE3B9F00011D7A /* JSRootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootTabBarViewController.m; sourceTree = "<group>"; };
-		505A6B9E21BE3B9F00011D7A /* JSRootTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRootTabBarViewController.h; sourceTree = "<group>"; };
-		505A6B9F21BE3B9F00011D7A /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
-		505A6BA021BE3B9F00011D7A /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
+		505A6B9C21BE3B9F00011D7A /* KKDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDelegateViewController.h; sourceTree = "<group>"; };
+		505A6B9D21BE3B9F00011D7A /* KKRootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKRootTabBarViewController.m; sourceTree = "<group>"; };
+		505A6B9E21BE3B9F00011D7A /* KKRootTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKRootTabBarViewController.h; sourceTree = "<group>"; };
+		505A6B9F21BE3B9F00011D7A /* KKDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDelegateViewController.m; sourceTree = "<group>"; };
+		505A6BA021BE3B9F00011D7A /* KKDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKDelegateViewController.xib; sourceTree = "<group>"; };
 		505A6BA621BE3C5D00011D7A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		505A6BA721BE3C5D00011D7A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		505A6BAC21BE3CA300011D7A /* MMCleanCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCleanCacheManager.m; sourceTree = "<group>"; };
@@ -161,17 +160,17 @@
 		505A6BCA21BE3CA400011D7A /* DefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineHeader.h; sourceTree = "<group>"; };
 		505A6BCB21BE3CA400011D7A /* JSSelectViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSelectViewTool.m; sourceTree = "<group>"; };
 		505A6BCD21BE3CA400011D7A /* districts_bak.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = districts_bak.xml; sourceTree = "<group>"; };
-		505A6BDC21BE3D2F00011D7A /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		505A6BDD21BE3D2F00011D7A /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		505A6BDE21BE3D2F00011D7A /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		505A6BDC21BE3D2F00011D7A /* KKMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMineViewController.h; sourceTree = "<group>"; };
+		505A6BDD21BE3D2F00011D7A /* KKMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMineViewController.m; sourceTree = "<group>"; };
+		505A6BDE21BE3D2F00011D7A /* KKMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKMineViewController.xib; sourceTree = "<group>"; };
 		505A6BE121BE3D4100011D7A /* GamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamesViewController.h; sourceTree = "<group>"; };
 		505A6BE221BE3D4100011D7A /* GamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamesViewController.m; sourceTree = "<group>"; };
 		505A6BE321BE3D4100011D7A /* GamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesViewController.xib; sourceTree = "<group>"; };
 		505A6BE621BE3DD800011D7A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		505A6BE721BE3E0E00011D7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		505A6BE821BE42EF00011D7A /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
-		505A6BE921BE42EF00011D7A /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
-		505A6BEA21BE42EF00011D7A /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		505A6BE821BE42EF00011D7A /* KPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPersonViewController.h; sourceTree = "<group>"; };
+		505A6BE921BE42EF00011D7A /* KPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPersonViewController.m; sourceTree = "<group>"; };
+		505A6BEA21BE42EF00011D7A /* KPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPersonViewController.xib; sourceTree = "<group>"; };
 		505A6BEE21BE438900011D7A /* JSFPictureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFPictureManager.m; sourceTree = "<group>"; };
 		505A6BF021BE438900011D7A /* GroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupTableViewCell.m; sourceTree = "<group>"; };
 		505A6BF121BE438900011D7A /* GroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupTableViewController.h; sourceTree = "<group>"; };
@@ -188,15 +187,15 @@
 		505A6BFE21BE438900011D7A /* AllAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAlbumCollectionViewCell.h; sourceTree = "<group>"; };
 		505A6BFF21BE438900011D7A /* AllAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAlbumViewController.h; sourceTree = "<group>"; };
 		505A6C0021BE438900011D7A /* AllAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAlbumCollectionViewCell.m; sourceTree = "<group>"; };
-		505A6C0B21BE443000011D7A /* PersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableViewCell.h; sourceTree = "<group>"; };
-		505A6C0C21BE443000011D7A /* PersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewCell.m; sourceTree = "<group>"; };
-		505A6C0D21BE443100011D7A /* PersonalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalTableViewCell.xib; sourceTree = "<group>"; };
-		505A6C1021BE449100011D7A /* MineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
-		505A6C1121BE449100011D7A /* MineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
-		505A6C1221BE449100011D7A /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
-		505A6C1521BE44E300011D7A /* AboutMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMineViewController.h; sourceTree = "<group>"; };
-		505A6C1621BE44E400011D7A /* AboutMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMineViewController.m; sourceTree = "<group>"; };
-		505A6C1721BE44E400011D7A /* AboutMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutMineViewController.xib; sourceTree = "<group>"; };
+		505A6C0B21BE443000011D7A /* KKPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPersonalTableViewCell.h; sourceTree = "<group>"; };
+		505A6C0C21BE443000011D7A /* KKPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPersonalTableViewCell.m; sourceTree = "<group>"; };
+		505A6C0D21BE443100011D7A /* KKPersonalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKPersonalTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C1021BE449100011D7A /* KKMineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMineTableViewCell.m; sourceTree = "<group>"; };
+		505A6C1121BE449100011D7A /* KKMineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKMineTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C1221BE449100011D7A /* KKMineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMineTableViewCell.h; sourceTree = "<group>"; };
+		505A6C1521BE44E300011D7A /* KKAboutMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAboutMineViewController.h; sourceTree = "<group>"; };
+		505A6C1621BE44E400011D7A /* KKAboutMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAboutMineViewController.m; sourceTree = "<group>"; };
+		505A6C1721BE44E400011D7A /* KKAboutMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKAboutMineViewController.xib; sourceTree = "<group>"; };
 		505A6C1C21BE4C1600011D7A /* GamesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamesTableViewCell.h; sourceTree = "<group>"; };
 		505A6C1D21BE4C1600011D7A /* GamesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamesTableViewCell.m; sourceTree = "<group>"; };
 		505A6C1E21BE4C1600011D7A /* GamesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesTableViewCell.xib; sourceTree = "<group>"; };
@@ -215,21 +214,21 @@
 		505A6C3921BE631600011D7A /* AddNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNumberViewController.h; sourceTree = "<group>"; };
 		505A6C3A21BE631600011D7A /* AddNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNumberViewController.m; sourceTree = "<group>"; };
 		505A6C3B21BE631600011D7A /* AddNumberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNumberViewController.xib; sourceTree = "<group>"; };
-		505A6C3E21BE63EE00011D7A /* AddNumberTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNumberTableViewCell.h; sourceTree = "<group>"; };
-		505A6C3F21BE63EE00011D7A /* AddNumberTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNumberTableViewCell.m; sourceTree = "<group>"; };
-		505A6C4021BE63EE00011D7A /* AddNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNumberTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C3E21BE63EE00011D7A /* KKAddNumberTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAddNumberTableViewCell.h; sourceTree = "<group>"; };
+		505A6C3F21BE63EE00011D7A /* KKAddNumberTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAddNumberTableViewCell.m; sourceTree = "<group>"; };
+		505A6C4021BE63EE00011D7A /* KKAddNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKAddNumberTableViewCell.xib; sourceTree = "<group>"; };
 		505A6C4321BE706200011D7A /* AddGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddGameViewController.h; sourceTree = "<group>"; };
 		505A6C4421BE706200011D7A /* AddGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddGameViewController.m; sourceTree = "<group>"; };
 		505A6C4521BE706200011D7A /* AddGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGameViewController.xib; sourceTree = "<group>"; };
 		505A6C4821BE707F00011D7A /* AddGameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddGameTableViewCell.h; sourceTree = "<group>"; };
 		505A6C4921BE707F00011D7A /* AddGameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddGameTableViewCell.m; sourceTree = "<group>"; };
 		505A6C4A21BE707F00011D7A /* AddGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGameTableViewCell.xib; sourceTree = "<group>"; };
-		505A6C4D21BE7BE000011D7A /* OpinionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpinionViewController.h; sourceTree = "<group>"; };
-		505A6C4E21BE7BE000011D7A /* OpinionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpinionViewController.m; sourceTree = "<group>"; };
-		505A6C4F21BE7BE000011D7A /* OpinionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpinionViewController.xib; sourceTree = "<group>"; };
-		505A6C5221BE7D6900011D7A /* FillContantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FillContantTableViewCell.xib; sourceTree = "<group>"; };
-		505A6C5321BE7D6900011D7A /* FillContantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillContantTableViewCell.h; sourceTree = "<group>"; };
-		505A6C5421BE7D6A00011D7A /* FillContantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillContantTableViewCell.m; sourceTree = "<group>"; };
+		505A6C4D21BE7BE000011D7A /* KOpinionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOpinionViewController.h; sourceTree = "<group>"; };
+		505A6C4E21BE7BE000011D7A /* KOpinionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOpinionViewController.m; sourceTree = "<group>"; };
+		505A6C4F21BE7BE000011D7A /* KOpinionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KOpinionViewController.xib; sourceTree = "<group>"; };
+		505A6C5221BE7D6900011D7A /* KKFillContantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKFillContantTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C5321BE7D6900011D7A /* KKFillContantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFillContantTableViewCell.h; sourceTree = "<group>"; };
+		505A6C5421BE7D6A00011D7A /* KKFillContantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFillContantTableViewCell.m; sourceTree = "<group>"; };
 		505A6C5921C0FEBF00011D7A /* XXToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXToast.m; sourceTree = "<group>"; };
 		505A6C5A21C0FEBF00011D7A /* AppURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppURL.h; sourceTree = "<group>"; };
 		505A6C5B21C0FEBF00011D7A /* XXToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXToast.h; sourceTree = "<group>"; };
@@ -245,20 +244,19 @@
 		505A6C6721C0FEC200011D7A /* XXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRequest.h; sourceTree = "<group>"; };
 		505A6C6821C0FEC200011D7A /* AppDeviceMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDeviceMode.m; sourceTree = "<group>"; };
 		505A6C6921C0FEC200011D7A /* AppDeviceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDeviceMode.h; sourceTree = "<group>"; };
-		505A6C7121C1047500011D7A /* TransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
-		505A6C7221C1047500011D7A /* TransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
-		505A6C7321C1047500011D7A /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
-		505A6C7621C116EA00011D7A /* IudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IudgeViewController.h; sourceTree = "<group>"; };
-		505A6C7721C116EA00011D7A /* IudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IudgeViewController.m; sourceTree = "<group>"; };
-		505A6C7821C116EA00011D7A /* IudgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IudgeViewController.xib; sourceTree = "<group>"; };
+		505A6C7121C1047500011D7A /* KTransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTransferViewController.h; sourceTree = "<group>"; };
+		505A6C7221C1047500011D7A /* KTransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTransferViewController.m; sourceTree = "<group>"; };
+		505A6C7321C1047500011D7A /* KTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTransferViewController.xib; sourceTree = "<group>"; };
+		505A6C7621C116EA00011D7A /* KKIudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKIudgeViewController.h; sourceTree = "<group>"; };
+		505A6C7721C116EA00011D7A /* KKIudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKIudgeViewController.m; sourceTree = "<group>"; };
+		505A6C7821C116EA00011D7A /* KKIudgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKIudgeViewController.xib; sourceTree = "<group>"; };
 		505A6CAB21C22B9600011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		505A6CAC21C22B9700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		505A6CB221C22CA400011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		505A6CBA21C22CC700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		505A6CDC21C2501800011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		505A6CDE21C2501A00011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		505A6CEC21C39DE200011D7A /* launch_images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_images.jpg; sourceTree = "<group>"; };
-		505A6CEE21C39E1B00011D7A /* launch_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_image.jpg; sourceTree = "<group>"; };
+		50742C6421E837C5007BFDC8 /* launch_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_icon.jpg; sourceTree = "<group>"; };
 		80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoardGamesItems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34B419008FE59CB600F22B /* Pods-BoardGamesItems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGamesItems.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoardGamesItems/Pods-BoardGamesItems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,8 +321,7 @@
 				505A6B6D21BE30C100011D7A /* ViewController.m */,
 				505A6B6F21BE30C100011D7A /* Main.storyboard */,
 				505A6B7221BE30C300011D7A /* Assets.xcassets */,
-				505A6CEE21C39E1B00011D7A /* launch_image.jpg */,
-				505A6CEC21C39DE200011D7A /* launch_images.jpg */,
+				50742C6421E837C5007BFDC8 /* launch_icon.jpg */,
 				505A6B7421BE30C300011D7A /* LaunchScreen.storyboard */,
 				505A6B7721BE30C300011D7A /* Info.plist */,
 				505A6CDD21C2501800011D7A /* Localizable.strings */,
@@ -357,17 +354,17 @@
 		505A6B9B21BE3B9F00011D7A /* RootTab */ = {
 			isa = PBXGroup;
 			children = (
-				505A6B9E21BE3B9F00011D7A /* JSRootTabBarViewController.h */,
-				505A6B9D21BE3B9F00011D7A /* JSRootTabBarViewController.m */,
-				505A6B9C21BE3B9F00011D7A /* DelegateViewController.h */,
-				505A6B9F21BE3B9F00011D7A /* DelegateViewController.m */,
-				505A6BA021BE3B9F00011D7A /* DelegateViewController.xib */,
-				505A6C7121C1047500011D7A /* TransferViewController.h */,
-				505A6C7221C1047500011D7A /* TransferViewController.m */,
-				505A6C7321C1047500011D7A /* TransferViewController.xib */,
-				505A6C7621C116EA00011D7A /* IudgeViewController.h */,
-				505A6C7721C116EA00011D7A /* IudgeViewController.m */,
-				505A6C7821C116EA00011D7A /* IudgeViewController.xib */,
+				505A6B9E21BE3B9F00011D7A /* KKRootTabBarViewController.h */,
+				505A6B9D21BE3B9F00011D7A /* KKRootTabBarViewController.m */,
+				505A6B9C21BE3B9F00011D7A /* KKDelegateViewController.h */,
+				505A6B9F21BE3B9F00011D7A /* KKDelegateViewController.m */,
+				505A6BA021BE3B9F00011D7A /* KKDelegateViewController.xib */,
+				505A6C7121C1047500011D7A /* KTransferViewController.h */,
+				505A6C7221C1047500011D7A /* KTransferViewController.m */,
+				505A6C7321C1047500011D7A /* KTransferViewController.xib */,
+				505A6C7621C116EA00011D7A /* KKIudgeViewController.h */,
+				505A6C7721C116EA00011D7A /* KKIudgeViewController.m */,
+				505A6C7821C116EA00011D7A /* KKIudgeViewController.xib */,
 			);
 			path = RootTab;
 			sourceTree = "<group>";
@@ -535,18 +532,18 @@
 		505A6C0921BE43F200011D7A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				505A6BDC21BE3D2F00011D7A /* MineViewController.h */,
-				505A6BDD21BE3D2F00011D7A /* MineViewController.m */,
-				505A6BDE21BE3D2F00011D7A /* MineViewController.xib */,
-				505A6BE821BE42EF00011D7A /* PersonViewController.h */,
-				505A6BE921BE42EF00011D7A /* PersonViewController.m */,
-				505A6BEA21BE42EF00011D7A /* PersonViewController.xib */,
-				505A6C1521BE44E300011D7A /* AboutMineViewController.h */,
-				505A6C1621BE44E400011D7A /* AboutMineViewController.m */,
-				505A6C1721BE44E400011D7A /* AboutMineViewController.xib */,
-				505A6C4D21BE7BE000011D7A /* OpinionViewController.h */,
-				505A6C4E21BE7BE000011D7A /* OpinionViewController.m */,
-				505A6C4F21BE7BE000011D7A /* OpinionViewController.xib */,
+				505A6BDC21BE3D2F00011D7A /* KKMineViewController.h */,
+				505A6BDD21BE3D2F00011D7A /* KKMineViewController.m */,
+				505A6BDE21BE3D2F00011D7A /* KKMineViewController.xib */,
+				505A6BE821BE42EF00011D7A /* KPersonViewController.h */,
+				505A6BE921BE42EF00011D7A /* KPersonViewController.m */,
+				505A6BEA21BE42EF00011D7A /* KPersonViewController.xib */,
+				505A6C1521BE44E300011D7A /* KKAboutMineViewController.h */,
+				505A6C1621BE44E400011D7A /* KKAboutMineViewController.m */,
+				505A6C1721BE44E400011D7A /* KKAboutMineViewController.xib */,
+				505A6C4D21BE7BE000011D7A /* KOpinionViewController.h */,
+				505A6C4E21BE7BE000011D7A /* KOpinionViewController.m */,
+				505A6C4F21BE7BE000011D7A /* KOpinionViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -554,15 +551,15 @@
 		505A6C0A21BE440700011D7A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				505A6C1221BE449100011D7A /* MineTableViewCell.h */,
-				505A6C1021BE449100011D7A /* MineTableViewCell.m */,
-				505A6C1121BE449100011D7A /* MineTableViewCell.xib */,
-				505A6C0B21BE443000011D7A /* PersonalTableViewCell.h */,
-				505A6C0C21BE443000011D7A /* PersonalTableViewCell.m */,
-				505A6C0D21BE443100011D7A /* PersonalTableViewCell.xib */,
-				505A6C5321BE7D6900011D7A /* FillContantTableViewCell.h */,
-				505A6C5421BE7D6A00011D7A /* FillContantTableViewCell.m */,
-				505A6C5221BE7D6900011D7A /* FillContantTableViewCell.xib */,
+				505A6C1221BE449100011D7A /* KKMineTableViewCell.h */,
+				505A6C1021BE449100011D7A /* KKMineTableViewCell.m */,
+				505A6C1121BE449100011D7A /* KKMineTableViewCell.xib */,
+				505A6C0B21BE443000011D7A /* KKPersonalTableViewCell.h */,
+				505A6C0C21BE443000011D7A /* KKPersonalTableViewCell.m */,
+				505A6C0D21BE443100011D7A /* KKPersonalTableViewCell.xib */,
+				505A6C5321BE7D6900011D7A /* KKFillContantTableViewCell.h */,
+				505A6C5421BE7D6A00011D7A /* KKFillContantTableViewCell.m */,
+				505A6C5221BE7D6900011D7A /* KKFillContantTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,9 +598,9 @@
 				505A6C3421BE5EAB00011D7A /* DeleteTableViewCell.h */,
 				505A6C3521BE5EAB00011D7A /* DeleteTableViewCell.m */,
 				505A6C3621BE5EAB00011D7A /* DeleteTableViewCell.xib */,
-				505A6C3E21BE63EE00011D7A /* AddNumberTableViewCell.h */,
-				505A6C3F21BE63EE00011D7A /* AddNumberTableViewCell.m */,
-				505A6C4021BE63EE00011D7A /* AddNumberTableViewCell.xib */,
+				505A6C3E21BE63EE00011D7A /* KKAddNumberTableViewCell.h */,
+				505A6C3F21BE63EE00011D7A /* KKAddNumberTableViewCell.m */,
+				505A6C4021BE63EE00011D7A /* KKAddNumberTableViewCell.xib */,
 				505A6C4821BE707F00011D7A /* AddGameTableViewCell.h */,
 				505A6C4921BE707F00011D7A /* AddGameTableViewCell.m */,
 				505A6C4A21BE707F00011D7A /* AddGameTableViewCell.xib */,
@@ -782,32 +779,31 @@
 			files = (
 				505A6B7621BE30C300011D7A /* LaunchScreen.storyboard in Resources */,
 				505A6C2521BE536F00011D7A /* DetailViewController.xib in Resources */,
-				505A6C4221BE63EE00011D7A /* AddNumberTableViewCell.xib in Resources */,
+				505A6C4221BE63EE00011D7A /* KKAddNumberTableViewCell.xib in Resources */,
 				505A6BDB21BE3CA400011D7A /* districts_bak.xml in Resources */,
-				505A6CEF21C39E1C00011D7A /* launch_image.jpg in Resources */,
-				505A6C5521BE7D6A00011D7A /* FillContantTableViewCell.xib in Resources */,
-				505A6C1421BE449100011D7A /* MineTableViewCell.xib in Resources */,
+				505A6C5521BE7D6A00011D7A /* KKFillContantTableViewCell.xib in Resources */,
+				505A6C1421BE449100011D7A /* KKMineTableViewCell.xib in Resources */,
 				505A6C2021BE4C1600011D7A /* GamesTableViewCell.xib in Resources */,
 				505A6C4721BE706200011D7A /* AddGameViewController.xib in Resources */,
 				505A6C2F21BE5CD600011D7A /* DeleteViewController.xib in Resources */,
-				505A6C7521C1047500011D7A /* TransferViewController.xib in Resources */,
-				505A6BA321BE3B9F00011D7A /* DelegateViewController.xib in Resources */,
-				505A6CED21C39DE200011D7A /* launch_images.jpg in Resources */,
+				505A6C7521C1047500011D7A /* KTransferViewController.xib in Resources */,
+				505A6BA321BE3B9F00011D7A /* KKDelegateViewController.xib in Resources */,
 				505A6B7321BE30C300011D7A /* Assets.xcassets in Resources */,
 				505A6C3D21BE631600011D7A /* AddNumberViewController.xib in Resources */,
-				505A6C7A21C116EA00011D7A /* IudgeViewController.xib in Resources */,
-				505A6C5121BE7BE000011D7A /* OpinionViewController.xib in Resources */,
+				505A6C7A21C116EA00011D7A /* KKIudgeViewController.xib in Resources */,
+				505A6C5121BE7BE000011D7A /* KOpinionViewController.xib in Resources */,
+				50742C6521E837C5007BFDC8 /* launch_icon.jpg in Resources */,
 				505A6CDB21C2501800011D7A /* Localizable.strings in Resources */,
 				505A6B7121BE30C100011D7A /* Main.storyboard in Resources */,
 				505A6BE521BE3D4100011D7A /* GamesViewController.xib in Resources */,
-				505A6BE021BE3D2F00011D7A /* MineViewController.xib in Resources */,
-				505A6C1921BE44E400011D7A /* AboutMineViewController.xib in Resources */,
+				505A6BE021BE3D2F00011D7A /* KKMineViewController.xib in Resources */,
+				505A6C1921BE44E400011D7A /* KKAboutMineViewController.xib in Resources */,
 				505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */,
 				505A6C4C21BE707F00011D7A /* AddGameTableViewCell.xib in Resources */,
-				505A6BEC21BE42EF00011D7A /* PersonViewController.xib in Resources */,
+				505A6BEC21BE42EF00011D7A /* KPersonViewController.xib in Resources */,
 				505A6C2A21BE55B600011D7A /* DetailTableViewCell.xib in Resources */,
 				505A6C3821BE5EAB00011D7A /* DeleteTableViewCell.xib in Resources */,
-				505A6C0F21BE443100011D7A /* PersonalTableViewCell.xib in Resources */,
+				505A6C0F21BE443100011D7A /* KKPersonalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,18 +887,18 @@
 				505A6C0221BE438900011D7A /* GroupTableViewCell.m in Sources */,
 				505A6BCE21BE3CA400011D7A /* MMCleanCacheManager.m in Sources */,
 				505A6B6E21BE30C100011D7A /* ViewController.m in Sources */,
-				505A6C7421C1047500011D7A /* TransferViewController.m in Sources */,
+				505A6C7421C1047500011D7A /* KTransferViewController.m in Sources */,
 				505A6C0821BE438900011D7A /* AllAlbumCollectionViewCell.m in Sources */,
 				505A6BD421BE3CA400011D7A /* UIViewController+BackgroundAlpha.m in Sources */,
 				505A6C6A21C0FEC700011D7A /* XXToast.m in Sources */,
 				505A6C2921BE55B600011D7A /* DetailTableViewCell.m in Sources */,
 				505A6BD921BE3CA400011D7A /* JSClassModel.m in Sources */,
-				505A6C4121BE63EE00011D7A /* AddNumberTableViewCell.m in Sources */,
+				505A6C4121BE63EE00011D7A /* KKAddNumberTableViewCell.m in Sources */,
 				505A6C6E21C0FEC700011D7A /* UIView+addGradualLayer.m in Sources */,
 				505A6C4B21BE707F00011D7A /* AddGameTableViewCell.m in Sources */,
 				505A6C6F21C0FEC700011D7A /* XXRequest.m in Sources */,
 				505A6BD621BE3CA400011D7A /* JSFastLoginModel.m in Sources */,
-				505A6BDF21BE3D2F00011D7A /* MineViewController.m in Sources */,
+				505A6BDF21BE3D2F00011D7A /* KKMineViewController.m in Sources */,
 				505A6C0521BE438900011D7A /* PhotoDetailsCollectionViewCell.m in Sources */,
 				505A6B7921BE30C300011D7A /* main.m in Sources */,
 				505A6BE421BE3D4100011D7A /* GamesViewController.m in Sources */,
@@ -917,20 +913,20 @@
 				505A6BD121BE3CA400011D7A /* UINavigationBar+BackgroundColor.m in Sources */,
 				505A6BD521BE3CA400011D7A /* UITextView+CustomFont.m in Sources */,
 				505A6C2E21BE5CD600011D7A /* DeleteViewController.m in Sources */,
-				505A6C5021BE7BE000011D7A /* OpinionViewController.m in Sources */,
-				505A6BA221BE3B9F00011D7A /* DelegateViewController.m in Sources */,
-				505A6C1321BE449100011D7A /* MineTableViewCell.m in Sources */,
+				505A6C5021BE7BE000011D7A /* KOpinionViewController.m in Sources */,
+				505A6BA221BE3B9F00011D7A /* KKDelegateViewController.m in Sources */,
+				505A6C1321BE449100011D7A /* KKMineTableViewCell.m in Sources */,
 				505A6C4621BE706200011D7A /* AddGameViewController.m in Sources */,
-				505A6C0E21BE443100011D7A /* PersonalTableViewCell.m in Sources */,
-				505A6C1821BE44E400011D7A /* AboutMineViewController.m in Sources */,
+				505A6C0E21BE443100011D7A /* KKPersonalTableViewCell.m in Sources */,
+				505A6C1821BE44E400011D7A /* KKAboutMineViewController.m in Sources */,
 				505A6C0721BE438900011D7A /* AllAlbumViewController.m in Sources */,
-				505A6C7921C116EA00011D7A /* IudgeViewController.m in Sources */,
+				505A6C7921C116EA00011D7A /* KKIudgeViewController.m in Sources */,
 				505A6C0321BE438900011D7A /* GroupTableViewController.m in Sources */,
 				505A6C3C21BE631600011D7A /* AddNumberViewController.m in Sources */,
-				505A6BA121BE3B9F00011D7A /* JSRootTabBarViewController.m in Sources */,
-				505A6BEB21BE42EF00011D7A /* PersonViewController.m in Sources */,
+				505A6BA121BE3B9F00011D7A /* KKRootTabBarViewController.m in Sources */,
+				505A6BEB21BE42EF00011D7A /* KPersonViewController.m in Sources */,
 				505A6C0121BE438900011D7A /* JSFPictureManager.m in Sources */,
-				505A6C5621BE7D6A00011D7A /* FillContantTableViewCell.m in Sources */,
+				505A6C5621BE7D6A00011D7A /* KKFillContantTableViewCell.m in Sources */,
 				505A6C6B21C0FEC700011D7A /* AppURL.m in Sources */,
 				505A6BD721BE3CA400011D7A /* JSLocalStorageKit.m in Sources */,
 				505A6BD221BE3CA400011D7A /* UITableView+JSCustom.m in Sources */,
