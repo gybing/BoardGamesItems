@@ -13,7 +13,13 @@
 #import<CoreTelephony/CTCellularData.h>
 #import "AFNetworkReachabilityManager.h"
 
-@interface AppDelegate ()
+#import  <UMCommon/UMCommon.h>  // 公共组件是所有友盟产品的基础组件，必选
+#import  <UMPush/UMessage.h>  // Push组件
+#import  <UserNotifications/UserNotifications.h>// Push组件必须的系统库
+
+#define UMAppKey @"5c3d69bbb465f5eb60000fc9"
+
+@interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
 
@@ -23,6 +29,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window.backgroundColor = [UIColor whiteColor];
     application.statusBarHidden = YES;
+    //配置友盟推送
+    [self configureUMessageWithLaunchOptions:launchOptions];
     //当前域名
     [AppURL Manager].HttpHost = @"http://www.88313.xin";
     //1.获取网络权限 根绝权限进行人机交互
@@ -142,6 +150,61 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)configureUMessageWithLaunchOptions:(NSDictionary *)launchOptions {
+    
+    // 配置友盟SDK产品并并统一初始化
+    [UMConfigure initWithAppkey:UMAppKey channel:@"App Store"];
+    // Push组件基本功能配置
+    if (@available(iOS 10.0, *)) {
+        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+    } else {
+        // Fallback on earlier versions
+    }
+    UMessageRegisterEntity* entity = [[UMessageRegisterEntity alloc] init];
+    //type是对推送的几个参数的选择，可以选择一个或者多个。默认是三个全部打开，即：声音，弹窗，角标等
+    entity.types= UMessageAuthorizationOptionBadge|UMessageAuthorizationOptionAlert;
+    if (@available(iOS 10.0, *)) {
+        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+    } else {
+        // Fallback on earlier versions
+    }
+    [UMessage registerForRemoteNotificationsWithLaunchOptions:launchOptions Entity:entity completionHandler:^(BOOL granted, NSError* _Nullableerror) {
+        if(granted) {
+            
+            // 用户选择了接收Push消息
+        }else{
+            // 用户拒绝接收Push消息
+        }
+    }];
+}
+
+//iOS10以下使用这两个方法接收通知
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    [UMessage setAutoAlert:NO];
+    NSLog(@"j-------------------67676");
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [UMessage setAutoAlert:NO];
+    [UMessage didReceiveRemoteNotification:userInfo];
+    NSLog(@"jforj-=-=-=-=-=-=wgopfjerpfgjr");
+}
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    
+    [UMessage registerDeviceToken:deviceToken];
+    NSLog(@"didRegisterForRemoteNotificationsWithDeviceToken success");
+    
+    NSLog(@"deviceToken————>>>%@",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<"withString: @""]
+                                    
+                                    stringByReplacingOccurrencesOfString: @">"withString: @""]
+                                   
+                                   stringByReplacingOccurrencesOfString: @" "withString: @""]);
+}
+
 
 
 @end

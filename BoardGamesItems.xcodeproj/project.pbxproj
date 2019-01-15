@@ -256,6 +256,13 @@
 		505A6CBA21C22CC700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		505A6CDC21C2501800011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		505A6CDE21C2501A00011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		505C996021ED84760014FD34 /* BoardGamesItems.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BoardGamesItems.entitlements; sourceTree = "<group>"; };
+		505C996121EDAF710014FD34 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		505C996821EDB8D80014FD34 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		505C996A21EDB8E30014FD34 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		505C996C21EDB8FA0014FD34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		505C996E21EDB9210014FD34 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		505C997021EDB9340014FD34 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		50742C6421E837C5007BFDC8 /* launch_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_icon.jpg; sourceTree = "<group>"; };
 		80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoardGamesItems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34B419008FE59CB600F22B /* Pods-BoardGamesItems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoardGamesItems.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoardGamesItems/Pods-BoardGamesItems.release.xcconfig"; sourceTree = "<group>"; };
@@ -312,6 +319,7 @@
 		505A6B6821BE30C100011D7A /* BoardGamesItems */ = {
 			isa = PBXGroup;
 			children = (
+				505C996021ED84760014FD34 /* BoardGamesItems.entitlements */,
 				505A6BA521BE3C5D00011D7A /* Application */,
 				505A6B9B21BE3B9F00011D7A /* RootTab */,
 				505A6BA421BE3C5D00011D7A /* Tool */,
@@ -666,6 +674,12 @@
 		90BDD06BE253673E95E73B00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				505C997021EDB9340014FD34 /* libsqlite3.tbd */,
+				505C996E21EDB9210014FD34 /* libsqlite3.0.tbd */,
+				505C996C21EDB8FA0014FD34 /* SystemConfiguration.framework */,
+				505C996A21EDB8E30014FD34 /* libz.tbd */,
+				505C996821EDB8D80014FD34 /* CoreTelephony.framework */,
+				505C996121EDAF710014FD34 /* UserNotifications.framework */,
 				80E132E19DC56F8794F48EFE /* libPods-BoardGamesItems.a */,
 			);
 			name = Frameworks;
@@ -740,6 +754,14 @@
 				TargetAttributes = {
 					505A6B6521BE30C100011D7A = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					505A6B7D21BE30C300011D7A = {
 						CreatedOnToolsVersion = 10.1;
@@ -1125,8 +1147,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BoardGamesItems/BoardGamesItems.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG258AQY9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BoardGamesItems/Application/push",
+				);
 				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/BoardGamesItems/BoardGamesItems/PrefixHeader.pch;
 				INFOPLIST_FILE = BoardGamesItems/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1136,6 +1165,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BoardGamesItems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1146,8 +1176,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BoardGamesItems/BoardGamesItems.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG258AQY9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BoardGamesItems/Application/push",
+				);
 				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/BoardGamesItems/BoardGamesItems/PrefixHeader.pch;
 				INFOPLIST_FILE = BoardGamesItems/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1157,6 +1194,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BoardGamesItems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

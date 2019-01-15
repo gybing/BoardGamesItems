@@ -18,10 +18,14 @@ PODS:
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.7)
   - ReactiveObjC (3.1.0)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
   - SVProgressHUD (2.2.5)
+  - UMCCommon (2.0.0)
+  - UMCPush (3.2.3):
+    - UMCCommon
+  - UMCSecurityPlugins (1.0.6)
   - XFAssistiveTouch (0.0.1)
   - XYSuspensionMenu (1.0.7)
   - YYKit (1.0.9):
@@ -36,6 +40,9 @@ DEPENDENCIES:
   - ReactiveObjC
   - SDWebImage
   - SVProgressHUD
+  - UMCCommon
+  - UMCPush
+  - UMCSecurityPlugins
   - XFAssistiveTouch
   - XYSuspensionMenu (~> 1.0.7)
   - YYKit
@@ -49,6 +56,9 @@ SPEC REPOS:
     - ReactiveObjC
     - SDWebImage
     - SVProgressHUD
+    - UMCCommon
+    - UMCPush
+    - UMCSecurityPlugins
     - XFAssistiveTouch
     - XYSuspensionMenu
     - YYKit
@@ -59,12 +69,15 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMCCommon: 79b5a614c958db367113eed5740109d9a98e1223
+  UMCPush: 628b5c61be5a5036cb31eb9b3a3ab8dce7521691
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   XFAssistiveTouch: 9bb7289b0894b6e4752ccf6a29e654154926ec18
   XYSuspensionMenu: 2331900538d60a26698e5170e0bf58d074051f2b
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9385d2df15b7df5ee74441499ad196b43eacdf0a
+PODFILE CHECKSUM: 4a90711708e0f66680ae5c4d6702c41ed6c67051
 
 COCOAPODS: 1.5.3
