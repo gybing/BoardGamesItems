@@ -6,9 +6,9 @@
   Copyright © 2018 锋子. All rights reserved.
 */
 
-CFBundleDisplayName = "牌九计分器";
+CFBundleDisplayName = "K计分器";
 
-"NSPhotoLibraryUsageDescription" = "牌九计分器需要访问您的相册，帮助完成您的个人头像更换";
-"NSCameraUsageDescription" = "牌九计分器需要访问您的相机，帮助完成您的个人头像更换";
-"NSAppleMusicUsageDescription" = "牌九计分器需要访问您的多媒体，帮助完成您的个人头像更换";
+"NSPhotoLibraryUsageDescription" = "K计分器需要访问您的相册，帮助完成您的个人头像更换";
+"NSCameraUsageDescription" = "K计分器需要访问您的相机，帮助完成您的个人头像更换";
+"NSAppleMusicUsageDescription" = "K计分器需要访问您的多媒体，帮助完成您的个人头像更换";
 
