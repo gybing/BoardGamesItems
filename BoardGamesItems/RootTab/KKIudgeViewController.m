@@ -29,7 +29,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"YYYY-MM-dd"];
     NSString * currentDateStr = [dateFormatter stringFromDate:currentDate];
-    int comparisonResult = [self compareDate:currentDateStr withDate:@"2019-01-25"];
+    int comparisonResult = [self compareDate:currentDateStr withDate:@"2019-02-08"];
     if(comparisonResult >0){
         //endDate 大
         [self judgeIsWebView];
