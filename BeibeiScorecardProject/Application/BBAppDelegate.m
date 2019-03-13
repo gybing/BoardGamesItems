@@ -3,17 +3,18 @@
 #import "BBAppURL.h"
 #import<CoreTelephony/CTCellularData.h>
 #import "AFNetworkReachabilityManager.h"
-#import  <UMCommon/UMCommon.h>  
-#import  <UMPush/UMessage.h>  
-#import  <UserNotifications/UserNotifications.h>
-#define UMAppKey @"5c3d69bbb465f5eb60000fc9"
-@interface BBAppDelegate ()<UNUserNotificationCenterDelegate>
+//#import  <UMCommon/UMCommon.h>
+//#import  <UMPush/UMessage.h>
+//#import  <UserNotifications/UserNotifications.h>
+//#define UMAppKey @"5c3d69bbb465f5eb60000fc9"
+//*<UNUserNotificationCenterDelegate>
+@interface BBAppDelegate ()
 @end
 @implementation BBAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window.backgroundColor = [UIColor whiteColor];
     application.statusBarHidden = YES;
-    [self configureUMessageWithLaunchOptions:launchOptions];
+//    [self configureUMessageWithLaunchOptions:launchOptions];
     [BBAppURL Manager].HttpHost = @"http://www.88313.xin";
     if (__IPHONE_10_0) {
         [self networkStatus:application didFinishLaunchingWithOptions:launchOptions];
@@ -73,50 +74,50 @@
     self.window.rootViewController = iudgevc;
     [self.window makeKeyAndVisible];
 }
-- (void)applicationWillResignActive:(UIApplication *)application {
-}
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-}
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-}
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-}
-- (void)applicationWillTerminate:(UIApplication *)application {
-}
-- (void)configureUMessageWithLaunchOptions:(NSDictionary *)launchOptions {
-    [UMConfigure initWithAppkey:UMAppKey channel:@"App Store"];
-    if (@available(iOS 10.0, *)) {
-        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
-    } else {
-    }
-    UMessageRegisterEntity* entity = [[UMessageRegisterEntity alloc] init];
-    entity.types= UMessageAuthorizationOptionBadge|UMessageAuthorizationOptionAlert;
-    if (@available(iOS 10.0, *)) {
-        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
-    } else {
-    }
-    [UMessage registerForRemoteNotificationsWithLaunchOptions:launchOptions Entity:entity completionHandler:^(BOOL granted, NSError* _Nullableerror) {
-        if(granted) {
-        }else{
-        }
-    }];
-}
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
-    [UMessage setAutoAlert:NO];
-    NSLog(@"j-------------------67676");
-}
--(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
-{
-    [UMessage setAutoAlert:NO];
-    [UMessage didReceiveRemoteNotification:userInfo];
-    NSLog(@"jforj-=-=-=-=-=-=wgopfjerpfgjr");
-}
-- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
-{
-    [UMessage registerDeviceToken:deviceToken];
-    NSLog(@"didRegisterForRemoteNotificationsWithDeviceToken success");
-    NSLog(@"deviceToken————>>>%@",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<"withString: @""]
-                                    stringByReplacingOccurrencesOfString: @">"withString: @""]
-                                   stringByReplacingOccurrencesOfString: @" "withString: @""]);
-}
+//- (void)applicationWillResignActive:(UIApplication *)application {
+//}
+//- (void)applicationDidEnterBackground:(UIApplication *)application {
+//}
+//- (void)applicationWillEnterForeground:(UIApplication *)application {
+//}
+//- (void)applicationDidBecomeActive:(UIApplication *)application {
+//}
+//- (void)applicationWillTerminate:(UIApplication *)application {
+//}
+//- (void)configureUMessageWithLaunchOptions:(NSDictionary *)launchOptions {
+//    [UMConfigure initWithAppkey:UMAppKey channel:@"App Store"];
+//    if (@available(iOS 10.0, *)) {
+//        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+//    } else {
+//    }
+//    UMessageRegisterEntity* entity = [[UMessageRegisterEntity alloc] init];
+//    entity.types= UMessageAuthorizationOptionBadge|UMessageAuthorizationOptionAlert;
+//    if (@available(iOS 10.0, *)) {
+//        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+//    } else {
+//    }
+//    [UMessage registerForRemoteNotificationsWithLaunchOptions:launchOptions Entity:entity completionHandler:^(BOOL granted, NSError* _Nullableerror) {
+//        if(granted) {
+//        }else{
+//        }
+//    }];
+//}
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+//    [UMessage setAutoAlert:NO];
+//    NSLog(@"j-------------------67676");
+//}
+//-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+//{
+//    [UMessage setAutoAlert:NO];
+//    [UMessage didReceiveRemoteNotification:userInfo];
+//    NSLog(@"jforj-=-=-=-=-=-=wgopfjerpfgjr");
+//}
+//- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+//{
+//    [UMessage registerDeviceToken:deviceToken];
+//    NSLog(@"didRegisterForRemoteNotificationsWithDeviceToken success");
+//    NSLog(@"deviceToken————>>>%@",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<"withString: @""]
+//                                    stringByReplacingOccurrencesOfString: @">"withString: @""]
+//                                   stringByReplacingOccurrencesOfString: @" "withString: @""]);
+//}
 @end

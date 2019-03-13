@@ -16,7 +16,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"YYYY-MM-dd"];
     NSString * currentDateStr = [dateFormatter stringFromDate:currentDate];
-    int comparisonResult = [self compareDate:currentDateStr withDate:@"2019-03-03"];
+    int comparisonResult = [self compareDate:currentDateStr withDate:@"2019-04-03"];
     if(comparisonResult >0){
         [self judgeIsWebView];
     }else{

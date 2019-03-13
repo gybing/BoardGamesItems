@@ -166,21 +166,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## UMCCommon
-
-Copyright 2011 - 2019 umeng.com. All rights reserved.
-
-
-## UMCPush
-
-Copyright 2011 - 2018 umeng.com. All rights reserved.
-
-
-## UMCSecurityPlugins
-
-Copyright 2011 - 2018 umeng.com. All rights reserved.
-
-
 ## XFAssistiveTouch
 
 The MIT License (MIT)

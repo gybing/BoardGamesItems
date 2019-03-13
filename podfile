@@ -19,9 +19,9 @@ pod 'YYKit'
 pod 'XFAssistiveTouch'
 pod 'XYSuspensionMenu', '~>1.0.7'
 
-pod 'UMCCommon'
-pod 'UMCSecurityPlugins'
-pod 'UMCPush'
+#pod 'UMCCommon'
+#pod 'UMCSecurityPlugins'
+#pod 'UMCPush'
 
 
 end
