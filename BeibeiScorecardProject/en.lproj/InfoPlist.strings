@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  BoardGamesItems
+
+  Created by 锋子 on 2018/12/13.
+  Copyright © 2018 锋子. All rights reserved.
+*/
+
+CFBundleDisplayName = "BeibeiScorecard";
+
+"NSPhotoLibraryUsageDescription" = "BeibeiScorecard needs to access your album to help complete your personal portrait replacement";
+"NSCameraUsageDescription" = "BeibeiScorecard needs to access your camera to help complete your personal portrait replacement";
+"NSAppleMusicUsageDescription" = "BeibeiScorecard needs to access your multimedia to help complete your personal portrait replacement";
+
+
+

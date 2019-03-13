@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5CAF300F325E4F1CE7444AD039BD8698"
+               BlueprintIdentifier = "B2A598BBDE2B2BB86B42D01C0471E180"
                BlueprintName = "XYSuspensionMenu"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libXYSuspensionMenu.a">

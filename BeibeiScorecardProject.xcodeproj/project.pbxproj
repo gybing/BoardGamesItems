@@ -1,0 +1,1356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		501929502238AD7900E93EF1 /* 微软雅黑细体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5019294F2238AD7900E93EF1 /* 微软雅黑细体.ttf */; };
+		5019296E2238FB9800E93EF1 /* UIButton+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929662238FB9800E93EF1 /* UIButton+CustomFont.m */; };
+		5019296F2238FB9800E93EF1 /* UITextField+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929692238FB9800E93EF1 /* UITextField+CustomFont.m */; };
+		501929702238FB9800E93EF1 /* UITextView+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019296A2238FB9800E93EF1 /* UITextView+CustomFont.m */; };
+		501929712238FB9800E93EF1 /* UILabel+CustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019296C2238FB9800E93EF1 /* UILabel+CustomFont.m */; };
+		5019297A2238FBB000E93EF1 /* UIViewController+TouchAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929722238FBAF00E93EF1 /* UIViewController+TouchAvatar.m */; };
+		5019297C2238FBB000E93EF1 /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929742238FBB000E93EF1 /* UINavigationBar+BackgroundColor.m */; };
+		5019297D2238FBB000E93EF1 /* UIViewController+BackgroundAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929792238FBB000E93EF1 /* UIViewController+BackgroundAlpha.m */; };
+		501929902238FC1A00E93EF1 /* BBJSCommonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019297F2238FC1A00E93EF1 /* BBJSCommonAlertView.m */; };
+		501929912238FC1A00E93EF1 /* BBJSUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929852238FC1A00E93EF1 /* BBJSUserInfo.m */; };
+		501929922238FC1A00E93EF1 /* BBJSClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929862238FC1A00E93EF1 /* BBJSClassModel.m */; };
+		501929932238FC1A00E93EF1 /* BBJSFastLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929872238FC1A00E93EF1 /* BBJSFastLoginModel.m */; };
+		501929942238FC1A00E93EF1 /* BBJSLocalStorageKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929892238FC1A00E93EF1 /* BBJSLocalStorageKit.m */; };
+		501929952238FC1A00E93EF1 /* BBJSSelectViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019298B2238FC1A00E93EF1 /* BBJSSelectViewTool.m */; };
+		501929962238FC1A00E93EF1 /* districts_bak.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5019298E2238FC1A00E93EF1 /* districts_bak.xml */; };
+		5019299D2238FC5200E93EF1 /* UIView+addGradualLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019299A2238FC5100E93EF1 /* UIView+addGradualLayer.m */; };
+		5019299E2238FC5200E93EF1 /* NSString+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019299B2238FC5200E93EF1 /* NSString+Code.m */; };
+		5019299F2238FC5200E93EF1 /* NSDictionary+codeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019299C2238FC5200E93EF1 /* NSDictionary+codeString.m */; };
+		501929A22238FC7400E93EF1 /* UIImage+ScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929A12238FC7400E93EF1 /* UIImage+ScaleImage.m */; };
+		505A6B6E21BE30C100011D7A /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B6D21BE30C100011D7A /* BBViewController.m */; };
+		505A6B7121BE30C100011D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505A6B6F21BE30C100011D7A /* Main.storyboard */; };
+		505A6B7321BE30C300011D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505A6B7221BE30C300011D7A /* Assets.xcassets */; };
+		505A6B7621BE30C300011D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505A6B7421BE30C300011D7A /* LaunchScreen.storyboard */; };
+		505A6B7921BE30C300011D7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B7821BE30C300011D7A /* main.m */; };
+		505A6B8321BE30C300011D7A /* BoardGamesItemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B8221BE30C300011D7A /* BoardGamesItemsTests.m */; };
+		505A6B8E21BE30C300011D7A /* BoardGamesItemsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B8D21BE30C300011D7A /* BoardGamesItemsUITests.m */; };
+		505A6BA121BE3B9F00011D7A /* BBRootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B9D21BE3B9F00011D7A /* BBRootTabBarViewController.m */; };
+		505A6BA221BE3B9F00011D7A /* BBDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B9F21BE3B9F00011D7A /* BBDelegateViewController.m */; };
+		505A6BA321BE3B9F00011D7A /* BBDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BA021BE3B9F00011D7A /* BBDelegateViewController.xib */; };
+		505A6BAA21BE3C5D00011D7A /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BA721BE3C5D00011D7A /* BBAppDelegate.m */; };
+		505A6BCE21BE3CA400011D7A /* BBMMCleanCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BAC21BE3CA300011D7A /* BBMMCleanCacheManager.m */; };
+		505A6BD221BE3CA400011D7A /* UITableView+JSCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BB721BE3CA400011D7A /* UITableView+JSCustom.m */; };
+		505A6BD321BE3CA400011D7A /* JS3DImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BB821BE3CA400011D7A /* JS3DImageViewController.m */; };
+		505A6BDF21BE3D2F00011D7A /* BBMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BDD21BE3D2F00011D7A /* BBMineViewController.m */; };
+		505A6BE021BE3D2F00011D7A /* BBMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BDE21BE3D2F00011D7A /* BBMineViewController.xib */; };
+		505A6BE421BE3D4100011D7A /* BBGamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BE221BE3D4100011D7A /* BBGamesViewController.m */; };
+		505A6BE521BE3D4100011D7A /* BBGamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BE321BE3D4100011D7A /* BBGamesViewController.xib */; };
+		505A6BEB21BE42EF00011D7A /* BBKPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BE921BE42EF00011D7A /* BBKPersonViewController.m */; };
+		505A6BEC21BE42EF00011D7A /* BBKPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6BEA21BE42EF00011D7A /* BBKPersonViewController.xib */; };
+		505A6C0121BE438900011D7A /* BBJSFPictureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BEE21BE438900011D7A /* BBJSFPictureManager.m */; };
+		505A6C0221BE438900011D7A /* BBGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF021BE438900011D7A /* BBGroupTableViewCell.m */; };
+		505A6C0321BE438900011D7A /* BBGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF321BE438900011D7A /* BBGroupTableViewController.m */; };
+		505A6C0521BE438900011D7A /* BBPhotoDetailsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF721BE438900011D7A /* BBPhotoDetailsCollectionViewCell.m */; };
+		505A6C0621BE438900011D7A /* BBPhotoDetailsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BF821BE438900011D7A /* BBPhotoDetailsCollectionViewController.m */; };
+		505A6C0721BE438900011D7A /* BBAllAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6BFD21BE438900011D7A /* BBAllAlbumViewController.m */; };
+		505A6C0821BE438900011D7A /* BBAllAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C0021BE438900011D7A /* BBAllAlbumCollectionViewCell.m */; };
+		505A6C0E21BE443100011D7A /* BBPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C0C21BE443000011D7A /* BBPersonalTableViewCell.m */; };
+		505A6C0F21BE443100011D7A /* BBPersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C0D21BE443100011D7A /* BBPersonalTableViewCell.xib */; };
+		505A6C1321BE449100011D7A /* BBMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1021BE449100011D7A /* BBMineTableViewCell.m */; };
+		505A6C1421BE449100011D7A /* BBMineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1121BE449100011D7A /* BBMineTableViewCell.xib */; };
+		505A6C1821BE44E400011D7A /* BBAboutMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1621BE44E400011D7A /* BBAboutMineViewController.m */; };
+		505A6C1921BE44E400011D7A /* BBAboutMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1721BE44E400011D7A /* BBAboutMineViewController.xib */; };
+		505A6C1F21BE4C1600011D7A /* BBGamesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C1D21BE4C1600011D7A /* BBGamesTableViewCell.m */; };
+		505A6C2021BE4C1600011D7A /* BBGamesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C1E21BE4C1600011D7A /* BBGamesTableViewCell.xib */; };
+		505A6C2421BE536F00011D7A /* BBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C2221BE536F00011D7A /* BBDetailViewController.m */; };
+		505A6C2521BE536F00011D7A /* BBDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C2321BE536F00011D7A /* BBDetailViewController.xib */; };
+		505A6C2921BE55B600011D7A /* BBDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C2721BE55B600011D7A /* BBDetailTableViewCell.m */; };
+		505A6C2A21BE55B600011D7A /* BBDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C2821BE55B600011D7A /* BBDetailTableViewCell.xib */; };
+		505A6C2E21BE5CD600011D7A /* BBDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C2C21BE5CD600011D7A /* BBDeleteViewController.m */; };
+		505A6C2F21BE5CD600011D7A /* BBDeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C2D21BE5CD600011D7A /* BBDeleteViewController.xib */; };
+		505A6C3721BE5EAB00011D7A /* BBDeleteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C3521BE5EAB00011D7A /* BBDeleteTableViewCell.m */; };
+		505A6C3821BE5EAB00011D7A /* BBDeleteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C3621BE5EAB00011D7A /* BBDeleteTableViewCell.xib */; };
+		505A6C3C21BE631600011D7A /* BBAddNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C3A21BE631600011D7A /* BBAddNumberViewController.m */; };
+		505A6C3D21BE631600011D7A /* BBAddNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C3B21BE631600011D7A /* BBAddNumberViewController.xib */; };
+		505A6C4121BE63EE00011D7A /* BBAddNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C3F21BE63EE00011D7A /* BBAddNumberTableViewCell.m */; };
+		505A6C4221BE63EE00011D7A /* BBAddNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4021BE63EE00011D7A /* BBAddNumberTableViewCell.xib */; };
+		505A6C4621BE706200011D7A /* BBAddGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4421BE706200011D7A /* BBAddGameViewController.m */; };
+		505A6C4721BE706200011D7A /* BBAddGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4521BE706200011D7A /* BBAddGameViewController.xib */; };
+		505A6C4B21BE707F00011D7A /* BBAddGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4921BE707F00011D7A /* BBAddGameTableViewCell.m */; };
+		505A6C4C21BE707F00011D7A /* BBAddGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4A21BE707F00011D7A /* BBAddGameTableViewCell.xib */; };
+		505A6C5021BE7BE000011D7A /* BBKOpinionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C4E21BE7BE000011D7A /* BBKOpinionViewController.m */; };
+		505A6C5121BE7BE000011D7A /* BBKOpinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C4F21BE7BE000011D7A /* BBKOpinionViewController.xib */; };
+		505A6C5521BE7D6A00011D7A /* BBFillContantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C5221BE7D6900011D7A /* BBFillContantTableViewCell.xib */; };
+		505A6C5621BE7D6A00011D7A /* BBFillContantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5421BE7D6A00011D7A /* BBFillContantTableViewCell.m */; };
+		505A6C6A21C0FEC700011D7A /* BBXXToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5921C0FEBF00011D7A /* BBXXToast.m */; };
+		505A6C6B21C0FEC700011D7A /* BBAppURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C5C21C0FEBF00011D7A /* BBAppURL.m */; };
+		505A6C6F21C0FEC700011D7A /* BBXXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6621C0FEC200011D7A /* BBXXRequest.m */; };
+		505A6C7021C0FEC700011D7A /* BBAppDeviceMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C6821C0FEC200011D7A /* BBAppDeviceMode.m */; };
+		505A6C7421C1047500011D7A /* BBKTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7221C1047500011D7A /* BBKTransferViewController.m */; };
+		505A6C7521C1047500011D7A /* BBKTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7321C1047500011D7A /* BBKTransferViewController.xib */; };
+		505A6C7921C116EA00011D7A /* BBIudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6C7721C116EA00011D7A /* BBIudgeViewController.m */; };
+		505A6C7A21C116EA00011D7A /* BBIudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7821C116EA00011D7A /* BBIudgeViewController.xib */; };
+		505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CB321C22CA400011D7A /* InfoPlist.strings */; };
+		505A6CDB21C2501800011D7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CDD21C2501800011D7A /* Localizable.strings */; };
+		50742C6521E837C5007BFDC8 /* launch_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50742C6421E837C5007BFDC8 /* launch_icon.jpg */; };
+		609E7C604908ECCE640B431E /* libPods-BeibeiScorecardProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E132E19DC56F8794F48EFE /* libPods-BeibeiScorecardProject.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		505A6B7F21BE30C300011D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505A6B5E21BE30C100011D7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505A6B6521BE30C100011D7A;
+			remoteInfo = BeibeiScorecardProject;
+		};
+		505A6B8A21BE30C300011D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505A6B5E21BE30C100011D7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505A6B6521BE30C100011D7A;
+			remoteInfo = BeibeiScorecardProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AB3D92E8DBE96037CF3BE72 /* Pods-BeibeiScorecardProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeibeiScorecardProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeibeiScorecardProject/Pods-BeibeiScorecardProject.debug.xcconfig"; sourceTree = "<group>"; };
+		5019294F2238AD7900E93EF1 /* 微软雅黑细体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "微软雅黑细体.ttf"; sourceTree = "<group>"; };
+		501929662238FB9800E93EF1 /* UIButton+CustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomFont.m"; sourceTree = "<group>"; };
+		501929672238FB9800E93EF1 /* UITextField+CustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CustomFont.h"; sourceTree = "<group>"; };
+		501929682238FB9800E93EF1 /* UITextView+CustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+CustomFont.h"; sourceTree = "<group>"; };
+		501929692238FB9800E93EF1 /* UITextField+CustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CustomFont.m"; sourceTree = "<group>"; };
+		5019296A2238FB9800E93EF1 /* UITextView+CustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+CustomFont.m"; sourceTree = "<group>"; };
+		5019296B2238FB9800E93EF1 /* UIButton+CustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomFont.h"; sourceTree = "<group>"; };
+		5019296C2238FB9800E93EF1 /* UILabel+CustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CustomFont.m"; sourceTree = "<group>"; };
+		5019296D2238FB9800E93EF1 /* UILabel+CustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CustomFont.h"; sourceTree = "<group>"; };
+		501929722238FBAF00E93EF1 /* UIViewController+TouchAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchAvatar.m"; sourceTree = "<group>"; };
+		501929742238FBB000E93EF1 /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
+		501929762238FBB000E93EF1 /* UIViewController+BackgroundAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackgroundAlpha.h"; sourceTree = "<group>"; };
+		501929772238FBB000E93EF1 /* UIViewController+TouchAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchAvatar.h"; sourceTree = "<group>"; };
+		501929782238FBB000E93EF1 /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
+		501929792238FBB000E93EF1 /* UIViewController+BackgroundAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackgroundAlpha.m"; sourceTree = "<group>"; };
+		5019297F2238FC1A00E93EF1 /* BBJSCommonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSCommonAlertView.m; sourceTree = "<group>"; };
+		501929802238FC1A00E93EF1 /* BBJSCommonAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSCommonAlertView.h; sourceTree = "<group>"; };
+		501929822238FC1A00E93EF1 /* BBJSClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSClassModel.h; sourceTree = "<group>"; };
+		501929832238FC1A00E93EF1 /* BBJSFastLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSFastLoginModel.h; sourceTree = "<group>"; };
+		501929842238FC1A00E93EF1 /* BBJSLocalStorageKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSLocalStorageKit.h; sourceTree = "<group>"; };
+		501929852238FC1A00E93EF1 /* BBJSUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSUserInfo.m; sourceTree = "<group>"; };
+		501929862238FC1A00E93EF1 /* BBJSClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSClassModel.m; sourceTree = "<group>"; };
+		501929872238FC1A00E93EF1 /* BBJSFastLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSFastLoginModel.m; sourceTree = "<group>"; };
+		501929882238FC1A00E93EF1 /* BBJSUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSUserInfo.h; sourceTree = "<group>"; };
+		501929892238FC1A00E93EF1 /* BBJSLocalStorageKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSLocalStorageKit.m; sourceTree = "<group>"; };
+		5019298B2238FC1A00E93EF1 /* BBJSSelectViewTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSSelectViewTool.m; sourceTree = "<group>"; };
+		5019298C2238FC1A00E93EF1 /* DefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineHeader.h; sourceTree = "<group>"; };
+		5019298E2238FC1A00E93EF1 /* districts_bak.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = districts_bak.xml; sourceTree = "<group>"; };
+		5019298F2238FC1A00E93EF1 /* BBJSSelectViewTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSSelectViewTool.h; sourceTree = "<group>"; };
+		501929972238FC5100E93EF1 /* NSString+Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Code.h"; sourceTree = "<group>"; };
+		501929982238FC5100E93EF1 /* NSDictionary+codeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+codeString.h"; sourceTree = "<group>"; };
+		501929992238FC5100E93EF1 /* UIView+addGradualLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addGradualLayer.h"; sourceTree = "<group>"; };
+		5019299A2238FC5100E93EF1 /* UIView+addGradualLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addGradualLayer.m"; sourceTree = "<group>"; };
+		5019299B2238FC5200E93EF1 /* NSString+Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Code.m"; sourceTree = "<group>"; };
+		5019299C2238FC5200E93EF1 /* NSDictionary+codeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+codeString.m"; sourceTree = "<group>"; };
+		501929A02238FC7300E93EF1 /* UIImage+ScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScaleImage.h"; sourceTree = "<group>"; };
+		501929A12238FC7400E93EF1 /* UIImage+ScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScaleImage.m"; sourceTree = "<group>"; };
+		505A6B6621BE30C100011D7A /* BeibeiScorecardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeibeiScorecardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505A6B6C21BE30C100011D7A /* BBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		505A6B6D21BE30C100011D7A /* BBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
+		505A6B7021BE30C100011D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		505A6B7221BE30C300011D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505A6B7521BE30C300011D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		505A6B7721BE30C300011D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505A6B7821BE30C300011D7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		505A6B7E21BE30C300011D7A /* BoardGamesItemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGamesItemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		505A6B8221BE30C300011D7A /* BoardGamesItemsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardGamesItemsTests.m; sourceTree = "<group>"; };
+		505A6B8421BE30C300011D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505A6B8921BE30C300011D7A /* BoardGamesItemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGamesItemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		505A6B8D21BE30C300011D7A /* BoardGamesItemsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardGamesItemsUITests.m; sourceTree = "<group>"; };
+		505A6B8F21BE30C300011D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505A6B9C21BE3B9F00011D7A /* BBDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDelegateViewController.h; sourceTree = "<group>"; };
+		505A6B9D21BE3B9F00011D7A /* BBRootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRootTabBarViewController.m; sourceTree = "<group>"; };
+		505A6B9E21BE3B9F00011D7A /* BBRootTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRootTabBarViewController.h; sourceTree = "<group>"; };
+		505A6B9F21BE3B9F00011D7A /* BBDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDelegateViewController.m; sourceTree = "<group>"; };
+		505A6BA021BE3B9F00011D7A /* BBDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBDelegateViewController.xib; sourceTree = "<group>"; };
+		505A6BA621BE3C5D00011D7A /* BBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		505A6BA721BE3C5D00011D7A /* BBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		505A6BAC21BE3CA300011D7A /* BBMMCleanCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMMCleanCacheManager.m; sourceTree = "<group>"; };
+		505A6BAD21BE3CA300011D7A /* BBMMCleanCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMMCleanCacheManager.h; sourceTree = "<group>"; };
+		505A6BB221BE3CA400011D7A /* SMPageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageStyle.h; sourceTree = "<group>"; };
+		505A6BB721BE3CA400011D7A /* UITableView+JSCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JSCustom.m"; sourceTree = "<group>"; };
+		505A6BB821BE3CA400011D7A /* JS3DImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JS3DImageViewController.m; sourceTree = "<group>"; };
+		505A6BBD21BE3CA400011D7A /* JS3DImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JS3DImageViewController.h; sourceTree = "<group>"; };
+		505A6BBE21BE3CA400011D7A /* UITableView+JSCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JSCustom.h"; sourceTree = "<group>"; };
+		505A6BDC21BE3D2F00011D7A /* BBMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMineViewController.h; sourceTree = "<group>"; };
+		505A6BDD21BE3D2F00011D7A /* BBMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMineViewController.m; sourceTree = "<group>"; };
+		505A6BDE21BE3D2F00011D7A /* BBMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBMineViewController.xib; sourceTree = "<group>"; };
+		505A6BE121BE3D4100011D7A /* BBGamesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGamesViewController.h; sourceTree = "<group>"; };
+		505A6BE221BE3D4100011D7A /* BBGamesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBGamesViewController.m; sourceTree = "<group>"; };
+		505A6BE321BE3D4100011D7A /* BBGamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBGamesViewController.xib; sourceTree = "<group>"; };
+		505A6BE621BE3DD800011D7A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		505A6BE721BE3E0E00011D7A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		505A6BE821BE42EF00011D7A /* BBKPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBKPersonViewController.h; sourceTree = "<group>"; };
+		505A6BE921BE42EF00011D7A /* BBKPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBKPersonViewController.m; sourceTree = "<group>"; };
+		505A6BEA21BE42EF00011D7A /* BBKPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBKPersonViewController.xib; sourceTree = "<group>"; };
+		505A6BEE21BE438900011D7A /* BBJSFPictureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBJSFPictureManager.m; sourceTree = "<group>"; };
+		505A6BF021BE438900011D7A /* BBGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGroupTableViewCell.m; sourceTree = "<group>"; };
+		505A6BF121BE438900011D7A /* BBGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGroupTableViewController.h; sourceTree = "<group>"; };
+		505A6BF221BE438900011D7A /* BBGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGroupTableViewCell.h; sourceTree = "<group>"; };
+		505A6BF321BE438900011D7A /* BBGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGroupTableViewController.m; sourceTree = "<group>"; };
+		505A6BF521BE438900011D7A /* BBJSFPictureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBJSFPictureManager.h; sourceTree = "<group>"; };
+		505A6BF721BE438900011D7A /* BBPhotoDetailsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPhotoDetailsCollectionViewCell.m; sourceTree = "<group>"; };
+		505A6BF821BE438900011D7A /* BBPhotoDetailsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPhotoDetailsCollectionViewController.m; sourceTree = "<group>"; };
+		505A6BF921BE438900011D7A /* BBPhotoDetailsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPhotoDetailsCollectionViewCell.h; sourceTree = "<group>"; };
+		505A6BFA21BE438900011D7A /* BBPhotoDetailsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPhotoDetailsCollectionViewController.h; sourceTree = "<group>"; };
+		505A6BFD21BE438900011D7A /* BBAllAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAllAlbumViewController.m; sourceTree = "<group>"; };
+		505A6BFE21BE438900011D7A /* BBAllAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAllAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		505A6BFF21BE438900011D7A /* BBAllAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAllAlbumViewController.h; sourceTree = "<group>"; };
+		505A6C0021BE438900011D7A /* BBAllAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAllAlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		505A6C0B21BE443000011D7A /* BBPersonalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPersonalTableViewCell.h; sourceTree = "<group>"; };
+		505A6C0C21BE443000011D7A /* BBPersonalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPersonalTableViewCell.m; sourceTree = "<group>"; };
+		505A6C0D21BE443100011D7A /* BBPersonalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBPersonalTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C1021BE449100011D7A /* BBMineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMineTableViewCell.m; sourceTree = "<group>"; };
+		505A6C1121BE449100011D7A /* BBMineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBMineTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C1221BE449100011D7A /* BBMineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMineTableViewCell.h; sourceTree = "<group>"; };
+		505A6C1521BE44E300011D7A /* BBAboutMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAboutMineViewController.h; sourceTree = "<group>"; };
+		505A6C1621BE44E400011D7A /* BBAboutMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAboutMineViewController.m; sourceTree = "<group>"; };
+		505A6C1721BE44E400011D7A /* BBAboutMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBAboutMineViewController.xib; sourceTree = "<group>"; };
+		505A6C1C21BE4C1600011D7A /* BBGamesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGamesTableViewCell.h; sourceTree = "<group>"; };
+		505A6C1D21BE4C1600011D7A /* BBGamesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBGamesTableViewCell.m; sourceTree = "<group>"; };
+		505A6C1E21BE4C1600011D7A /* BBGamesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBGamesTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C2121BE536F00011D7A /* BBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBDetailViewController.h; sourceTree = "<group>"; };
+		505A6C2221BE536F00011D7A /* BBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBDetailViewController.m; sourceTree = "<group>"; };
+		505A6C2321BE536F00011D7A /* BBDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBDetailViewController.xib; sourceTree = "<group>"; };
+		505A6C2621BE55B600011D7A /* BBDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBDetailTableViewCell.h; sourceTree = "<group>"; };
+		505A6C2721BE55B600011D7A /* BBDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBDetailTableViewCell.m; sourceTree = "<group>"; };
+		505A6C2821BE55B600011D7A /* BBDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBDetailTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C2B21BE5CD600011D7A /* BBDeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBDeleteViewController.h; sourceTree = "<group>"; };
+		505A6C2C21BE5CD600011D7A /* BBDeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBDeleteViewController.m; sourceTree = "<group>"; };
+		505A6C2D21BE5CD600011D7A /* BBDeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBDeleteViewController.xib; sourceTree = "<group>"; };
+		505A6C3421BE5EAB00011D7A /* BBDeleteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBDeleteTableViewCell.h; sourceTree = "<group>"; };
+		505A6C3521BE5EAB00011D7A /* BBDeleteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBDeleteTableViewCell.m; sourceTree = "<group>"; };
+		505A6C3621BE5EAB00011D7A /* BBDeleteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBDeleteTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C3921BE631600011D7A /* BBAddNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAddNumberViewController.h; sourceTree = "<group>"; };
+		505A6C3A21BE631600011D7A /* BBAddNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAddNumberViewController.m; sourceTree = "<group>"; };
+		505A6C3B21BE631600011D7A /* BBAddNumberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBAddNumberViewController.xib; sourceTree = "<group>"; };
+		505A6C3E21BE63EE00011D7A /* BBAddNumberTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAddNumberTableViewCell.h; sourceTree = "<group>"; };
+		505A6C3F21BE63EE00011D7A /* BBAddNumberTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAddNumberTableViewCell.m; sourceTree = "<group>"; };
+		505A6C4021BE63EE00011D7A /* BBAddNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBAddNumberTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C4321BE706200011D7A /* BBAddGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAddGameViewController.h; sourceTree = "<group>"; };
+		505A6C4421BE706200011D7A /* BBAddGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAddGameViewController.m; sourceTree = "<group>"; };
+		505A6C4521BE706200011D7A /* BBAddGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBAddGameViewController.xib; sourceTree = "<group>"; };
+		505A6C4821BE707F00011D7A /* BBAddGameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAddGameTableViewCell.h; sourceTree = "<group>"; };
+		505A6C4921BE707F00011D7A /* BBAddGameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAddGameTableViewCell.m; sourceTree = "<group>"; };
+		505A6C4A21BE707F00011D7A /* BBAddGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBAddGameTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C4D21BE7BE000011D7A /* BBKOpinionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBKOpinionViewController.h; sourceTree = "<group>"; };
+		505A6C4E21BE7BE000011D7A /* BBKOpinionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBKOpinionViewController.m; sourceTree = "<group>"; };
+		505A6C4F21BE7BE000011D7A /* BBKOpinionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBKOpinionViewController.xib; sourceTree = "<group>"; };
+		505A6C5221BE7D6900011D7A /* BBFillContantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBFillContantTableViewCell.xib; sourceTree = "<group>"; };
+		505A6C5321BE7D6900011D7A /* BBFillContantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFillContantTableViewCell.h; sourceTree = "<group>"; };
+		505A6C5421BE7D6A00011D7A /* BBFillContantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFillContantTableViewCell.m; sourceTree = "<group>"; };
+		505A6C5921C0FEBF00011D7A /* BBXXToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBXXToast.m; sourceTree = "<group>"; };
+		505A6C5A21C0FEBF00011D7A /* BBAppURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAppURL.h; sourceTree = "<group>"; };
+		505A6C5B21C0FEBF00011D7A /* BBXXToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBXXToast.h; sourceTree = "<group>"; };
+		505A6C5C21C0FEBF00011D7A /* BBAppURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAppURL.m; sourceTree = "<group>"; };
+		505A6C5D21C0FEC000011D7A /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		505A6C6621C0FEC200011D7A /* BBXXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBXXRequest.m; sourceTree = "<group>"; };
+		505A6C6721C0FEC200011D7A /* BBXXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBXXRequest.h; sourceTree = "<group>"; };
+		505A6C6821C0FEC200011D7A /* BBAppDeviceMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAppDeviceMode.m; sourceTree = "<group>"; };
+		505A6C6921C0FEC200011D7A /* BBAppDeviceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAppDeviceMode.h; sourceTree = "<group>"; };
+		505A6C7121C1047500011D7A /* BBKTransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBKTransferViewController.h; sourceTree = "<group>"; };
+		505A6C7221C1047500011D7A /* BBKTransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBKTransferViewController.m; sourceTree = "<group>"; };
+		505A6C7321C1047500011D7A /* BBKTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBKTransferViewController.xib; sourceTree = "<group>"; };
+		505A6C7621C116EA00011D7A /* BBIudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBIudgeViewController.h; sourceTree = "<group>"; };
+		505A6C7721C116EA00011D7A /* BBIudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBIudgeViewController.m; sourceTree = "<group>"; };
+		505A6C7821C116EA00011D7A /* BBIudgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BBIudgeViewController.xib; sourceTree = "<group>"; };
+		505A6CAB21C22B9600011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		505A6CAC21C22B9700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		505A6CB221C22CA400011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		505A6CBA21C22CC700011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		505A6CDC21C2501800011D7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		505A6CDE21C2501A00011D7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		505C996021ED84760014FD34 /* BeibeiScorecardProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeibeiScorecardProject.entitlements; sourceTree = "<group>"; };
+		505C996121EDAF710014FD34 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		505C996821EDB8D80014FD34 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		505C996A21EDB8E30014FD34 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		505C996C21EDB8FA0014FD34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		505C996E21EDB9210014FD34 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		505C997021EDB9340014FD34 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		50742C6421E837C5007BFDC8 /* launch_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_icon.jpg; sourceTree = "<group>"; };
+		80E132E19DC56F8794F48EFE /* libPods-BeibeiScorecardProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeibeiScorecardProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB34B419008FE59CB600F22B /* Pods-BeibeiScorecardProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeibeiScorecardProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeibeiScorecardProject/Pods-BeibeiScorecardProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		505A6B6321BE30C100011D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609E7C604908ECCE640B431E /* libPods-BeibeiScorecardProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505A6B7B21BE30C300011D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505A6B8621BE30C300011D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		501929512238ADB700E93EF1 /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				5019296B2238FB9800E93EF1 /* UIButton+CustomFont.h */,
+				501929662238FB9800E93EF1 /* UIButton+CustomFont.m */,
+				5019296D2238FB9800E93EF1 /* UILabel+CustomFont.h */,
+				5019296C2238FB9800E93EF1 /* UILabel+CustomFont.m */,
+				501929672238FB9800E93EF1 /* UITextField+CustomFont.h */,
+				501929692238FB9800E93EF1 /* UITextField+CustomFont.m */,
+				501929682238FB9800E93EF1 /* UITextView+CustomFont.h */,
+				5019296A2238FB9800E93EF1 /* UITextView+CustomFont.m */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		501929652238F29800E93EF1 /* BBLog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BBLog;
+			sourceTree = "<group>";
+		};
+		5019297E2238FC1A00E93EF1 /* JSCommonAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				5019297F2238FC1A00E93EF1 /* BBJSCommonAlertView.m */,
+				501929802238FC1A00E93EF1 /* BBJSCommonAlertView.h */,
+			);
+			path = JSCommonAlertView;
+			sourceTree = "<group>";
+		};
+		501929812238FC1A00E93EF1 /* JSLocalStorageKit */ = {
+			isa = PBXGroup;
+			children = (
+				501929822238FC1A00E93EF1 /* BBJSClassModel.h */,
+				501929862238FC1A00E93EF1 /* BBJSClassModel.m */,
+				501929832238FC1A00E93EF1 /* BBJSFastLoginModel.h */,
+				501929872238FC1A00E93EF1 /* BBJSFastLoginModel.m */,
+				501929892238FC1A00E93EF1 /* BBJSLocalStorageKit.m */,
+				501929842238FC1A00E93EF1 /* BBJSLocalStorageKit.h */,
+				501929882238FC1A00E93EF1 /* BBJSUserInfo.h */,
+				501929852238FC1A00E93EF1 /* BBJSUserInfo.m */,
+			);
+			path = JSLocalStorageKit;
+			sourceTree = "<group>";
+		};
+		5019298A2238FC1A00E93EF1 /* JSSelectViewTool */ = {
+			isa = PBXGroup;
+			children = (
+				5019298F2238FC1A00E93EF1 /* BBJSSelectViewTool.h */,
+				5019298B2238FC1A00E93EF1 /* BBJSSelectViewTool.m */,
+				5019298C2238FC1A00E93EF1 /* DefineHeader.h */,
+				5019298D2238FC1A00E93EF1 /* New Group */,
+			);
+			path = JSSelectViewTool;
+			sourceTree = "<group>";
+		};
+		5019298D2238FC1A00E93EF1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				5019298E2238FC1A00E93EF1 /* districts_bak.xml */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		505A6B5D21BE30C100011D7A = {
+			isa = PBXGroup;
+			children = (
+				505A6B6821BE30C100011D7A /* BeibeiScorecardProject */,
+				505A6B8121BE30C300011D7A /* BoardGamesItemsTests */,
+				505A6B8C21BE30C300011D7A /* BoardGamesItemsUITests */,
+				505A6B6721BE30C100011D7A /* Products */,
+				75EC11D273EA9284784CF558 /* Pods */,
+				90BDD06BE253673E95E73B00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		505A6B6721BE30C100011D7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				505A6B6621BE30C100011D7A /* BeibeiScorecardProject.app */,
+				505A6B7E21BE30C300011D7A /* BoardGamesItemsTests.xctest */,
+				505A6B8921BE30C300011D7A /* BoardGamesItemsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		505A6B6821BE30C100011D7A /* BeibeiScorecardProject */ = {
+			isa = PBXGroup;
+			children = (
+				501929652238F29800E93EF1 /* BBLog */,
+				505C996021ED84760014FD34 /* BeibeiScorecardProject.entitlements */,
+				505A6BA521BE3C5D00011D7A /* Application */,
+				505A6B9B21BE3B9F00011D7A /* RootTab */,
+				505A6BA421BE3C5D00011D7A /* Tool */,
+				505A6BA921BE3C5D00011D7A /* Games */,
+				505A6BA821BE3C5D00011D7A /* Mine */,
+				505A6B6C21BE30C100011D7A /* BBViewController.h */,
+				505A6B6D21BE30C100011D7A /* BBViewController.m */,
+				505A6B6F21BE30C100011D7A /* Main.storyboard */,
+				505A6B7221BE30C300011D7A /* Assets.xcassets */,
+				50742C6421E837C5007BFDC8 /* launch_icon.jpg */,
+				505A6B7421BE30C300011D7A /* LaunchScreen.storyboard */,
+				505A6B7721BE30C300011D7A /* Info.plist */,
+				505A6CDD21C2501800011D7A /* Localizable.strings */,
+				505A6CB321C22CA400011D7A /* InfoPlist.strings */,
+				5019294F2238AD7900E93EF1 /* 微软雅黑细体.ttf */,
+				505A6BE621BE3DD800011D7A /* Header.h */,
+				505A6BE721BE3E0E00011D7A /* PrefixHeader.pch */,
+				505A6B7821BE30C300011D7A /* main.m */,
+			);
+			path = BeibeiScorecardProject;
+			sourceTree = "<group>";
+		};
+		505A6B8121BE30C300011D7A /* BoardGamesItemsTests */ = {
+			isa = PBXGroup;
+			children = (
+				505A6B8221BE30C300011D7A /* BoardGamesItemsTests.m */,
+				505A6B8421BE30C300011D7A /* Info.plist */,
+			);
+			path = BoardGamesItemsTests;
+			sourceTree = "<group>";
+		};
+		505A6B8C21BE30C300011D7A /* BoardGamesItemsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				505A6B8D21BE30C300011D7A /* BoardGamesItemsUITests.m */,
+				505A6B8F21BE30C300011D7A /* Info.plist */,
+			);
+			path = BoardGamesItemsUITests;
+			sourceTree = "<group>";
+		};
+		505A6B9B21BE3B9F00011D7A /* RootTab */ = {
+			isa = PBXGroup;
+			children = (
+				505A6B9E21BE3B9F00011D7A /* BBRootTabBarViewController.h */,
+				505A6B9D21BE3B9F00011D7A /* BBRootTabBarViewController.m */,
+				505A6B9C21BE3B9F00011D7A /* BBDelegateViewController.h */,
+				505A6B9F21BE3B9F00011D7A /* BBDelegateViewController.m */,
+				505A6BA021BE3B9F00011D7A /* BBDelegateViewController.xib */,
+				505A6C7121C1047500011D7A /* BBKTransferViewController.h */,
+				505A6C7221C1047500011D7A /* BBKTransferViewController.m */,
+				505A6C7321C1047500011D7A /* BBKTransferViewController.xib */,
+				505A6C7621C116EA00011D7A /* BBIudgeViewController.h */,
+				505A6C7721C116EA00011D7A /* BBIudgeViewController.m */,
+				505A6C7821C116EA00011D7A /* BBIudgeViewController.xib */,
+			);
+			path = RootTab;
+			sourceTree = "<group>";
+		};
+		505A6BA421BE3C5D00011D7A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				5019297E2238FC1A00E93EF1 /* JSCommonAlertView */,
+				501929812238FC1A00E93EF1 /* JSLocalStorageKit */,
+				5019298A2238FC1A00E93EF1 /* JSSelectViewTool */,
+				505A6C5721C0FE7400011D7A /* Integration */,
+				505A6BED21BE438900011D7A /* JSPictureManager */,
+				505A6BB121BE3CA400011D7A /* Category */,
+				505A6BAB21BE3CA300011D7A /* cleanCache */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		505A6BA521BE3C5D00011D7A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BA621BE3C5D00011D7A /* BBAppDelegate.h */,
+				505A6BA721BE3C5D00011D7A /* BBAppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		505A6BA821BE3C5D00011D7A /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C0A21BE440700011D7A /* View */,
+				505A6C0921BE43F200011D7A /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		505A6BA921BE3C5D00011D7A /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C1A21BE4BDF00011D7A /* Controller */,
+				505A6C1B21BE4BE600011D7A /* View */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		505A6BAB21BE3CA300011D7A /* cleanCache */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BAC21BE3CA300011D7A /* BBMMCleanCacheManager.m */,
+				505A6BAD21BE3CA300011D7A /* BBMMCleanCacheManager.h */,
+			);
+			path = cleanCache;
+			sourceTree = "<group>";
+		};
+		505A6BB121BE3CA400011D7A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				501929512238ADB700E93EF1 /* CustomFont */,
+				505A6BB221BE3CA400011D7A /* SMPageStyle.h */,
+				501929782238FBB000E93EF1 /* UINavigationBar+BackgroundColor.h */,
+				501929742238FBB000E93EF1 /* UINavigationBar+BackgroundColor.m */,
+				501929762238FBB000E93EF1 /* UIViewController+BackgroundAlpha.h */,
+				501929792238FBB000E93EF1 /* UIViewController+BackgroundAlpha.m */,
+				501929772238FBB000E93EF1 /* UIViewController+TouchAvatar.h */,
+				501929722238FBAF00E93EF1 /* UIViewController+TouchAvatar.m */,
+				505A6BBD21BE3CA400011D7A /* JS3DImageViewController.h */,
+				505A6BB821BE3CA400011D7A /* JS3DImageViewController.m */,
+				505A6BBE21BE3CA400011D7A /* UITableView+JSCustom.h */,
+				505A6BB721BE3CA400011D7A /* UITableView+JSCustom.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		505A6BED21BE438900011D7A /* JSPictureManager */ = {
+			isa = PBXGroup;
+			children = (
+				501929A02238FC7300E93EF1 /* UIImage+ScaleImage.h */,
+				501929A12238FC7400E93EF1 /* UIImage+ScaleImage.m */,
+				505A6BF521BE438900011D7A /* BBJSFPictureManager.h */,
+				505A6BEE21BE438900011D7A /* BBJSFPictureManager.m */,
+				505A6BEF21BE438900011D7A /* Group */,
+				505A6BF621BE438900011D7A /* New Group */,
+				505A6BFC21BE438900011D7A /* Album */,
+			);
+			path = JSPictureManager;
+			sourceTree = "<group>";
+		};
+		505A6BEF21BE438900011D7A /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BF221BE438900011D7A /* BBGroupTableViewCell.h */,
+				505A6BF021BE438900011D7A /* BBGroupTableViewCell.m */,
+				505A6BF121BE438900011D7A /* BBGroupTableViewController.h */,
+				505A6BF321BE438900011D7A /* BBGroupTableViewController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		505A6BF621BE438900011D7A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BF721BE438900011D7A /* BBPhotoDetailsCollectionViewCell.m */,
+				505A6BF821BE438900011D7A /* BBPhotoDetailsCollectionViewController.m */,
+				505A6BF921BE438900011D7A /* BBPhotoDetailsCollectionViewCell.h */,
+				505A6BFA21BE438900011D7A /* BBPhotoDetailsCollectionViewController.h */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		505A6BFC21BE438900011D7A /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BFD21BE438900011D7A /* BBAllAlbumViewController.m */,
+				505A6BFE21BE438900011D7A /* BBAllAlbumCollectionViewCell.h */,
+				505A6BFF21BE438900011D7A /* BBAllAlbumViewController.h */,
+				505A6C0021BE438900011D7A /* BBAllAlbumCollectionViewCell.m */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		505A6C0921BE43F200011D7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BDC21BE3D2F00011D7A /* BBMineViewController.h */,
+				505A6BDD21BE3D2F00011D7A /* BBMineViewController.m */,
+				505A6BDE21BE3D2F00011D7A /* BBMineViewController.xib */,
+				505A6BE821BE42EF00011D7A /* BBKPersonViewController.h */,
+				505A6BE921BE42EF00011D7A /* BBKPersonViewController.m */,
+				505A6BEA21BE42EF00011D7A /* BBKPersonViewController.xib */,
+				505A6C1521BE44E300011D7A /* BBAboutMineViewController.h */,
+				505A6C1621BE44E400011D7A /* BBAboutMineViewController.m */,
+				505A6C1721BE44E400011D7A /* BBAboutMineViewController.xib */,
+				505A6C4D21BE7BE000011D7A /* BBKOpinionViewController.h */,
+				505A6C4E21BE7BE000011D7A /* BBKOpinionViewController.m */,
+				505A6C4F21BE7BE000011D7A /* BBKOpinionViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		505A6C0A21BE440700011D7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C1221BE449100011D7A /* BBMineTableViewCell.h */,
+				505A6C1021BE449100011D7A /* BBMineTableViewCell.m */,
+				505A6C1121BE449100011D7A /* BBMineTableViewCell.xib */,
+				505A6C0B21BE443000011D7A /* BBPersonalTableViewCell.h */,
+				505A6C0C21BE443000011D7A /* BBPersonalTableViewCell.m */,
+				505A6C0D21BE443100011D7A /* BBPersonalTableViewCell.xib */,
+				505A6C5321BE7D6900011D7A /* BBFillContantTableViewCell.h */,
+				505A6C5421BE7D6A00011D7A /* BBFillContantTableViewCell.m */,
+				505A6C5221BE7D6900011D7A /* BBFillContantTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		505A6C1A21BE4BDF00011D7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				505A6BE121BE3D4100011D7A /* BBGamesViewController.h */,
+				505A6BE221BE3D4100011D7A /* BBGamesViewController.m */,
+				505A6BE321BE3D4100011D7A /* BBGamesViewController.xib */,
+				505A6C2121BE536F00011D7A /* BBDetailViewController.h */,
+				505A6C2221BE536F00011D7A /* BBDetailViewController.m */,
+				505A6C2321BE536F00011D7A /* BBDetailViewController.xib */,
+				505A6C2B21BE5CD600011D7A /* BBDeleteViewController.h */,
+				505A6C2C21BE5CD600011D7A /* BBDeleteViewController.m */,
+				505A6C2D21BE5CD600011D7A /* BBDeleteViewController.xib */,
+				505A6C3921BE631600011D7A /* BBAddNumberViewController.h */,
+				505A6C3A21BE631600011D7A /* BBAddNumberViewController.m */,
+				505A6C3B21BE631600011D7A /* BBAddNumberViewController.xib */,
+				505A6C4321BE706200011D7A /* BBAddGameViewController.h */,
+				505A6C4421BE706200011D7A /* BBAddGameViewController.m */,
+				505A6C4521BE706200011D7A /* BBAddGameViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		505A6C1B21BE4BE600011D7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C1C21BE4C1600011D7A /* BBGamesTableViewCell.h */,
+				505A6C1D21BE4C1600011D7A /* BBGamesTableViewCell.m */,
+				505A6C1E21BE4C1600011D7A /* BBGamesTableViewCell.xib */,
+				505A6C2621BE55B600011D7A /* BBDetailTableViewCell.h */,
+				505A6C2721BE55B600011D7A /* BBDetailTableViewCell.m */,
+				505A6C2821BE55B600011D7A /* BBDetailTableViewCell.xib */,
+				505A6C3421BE5EAB00011D7A /* BBDeleteTableViewCell.h */,
+				505A6C3521BE5EAB00011D7A /* BBDeleteTableViewCell.m */,
+				505A6C3621BE5EAB00011D7A /* BBDeleteTableViewCell.xib */,
+				505A6C3E21BE63EE00011D7A /* BBAddNumberTableViewCell.h */,
+				505A6C3F21BE63EE00011D7A /* BBAddNumberTableViewCell.m */,
+				505A6C4021BE63EE00011D7A /* BBAddNumberTableViewCell.xib */,
+				505A6C4821BE707F00011D7A /* BBAddGameTableViewCell.h */,
+				505A6C4921BE707F00011D7A /* BBAddGameTableViewCell.m */,
+				505A6C4A21BE707F00011D7A /* BBAddGameTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		505A6C5721C0FE7400011D7A /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C5821C0FEBF00011D7A /* Alert */,
+				505A6C6921C0FEC200011D7A /* BBAppDeviceMode.h */,
+				505A6C6821C0FEC200011D7A /* BBAppDeviceMode.m */,
+				505A6C5D21C0FEC000011D7A /* AppMacro.h */,
+				505A6C5E21C0FEC100011D7A /* Category */,
+				505A6C6521C0FEC200011D7A /* Request */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		505A6C5821C0FEBF00011D7A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C5921C0FEBF00011D7A /* BBXXToast.m */,
+				505A6C5A21C0FEBF00011D7A /* BBAppURL.h */,
+				505A6C5B21C0FEBF00011D7A /* BBXXToast.h */,
+				505A6C5C21C0FEBF00011D7A /* BBAppURL.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		505A6C5E21C0FEC100011D7A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				501929982238FC5100E93EF1 /* NSDictionary+codeString.h */,
+				5019299C2238FC5200E93EF1 /* NSDictionary+codeString.m */,
+				501929972238FC5100E93EF1 /* NSString+Code.h */,
+				5019299B2238FC5200E93EF1 /* NSString+Code.m */,
+				501929992238FC5100E93EF1 /* UIView+addGradualLayer.h */,
+				5019299A2238FC5100E93EF1 /* UIView+addGradualLayer.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		505A6C6521C0FEC200011D7A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				505A6C6721C0FEC200011D7A /* BBXXRequest.h */,
+				505A6C6621C0FEC200011D7A /* BBXXRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		75EC11D273EA9284784CF558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB3D92E8DBE96037CF3BE72 /* Pods-BeibeiScorecardProject.debug.xcconfig */,
+				BB34B419008FE59CB600F22B /* Pods-BeibeiScorecardProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90BDD06BE253673E95E73B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505C997021EDB9340014FD34 /* libsqlite3.tbd */,
+				505C996E21EDB9210014FD34 /* libsqlite3.0.tbd */,
+				505C996C21EDB8FA0014FD34 /* SystemConfiguration.framework */,
+				505C996A21EDB8E30014FD34 /* libz.tbd */,
+				505C996821EDB8D80014FD34 /* CoreTelephony.framework */,
+				505C996121EDAF710014FD34 /* UserNotifications.framework */,
+				80E132E19DC56F8794F48EFE /* libPods-BeibeiScorecardProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		505A6B6521BE30C100011D7A /* BeibeiScorecardProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505A6B9221BE30C300011D7A /* Build configuration list for PBXNativeTarget "BeibeiScorecardProject" */;
+			buildPhases = (
+				EEF7720FEFC5EB33D4EB4315 /* [CP] Check Pods Manifest.lock */,
+				505A6B6221BE30C100011D7A /* Sources */,
+				505A6B6321BE30C100011D7A /* Frameworks */,
+				505A6B6421BE30C100011D7A /* Resources */,
+				29611BEC0DF7DC4E51AC996F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeibeiScorecardProject;
+			productName = BeibeiScorecardProject;
+			productReference = 505A6B6621BE30C100011D7A /* BeibeiScorecardProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		505A6B7D21BE30C300011D7A /* BoardGamesItemsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505A6B9521BE30C300011D7A /* Build configuration list for PBXNativeTarget "BoardGamesItemsTests" */;
+			buildPhases = (
+				505A6B7A21BE30C300011D7A /* Sources */,
+				505A6B7B21BE30C300011D7A /* Frameworks */,
+				505A6B7C21BE30C300011D7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505A6B8021BE30C300011D7A /* PBXTargetDependency */,
+			);
+			name = BoardGamesItemsTests;
+			productName = BoardGamesItemsTests;
+			productReference = 505A6B7E21BE30C300011D7A /* BoardGamesItemsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		505A6B8821BE30C300011D7A /* BoardGamesItemsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505A6B9821BE30C300011D7A /* Build configuration list for PBXNativeTarget "BoardGamesItemsUITests" */;
+			buildPhases = (
+				505A6B8521BE30C300011D7A /* Sources */,
+				505A6B8621BE30C300011D7A /* Frameworks */,
+				505A6B8721BE30C300011D7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505A6B8B21BE30C300011D7A /* PBXTargetDependency */,
+			);
+			name = BoardGamesItemsUITests;
+			productName = BoardGamesItemsUITests;
+			productReference = 505A6B8921BE30C300011D7A /* BoardGamesItemsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		505A6B5E21BE30C100011D7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "锋子";
+				TargetAttributes = {
+					505A6B6521BE30C100011D7A = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					505A6B7D21BE30C300011D7A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 505A6B6521BE30C100011D7A;
+					};
+					505A6B8821BE30C300011D7A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 505A6B6521BE30C100011D7A;
+					};
+				};
+			};
+			buildConfigurationList = 505A6B6121BE30C100011D7A /* Build configuration list for PBXProject "BeibeiScorecardProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 505A6B5D21BE30C100011D7A;
+			productRefGroup = 505A6B6721BE30C100011D7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				505A6B6521BE30C100011D7A /* BeibeiScorecardProject */,
+				505A6B7D21BE30C300011D7A /* BoardGamesItemsTests */,
+				505A6B8821BE30C300011D7A /* BoardGamesItemsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505A6B6421BE30C100011D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501929962238FC1A00E93EF1 /* districts_bak.xml in Resources */,
+				505A6B7621BE30C300011D7A /* LaunchScreen.storyboard in Resources */,
+				505A6C2521BE536F00011D7A /* BBDetailViewController.xib in Resources */,
+				505A6C4221BE63EE00011D7A /* BBAddNumberTableViewCell.xib in Resources */,
+				505A6C5521BE7D6A00011D7A /* BBFillContantTableViewCell.xib in Resources */,
+				505A6C1421BE449100011D7A /* BBMineTableViewCell.xib in Resources */,
+				505A6C2021BE4C1600011D7A /* BBGamesTableViewCell.xib in Resources */,
+				505A6C4721BE706200011D7A /* BBAddGameViewController.xib in Resources */,
+				505A6C2F21BE5CD600011D7A /* BBDeleteViewController.xib in Resources */,
+				505A6C7521C1047500011D7A /* BBKTransferViewController.xib in Resources */,
+				505A6BA321BE3B9F00011D7A /* BBDelegateViewController.xib in Resources */,
+				505A6B7321BE30C300011D7A /* Assets.xcassets in Resources */,
+				505A6C3D21BE631600011D7A /* BBAddNumberViewController.xib in Resources */,
+				505A6C7A21C116EA00011D7A /* BBIudgeViewController.xib in Resources */,
+				505A6C5121BE7BE000011D7A /* BBKOpinionViewController.xib in Resources */,
+				50742C6521E837C5007BFDC8 /* launch_icon.jpg in Resources */,
+				505A6CDB21C2501800011D7A /* Localizable.strings in Resources */,
+				505A6B7121BE30C100011D7A /* Main.storyboard in Resources */,
+				505A6BE521BE3D4100011D7A /* BBGamesViewController.xib in Resources */,
+				505A6BE021BE3D2F00011D7A /* BBMineViewController.xib in Resources */,
+				505A6C1921BE44E400011D7A /* BBAboutMineViewController.xib in Resources */,
+				505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */,
+				501929502238AD7900E93EF1 /* 微软雅黑细体.ttf in Resources */,
+				505A6C4C21BE707F00011D7A /* BBAddGameTableViewCell.xib in Resources */,
+				505A6BEC21BE42EF00011D7A /* BBKPersonViewController.xib in Resources */,
+				505A6C2A21BE55B600011D7A /* BBDetailTableViewCell.xib in Resources */,
+				505A6C3821BE5EAB00011D7A /* BBDeleteTableViewCell.xib in Resources */,
+				505A6C0F21BE443100011D7A /* BBPersonalTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505A6B7C21BE30C300011D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505A6B8721BE30C300011D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29611BEC0DF7DC4E51AC996F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeibeiScorecardProject/Pods-BeibeiScorecardProject-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeibeiScorecardProject/Pods-BeibeiScorecardProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF7720FEFC5EB33D4EB4315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeibeiScorecardProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		505A6B6221BE30C100011D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505A6C7021C0FEC700011D7A /* BBAppDeviceMode.m in Sources */,
+				5019297A2238FBB000E93EF1 /* UIViewController+TouchAvatar.m in Sources */,
+				5019297D2238FBB000E93EF1 /* UIViewController+BackgroundAlpha.m in Sources */,
+				505A6BD321BE3CA400011D7A /* JS3DImageViewController.m in Sources */,
+				505A6C3721BE5EAB00011D7A /* BBDeleteTableViewCell.m in Sources */,
+				505A6C0221BE438900011D7A /* BBGroupTableViewCell.m in Sources */,
+				5019299E2238FC5200E93EF1 /* NSString+Code.m in Sources */,
+				505A6BCE21BE3CA400011D7A /* BBMMCleanCacheManager.m in Sources */,
+				505A6B6E21BE30C100011D7A /* BBViewController.m in Sources */,
+				5019297C2238FBB000E93EF1 /* UINavigationBar+BackgroundColor.m in Sources */,
+				505A6C7421C1047500011D7A /* BBKTransferViewController.m in Sources */,
+				5019299D2238FC5200E93EF1 /* UIView+addGradualLayer.m in Sources */,
+				5019299F2238FC5200E93EF1 /* NSDictionary+codeString.m in Sources */,
+				505A6C0821BE438900011D7A /* BBAllAlbumCollectionViewCell.m in Sources */,
+				505A6C6A21C0FEC700011D7A /* BBXXToast.m in Sources */,
+				505A6C2921BE55B600011D7A /* BBDetailTableViewCell.m in Sources */,
+				505A6C4121BE63EE00011D7A /* BBAddNumberTableViewCell.m in Sources */,
+				505A6C4B21BE707F00011D7A /* BBAddGameTableViewCell.m in Sources */,
+				501929912238FC1A00E93EF1 /* BBJSUserInfo.m in Sources */,
+				505A6C6F21C0FEC700011D7A /* BBXXRequest.m in Sources */,
+				505A6BDF21BE3D2F00011D7A /* BBMineViewController.m in Sources */,
+				505A6C0521BE438900011D7A /* BBPhotoDetailsCollectionViewCell.m in Sources */,
+				501929932238FC1A00E93EF1 /* BBJSFastLoginModel.m in Sources */,
+				505A6B7921BE30C300011D7A /* main.m in Sources */,
+				505A6BE421BE3D4100011D7A /* BBGamesViewController.m in Sources */,
+				505A6C0621BE438900011D7A /* BBPhotoDetailsCollectionViewController.m in Sources */,
+				505A6BAA21BE3C5D00011D7A /* BBAppDelegate.m in Sources */,
+				505A6C1F21BE4C1600011D7A /* BBGamesTableViewCell.m in Sources */,
+				501929942238FC1A00E93EF1 /* BBJSLocalStorageKit.m in Sources */,
+				5019296F2238FB9800E93EF1 /* UITextField+CustomFont.m in Sources */,
+				505A6C2421BE536F00011D7A /* BBDetailViewController.m in Sources */,
+				505A6C2E21BE5CD600011D7A /* BBDeleteViewController.m in Sources */,
+				505A6C5021BE7BE000011D7A /* BBKOpinionViewController.m in Sources */,
+				505A6BA221BE3B9F00011D7A /* BBDelegateViewController.m in Sources */,
+				505A6C1321BE449100011D7A /* BBMineTableViewCell.m in Sources */,
+				505A6C4621BE706200011D7A /* BBAddGameViewController.m in Sources */,
+				505A6C0E21BE443100011D7A /* BBPersonalTableViewCell.m in Sources */,
+				505A6C1821BE44E400011D7A /* BBAboutMineViewController.m in Sources */,
+				505A6C0721BE438900011D7A /* BBAllAlbumViewController.m in Sources */,
+				505A6C7921C116EA00011D7A /* BBIudgeViewController.m in Sources */,
+				505A6C0321BE438900011D7A /* BBGroupTableViewController.m in Sources */,
+				501929712238FB9800E93EF1 /* UILabel+CustomFont.m in Sources */,
+				501929952238FC1A00E93EF1 /* BBJSSelectViewTool.m in Sources */,
+				505A6C3C21BE631600011D7A /* BBAddNumberViewController.m in Sources */,
+				5019296E2238FB9800E93EF1 /* UIButton+CustomFont.m in Sources */,
+				505A6BA121BE3B9F00011D7A /* BBRootTabBarViewController.m in Sources */,
+				505A6BEB21BE42EF00011D7A /* BBKPersonViewController.m in Sources */,
+				505A6C0121BE438900011D7A /* BBJSFPictureManager.m in Sources */,
+				505A6C5621BE7D6A00011D7A /* BBFillContantTableViewCell.m in Sources */,
+				501929702238FB9800E93EF1 /* UITextView+CustomFont.m in Sources */,
+				505A6C6B21C0FEC700011D7A /* BBAppURL.m in Sources */,
+				501929A22238FC7400E93EF1 /* UIImage+ScaleImage.m in Sources */,
+				505A6BD221BE3CA400011D7A /* UITableView+JSCustom.m in Sources */,
+				501929922238FC1A00E93EF1 /* BBJSClassModel.m in Sources */,
+				501929902238FC1A00E93EF1 /* BBJSCommonAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505A6B7A21BE30C300011D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505A6B8321BE30C300011D7A /* BoardGamesItemsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505A6B8521BE30C300011D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505A6B8E21BE30C300011D7A /* BoardGamesItemsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		505A6B8021BE30C300011D7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505A6B6521BE30C100011D7A /* BeibeiScorecardProject */;
+			targetProxy = 505A6B7F21BE30C300011D7A /* PBXContainerItemProxy */;
+		};
+		505A6B8B21BE30C300011D7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505A6B6521BE30C100011D7A /* BeibeiScorecardProject */;
+			targetProxy = 505A6B8A21BE30C300011D7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		505A6B6F21BE30C100011D7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505A6B7021BE30C100011D7A /* Base */,
+				505A6CAB21C22B9600011D7A /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		505A6B7421BE30C300011D7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505A6B7521BE30C300011D7A /* Base */,
+				505A6CAC21C22B9700011D7A /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		505A6CB321C22CA400011D7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505A6CB221C22CA400011D7A /* en */,
+				505A6CBA21C22CC700011D7A /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		505A6CDD21C2501800011D7A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505A6CDC21C2501800011D7A /* en */,
+				505A6CDE21C2501A00011D7A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		505A6B9021BE30C300011D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		505A6B9121BE30C300011D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		505A6B9321BE30C300011D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB3D92E8DBE96037CF3BE72 /* Pods-BeibeiScorecardProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BeibeiScorecardProject/BeibeiScorecardProject.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MG258AQY9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BeibeiScorecardProject/Application/push",
+				);
+				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/BoardGamesItems/BeibeiScorecardProject/PrefixHeader.pch;
+				INFOPLIST_FILE = BeibeiScorecardProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BeibeiScorecardProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		505A6B9421BE30C300011D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB34B419008FE59CB600F22B /* Pods-BeibeiScorecardProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BeibeiScorecardProject/BeibeiScorecardProject.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MG258AQY9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BeibeiScorecardProject/Application/push",
+				);
+				GCC_PREFIX_HEADER = /Users/liucheng/Desktop/BoardGamesItems/BeibeiScorecardProject/PrefixHeader.pch;
+				INFOPLIST_FILE = BeibeiScorecardProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BeibeiScorecardProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		505A6B9621BE30C300011D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248CQC5959;
+				INFOPLIST_FILE = BoardGamesItemsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BoardGamesItemsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeibeiScorecardProject.app/BeibeiScorecardProject";
+			};
+			name = Debug;
+		};
+		505A6B9721BE30C300011D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248CQC5959;
+				INFOPLIST_FILE = BoardGamesItemsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BoardGamesItemsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeibeiScorecardProject.app/BeibeiScorecardProject";
+			};
+			name = Release;
+		};
+		505A6B9921BE30C300011D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248CQC5959;
+				INFOPLIST_FILE = BoardGamesItemsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BoardGamesItemsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeibeiScorecardProject;
+			};
+			name = Debug;
+		};
+		505A6B9A21BE30C300011D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248CQC5959;
+				INFOPLIST_FILE = BoardGamesItemsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jsfront.BoardGamesItemsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeibeiScorecardProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		505A6B6121BE30C100011D7A /* Build configuration list for PBXProject "BeibeiScorecardProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505A6B9021BE30C300011D7A /* Debug */,
+				505A6B9121BE30C300011D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505A6B9221BE30C300011D7A /* Build configuration list for PBXNativeTarget "BeibeiScorecardProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505A6B9321BE30C300011D7A /* Debug */,
+				505A6B9421BE30C300011D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505A6B9521BE30C300011D7A /* Build configuration list for PBXNativeTarget "BoardGamesItemsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505A6B9621BE30C300011D7A /* Debug */,
+				505A6B9721BE30C300011D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505A6B9821BE30C300011D7A /* Build configuration list for PBXNativeTarget "BoardGamesItemsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505A6B9921BE30C300011D7A /* Debug */,
+				505A6B9A21BE30C300011D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 505A6B5E21BE30C100011D7A /* Project object */;
+}

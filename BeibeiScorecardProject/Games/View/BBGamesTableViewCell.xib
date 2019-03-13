@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BBGamesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enn-E2-aDt">
+                        <rect key="frame" x="15" y="10" width="290" height="109.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LYL-eh-dSP">
+                                <rect key="frame" x="15" y="15" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Luh-i3-QUr"/>
+                                    <constraint firstAttribute="width" constant="80" id="mId-jT-gkg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地主计分器" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV7-vr-7bL">
+                                <rect key="frame" x="105" y="0.0" width="175" height="109.5"/>
+                                <fontDescription key="fontDescription" name=".PingFangSC-Regular" family=".PingFang SC" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KV7-vr-7bL" secondAttribute="bottom" id="IVm-G7-CXu"/>
+                            <constraint firstItem="KV7-vr-7bL" firstAttribute="top" secondItem="enn-E2-aDt" secondAttribute="top" id="Ifc-1s-KzE"/>
+                            <constraint firstItem="LYL-eh-dSP" firstAttribute="leading" secondItem="enn-E2-aDt" secondAttribute="leading" constant="15" id="Iic-oG-Di0"/>
+                            <constraint firstItem="KV7-vr-7bL" firstAttribute="centerY" secondItem="enn-E2-aDt" secondAttribute="centerY" id="WhQ-rJ-oy1"/>
+                            <constraint firstItem="LYL-eh-dSP" firstAttribute="centerY" secondItem="enn-E2-aDt" secondAttribute="centerY" id="cQc-wN-MAv"/>
+                            <constraint firstItem="KV7-vr-7bL" firstAttribute="leading" secondItem="LYL-eh-dSP" secondAttribute="trailing" constant="10" id="eXY-Qh-9Co"/>
+                            <constraint firstAttribute="trailing" secondItem="KV7-vr-7bL" secondAttribute="trailing" constant="10" id="r5r-DL-XFG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="enn-E2-aDt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0pt-yr-rF7"/>
+                    <constraint firstItem="enn-E2-aDt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IAC-zj-gPk"/>
+                    <constraint firstAttribute="bottom" secondItem="enn-E2-aDt" secondAttribute="bottom" constant="10" id="WIf-ig-Z9n"/>
+                    <constraint firstAttribute="trailing" secondItem="enn-E2-aDt" secondAttribute="trailing" constant="15" id="WX9-Oc-jIt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgView" destination="enn-E2-aDt" id="6fo-Nq-c2w"/>
+                <outlet property="headerImageView" destination="LYL-eh-dSP" id="YUW-ad-bcp"/>
+                <outlet property="titleLabel" destination="KV7-vr-7bL" id="EkC-0g-Iut"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

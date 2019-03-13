@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4FACBBA5F43D558A503A32DC8608D4B1"
+               BlueprintIdentifier = "E8B38BAF0E4A80DF1AE01DC27303843D"
                BlueprintName = "XFAssistiveTouch"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libXFAssistiveTouch.a">
