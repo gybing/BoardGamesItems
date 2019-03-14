@@ -20,21 +20,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zJt-iA-S4f">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页.png" translatesAutoresizingMaskIntoConstraints="NO" id="zJt-iA-S4f">
+                    <rect key="frame" x="-187.5" y="-24" width="750" height="735"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="zJt-iA-S4f" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="87b-j9-avd"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="zJt-iA-S4f" secondAttribute="bottom" id="Nmr-Hs-2vA"/>
-                <constraint firstItem="zJt-iA-S4f" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="TtO-vu-bSP"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="zJt-iA-S4f" secondAttribute="trailing" id="r94-Fk-IUD"/>
+                <constraint firstItem="zJt-iA-S4f" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" constant="44" id="9tw-oj-Ry7"/>
+                <constraint firstItem="zJt-iA-S4f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K42-8c-vyd"/>
+                <constraint firstItem="zJt-iA-S4f" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="-44" id="a4T-C1-PDm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
     <resources>
-        <image name="launch_icon.jpg" width="750" height="1334"/>
+        <image name="启动页.png" width="750" height="1334"/>
     </resources>
 </document>

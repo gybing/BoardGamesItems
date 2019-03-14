@@ -56,7 +56,7 @@ const CGFloat HeadImageHeight= 90;
     BGView.frame=CGRectMake(0, -BackGroupHeight, ScreenWidth, BackGroupHeight);
     [self.tableView addSubview:BGView];
     headImageView=[[UIImageView alloc]init];
-    headImageView.image=[UIImage imageNamed:@"type_3c copy"];
+    headImageView.image=[UIImage imageNamed:@"camera"];
     headImageView.layer.cornerRadius = 45;
     headImageView.layer.masksToBounds = YES;
     [BGView addSubview:headImageView];
@@ -156,19 +156,19 @@ const CGFloat HeadImageHeight= 90;
     BBMineTableViewCell * cell = [BBMineTableViewCell cellWithTableView:tableView];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            cell.headerImageView.image = [UIImage imageNamed:@"opinion"];
+            cell.headerImageView.image = [UIImage imageNamed:@"反馈"];
             cell.titleLabel.text = NSLocalizedString(@"feedback", nil);
         }
     } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
-            cell.headerImageView.image = [UIImage imageNamed:@"privacy"];
+            cell.headerImageView.image = [UIImage imageNamed:@"隐私"];
             cell.titleLabel.text = NSLocalizedString(@"PrivacyPolicy", nil);
         } else if (indexPath.row == 1) {
-            cell.headerImageView.image = [UIImage imageNamed:@"clear_cache"];
+            cell.headerImageView.image = [UIImage imageNamed:@"清理"];
             cell.titleLabel.text = NSLocalizedString(@"ClearcCache", nil);
         }
     } else {
-        cell.headerImageView.image = [UIImage imageNamed:@"about_mine"];
+        cell.headerImageView.image = [UIImage imageNamed:@"关于"];
         cell.titleLabel.text = NSLocalizedString(@"AboutUs", nil);
     }
     return cell;

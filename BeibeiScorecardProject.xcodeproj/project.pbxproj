@@ -26,6 +26,7 @@
 		5019299E2238FC5200E93EF1 /* NSString+Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019299B2238FC5200E93EF1 /* NSString+Code.m */; };
 		5019299F2238FC5200E93EF1 /* NSDictionary+codeString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019299C2238FC5200E93EF1 /* NSDictionary+codeString.m */; };
 		501929A22238FC7400E93EF1 /* UIImage+ScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 501929A12238FC7400E93EF1 /* UIImage+ScaleImage.m */; };
+		501929A42239FE0400E93EF1 /* 启动页.png in Resources */ = {isa = PBXBuildFile; fileRef = 501929A32239FE0400E93EF1 /* 启动页.png */; };
 		505A6B6E21BE30C100011D7A /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6B6D21BE30C100011D7A /* BBViewController.m */; };
 		505A6B7121BE30C100011D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505A6B6F21BE30C100011D7A /* Main.storyboard */; };
 		505A6B7321BE30C300011D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505A6B7221BE30C300011D7A /* Assets.xcassets */; };
@@ -91,7 +92,6 @@
 		505A6C7A21C116EA00011D7A /* BBIudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6C7821C116EA00011D7A /* BBIudgeViewController.xib */; };
 		505A6CB121C22CA400011D7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CB321C22CA400011D7A /* InfoPlist.strings */; };
 		505A6CDB21C2501800011D7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 505A6CDD21C2501800011D7A /* Localizable.strings */; };
-		50742C6521E837C5007BFDC8 /* launch_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50742C6421E837C5007BFDC8 /* launch_icon.jpg */; };
 		609E7C604908ECCE640B431E /* libPods-BeibeiScorecardProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E132E19DC56F8794F48EFE /* libPods-BeibeiScorecardProject.a */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +151,7 @@
 		5019299C2238FC5200E93EF1 /* NSDictionary+codeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+codeString.m"; sourceTree = "<group>"; };
 		501929A02238FC7300E93EF1 /* UIImage+ScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScaleImage.h"; sourceTree = "<group>"; };
 		501929A12238FC7400E93EF1 /* UIImage+ScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScaleImage.m"; sourceTree = "<group>"; };
+		501929A32239FE0400E93EF1 /* 启动页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页.png"; sourceTree = "<group>"; };
 		505A6B6621BE30C100011D7A /* BeibeiScorecardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeibeiScorecardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505A6B6C21BE30C100011D7A /* BBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
 		505A6B6D21BE30C100011D7A /* BBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
@@ -274,7 +275,6 @@
 		505C996C21EDB8FA0014FD34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		505C996E21EDB9210014FD34 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		505C997021EDB9340014FD34 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		50742C6421E837C5007BFDC8 /* launch_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_icon.jpg; sourceTree = "<group>"; };
 		80E132E19DC56F8794F48EFE /* libPods-BeibeiScorecardProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeibeiScorecardProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB34B419008FE59CB600F22B /* Pods-BeibeiScorecardProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeibeiScorecardProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeibeiScorecardProject/Pods-BeibeiScorecardProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -406,7 +406,7 @@
 				505A6B6D21BE30C100011D7A /* BBViewController.m */,
 				505A6B6F21BE30C100011D7A /* Main.storyboard */,
 				505A6B7221BE30C300011D7A /* Assets.xcassets */,
-				50742C6421E837C5007BFDC8 /* launch_icon.jpg */,
+				501929A32239FE0400E93EF1 /* 启动页.png */,
 				505A6B7421BE30C300011D7A /* LaunchScreen.storyboard */,
 				505A6B7721BE30C300011D7A /* Info.plist */,
 				505A6CDD21C2501800011D7A /* Localizable.strings */,
@@ -848,7 +848,6 @@
 				505A6C3D21BE631600011D7A /* BBAddNumberViewController.xib in Resources */,
 				505A6C7A21C116EA00011D7A /* BBIudgeViewController.xib in Resources */,
 				505A6C5121BE7BE000011D7A /* BBKOpinionViewController.xib in Resources */,
-				50742C6521E837C5007BFDC8 /* launch_icon.jpg in Resources */,
 				505A6CDB21C2501800011D7A /* Localizable.strings in Resources */,
 				505A6B7121BE30C100011D7A /* Main.storyboard in Resources */,
 				505A6BE521BE3D4100011D7A /* BBGamesViewController.xib in Resources */,
@@ -860,6 +859,7 @@
 				505A6BEC21BE42EF00011D7A /* BBKPersonViewController.xib in Resources */,
 				505A6C2A21BE55B600011D7A /* BBDetailTableViewCell.xib in Resources */,
 				505A6C3821BE5EAB00011D7A /* BBDeleteTableViewCell.xib in Resources */,
+				501929A42239FE0400E93EF1 /* 启动页.png in Resources */,
 				505A6C0F21BE443100011D7A /* BBPersonalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
